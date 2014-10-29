@@ -1,0 +1,7518 @@
+$browser: opera;
+$isIE: false;
+$fullImagePath: '//ui1.img.digitalrivercontent.net/drui/1.9.29/images/';
+
+// Sass Variables
+
+//Page Layout
+$pageWidth: 958px;
+$contentAreaPaddingLeft: 10px;
+$contentAreaPaddingRight: 10px;
+
+//Grid
+$gridGutterWidth: 10px;
+$inputPadding: 6px;
+$colorPickerIconSize: 16;
+$numGridColumns: 14;
+$labelGridUnits: 3;
+$colorPickerUnits: 2;
+
+//Typography
+$fontSizeXXSmall: 10px;
+$fontSizeSmall: 14px;
+
+//Colors
+$darkBrightBlueColor: #083288;
+$darkGrayTextColor: #3d3d3d;
+$grayBackgroundColor: #dcdcdc;
+$bodyBackgroundColor: #e3e3e3;
+$productDetailNumberBoxColor: #E88505;
+$mediumBorderColor: #AAAAAA;
+$taskbarButtonHover: #dcdcdc;
+$taskbarButtonHoverSelected: #fffdd9;
+
+//Global Header
+$globalHeaderTabHeight: 32px;
+$globalHeaderTabWidth: 250px;
+$globalHeaderTabMarginLeft: -126px;
+$globalHeaderBackgroundColor: #0C3C96;
+$globalHeaderBorderBottomStyle: none;
+$globalHeaderBorderBottomWidth: 0px;
+$globalHeaderBorderBottomColor: #ffffff;
+$globalHeaderPodBorderStyle: solid;
+$globalHeaderPodBorderWidth: 1px;
+$globalHeaderPodBorderColor: #3D63AB;
+$globalHeaderTopPodTopColor: #5D82BC;
+$globalHeaderTopPodBottomColor: #5276B9;
+$globalHeaderBottomPodTopColor: #2653A7;
+$globalHeaderBottomPodBottomColor: #011E6E;
+$globalHeaderBottomPodGradientDirection: to bottom;
+
+//Header
+$headerBackgroundColor: #FFFFFF;
+$headerBackgroundPosition: top left;
+$headerBackgroundRepeat: repeat-x;
+$headerTitleTextColor: #FFFFFF;
+$headerTitleTextShadow: #333333;
+$headerText: #FFFFFF;
+$headerLogoWidth: 233px;
+$headerLogoHeight: 75px;
+$headerLogoOpacity: 1;
+$headerLogoOpacityIEFilters: 100;
+$headerBorderTopColor: transparent;
+$headerBorderTopWidth: 0;
+$headerBorderTopStyle: none;
+
+//Mega Menu
+$navBackgroundColor: #2956A7;
+$navItemHoverBackgroundRepeat: repeat-x;
+$navItemHoverBackgroundPosition: 0px -100px;
+$navItemHoverBackgroundColor: transparent;
+$navHelpTextBGPosition: 2px -6300px;
+$navInnerBackgroundColor: #f1f1f1;
+$navWrapperBackgroundColor: #FFFFFF;
+$megaMenuHelpBackgroundColor: #FFFFFF;
+$navItemTier2BackgroundColor: #FFFFFF;
+$navItemTier2BackgroundColorActive: transparent;
+$megaMenuRecentItemsBackgroundColor: #DCDCDC;
+$megaMenuInnerSupportBackgroundColor: #ffffff;
+$megaMenuBorder: #94CE48;
+$navBorderBottomStyle: solid;
+$navBorderBottomWidth: 3px;
+$navBorderBottomColor: #94CE48;
+$navBorderTopStyle: solid;
+$navBorderTopWidth: 1px;
+$navBorderTopColor: #2C74B4;
+$navLiBorderStyle: solid;
+$navLiBorderWidth: 1px;
+$navLiBorderLeftColor: #13477C;
+$navLiBorderRightColor: #2C74B4;
+$navLiTier2BorderTopColor: #f1f1f1;
+$navLiTier2BorderTopWidth: 1px;
+$navLiTier2BorderTopStyle: solid;
+$navLiTier2BorderBottomColor: #f1f1f1;
+$navLiTier2BorderBottomWidth: 1px;
+$navLiTier2BorderBottomStyle: solid;
+$megaMenuDividerBorderTopColor: #dfdfdf;
+$megaMenuDividerBorderTopWidth: 1px;
+$megaMenuDividerBorderTopStyle: solid;
+$megaMenuDividerBorderBottomColor: #ffffff;
+$megaMenuDividerBorderBottomWidth: 1px;
+$megaMenuDividerBorderBottomStyle: solid;
+$megaMenuRecentItemsBorderTopColor: #efefef;
+$megaMenuRecentItemsBorderTopWidth: 1px;
+$megaMenuRecentItemsBorderTopStyle: solid;
+$megaMenuLiTextColor: #000000;
+$megaMenuLiTier3TextColor: #000000;
+$megaMenuHelpTextColor: #000000;
+$megaMenuInnerSupportTextColor: #000000;
+$megaMenuInnerSupportBlueLinkTextColor: #002DDB;
+
+//Login
+$loginH1BackgroundColor: #1851AB;
+
+//Breadcrumbs and Icon Well
+$bciBackgroundColor: #f1f1f1;
+$bciBoxShadow: inset 0 3px 4px #C6C6C6;
+$breadcrumbMarginLeft: 5px;
+$bcBackgroundRepeat: no-repeat;
+$bcBackgroundPosition: right -585px;
+$breadcrumbColor: #666666;
+$iBackgroundRepeat: no-repeat;
+$icwTextColor: #333333;
+$icwTextColorHover: #FFFFFF;
+$icwHelpTextColor: #E88505;
+$icwBackgroundColorHover: #E88505;
+$icwBackgroundColor: #ffffff;
+$icwWrapperTextColor: #000000;
+$icwLargeHeaderBackgroundColor: #f1f1f1;
+$icwSmallHeaderTextColor: #333333;
+$icwSmallHeaderTextLinkColor: #333333;
+$icwSmallHeaderLinkHoverBackgroundColor: #e0e0e0;
+$icwSmallHeaderLinkHoverTextColor: #000000;
+$icwSmallHeaderLinkHoverTextDecoration: none;
+$icwSearchLabelColor: #000000;
+
+//Taskbar
+$taskbarHoverBGColorTop: #ffffff;
+$taskbarHoverBGColorBottom: #dcdcdc;
+$taskbarSelectedBGColorTop: #fffdd9;
+$taskbarSelectedBGColorBottom: #fffffd;
+
+//Wizard
+$wizardBeads: #E88505;
+$beadsFontWeight: bold;
+
+//Footer
+$footerBackgroundColor: #e3e3e3;
+$footerBoxShadowInset: inset;
+$footerBoxShadowHShadow: 0;
+$footerBoxShadowVShadow: 7px;
+$footerBoxShadowBlur: 12px;
+$footerBoxShadowColor: #D3D3D3;
+$footerLinkColor: #333333;
+$footerTextColor: #8e8e8e;
+$footerBorderTopColor: transparent;
+$footerBorderTopWidth: 0;
+$footerBorderTopStyle: none;
+
+//Messages
+$errorMessageColor: #B4342B;
+$warningMessageColor: #E78620;
+$successMessageColor: #15541B;
+$infoMessageColor: #244C8A;
+$lockedMessageColor: #545454;
+$systemMessageColor: #244C8A;
+$modalConfirmBorder: #244c8a;
+$modalLiveChangeBorder: #e78620;
+$modalWarningBorder: #e78620;
+$modalSuccessBorder: #15541b;
+
+//Buttons
+$buttonTopBorderColor: #4f7fc7;
+$buttonSideBorderColor: #3c69b4;
+$buttonBottomBorderColor: #2953a4;
+$buttonBackgroundTopColor: #5685cb;
+$buttonBackgroundBottomColor: #396bbc;
+$buttonHoverTopBorderColor: #4986c7;
+$buttonHoverSideBorderColor: #4a87c8;
+$buttonHoverBottomBorderColor: #36669b;
+$buttonHoverBackgroundTopColor: #5890cb;
+$buttonHoverBackgroundBottomColor: #4281c6;
+$buttonPrimaryTopBorderColor: #6db54d;
+$buttonPrimarySideBorderColor: #6ab345;
+$buttonPrimaryBottomBorderColor: #5ba73a;
+$buttonPrimaryBackgroundTopColor: #7fc859;
+$buttonPrimaryBackgroundBottomColor: #67b73d;
+$buttonPrimaryTextColor: #FFFFFF;
+$buttonPrimaryHoverTopBorderColor: #7ab956;
+$buttonPrimaryHoverSideBorderColor: #78b84e;
+$buttonPrimaryHoverBottomBorderColor: #69ac44;
+$buttonPrimaryHoverBackgroundTopColor: #93cf66;
+$buttonPrimaryHoverBackgroundBottomColor: #7ec04d;
+$buttonPrimaryTextColorHover: #FFFFFF;
+$buttonSecondaryTopBorderColor: #cccccc;
+$buttonSecondaryRightBorderColor: #adacac;
+$buttonSecondaryBottomBorderColor: #7d7d7d;
+$buttonSecondaryLeftBorderColor: #d2d2d2;
+$buttonSecondaryBackgroundTopColor: #ffffff;
+$buttonSecondaryBackgroundBottomColor: #cecece;
+$buttonSecondaryHoverTopBorderColor: #adacac;
+$buttonSecondaryHoverRightBorderColor: #bbbbbb;
+$buttonSecondaryHoverBottomBorderColor: #9b9b9b;
+$buttonSecondaryHoverLeftBorderColor: #d6d6d6;
+$buttonSecondaryHoverBackgroundTopColor: #d1d1d1;
+$buttonSecondaryHoverBackgroundBottomColor: #ffffff;
+$buttonDisabledTopBorderColor: #d5d5d5;
+$buttonDisabledSideBorderColor: #cccccc;
+$buttonDisabledBottomBorderColor: #c1c1c1;
+$buttonDisabledBackgroundTopColor: #d7d7d7;
+$buttonDisabledBackgroundBottomColor: #cfcfcf;
+$buttonSmallDisabledTopBorderColor: #d0d0d0;
+$buttonSmallDisabledSideBorderColor: #d0d0d0;
+$buttonSmallDisabledBottomBorderColor: #c5c5c5;
+$buttonSmallDisabledBackgroundTopColor: #d5d5d5;
+$buttonSmallDisabledBackgroundBottomColor: #cecece;
+$buttonPaddingLeftWithRightAlign: 0;
+$buttonPaddingRightWithRightAlign: 20px;
+$buttonPaddingLeftWithLeftAlign: 22px;
+$buttonIconPaddingLeft: 22px;
+$buttonSecondaryPaddingLeftWithRightAlign: 0;
+$buttonSecondaryPaddingRightWithRightAlign: 20px;
+$buttonSecondaryPaddingLeftWithLeftAlign: 22px;
+
+//Color Picker
+$colorPickerPopupBackgroundColor: #dcdcdc;
+$colorPickerPopupBorderColor: #333333;
+$colorPickerPopupBorderRadius: none;
+$colorPickerSampleBorderColor: #333333;
+$colorPickerSampleWidth: 52px;
+$colorPickerSampleDivWidth: 50px;
+
+//Modal Overlay
+$modalOverlayBottomBorderColor: #545454;
+
+//Toggleswitch
+$toggleswitchLeftFontColor: #ec8a0b;
+$toggleswitchRightFontColor: #548dca;
+$toggleswitchFontSize: 14;
+$toggleswitchLetterSpacing: -1px;
+$toggleswitchBackHeight: 33px;
+
+//Search Picker
+$searchPickerInputBackgroundColor: #fff;
+$searchPickerspPopInputBackgroundColor: #fff;
+$searchPickerSelectedStrongBackGroundColor: #fff;
+$searchPickerSelectedBackGroundColorHover: #fff;
+$searchPickerPaginBarBackGroundColor: #eee;
+$searchPickerResultWrapperBackGroundColor: #fff;
+$searchPickerLoadingRowsBackGroundColor: #eee;
+$searchPickerListedItemStrongBackGroundColor: #FFFF99;
+$searchPickerListedItemBackGroundColor: #ffffff;
+$searchPickerResultsHeaderBorderWidth: 1px;
+$searchPickerResultsHeaderBorderStyle: solid;
+$searchPickerResultsHeaderBorderColor: #ccc;
+$searchPickerSelectedBorderWidth: 1px;
+$searchPickerSelectedBorderStyle: solid;
+$searchPickerSelectedBorderColor: #fff;
+$searchPickerNotEmbeddedBorderWidth: 1px;
+$searchPickerNotEmbeddedBorderStyle: solid;
+$searchPickerNotEmbeddedBorderColor: #AAAAAA;
+$searchPickerPagingBarBorderWidth: 1px;
+$searchPickerPagingBarBorderStyle: solid;
+$searchPickerPagingBarBorderColor: #CCC;
+$searchPickerResultsWrapperBorderWidth: 1px;
+$searchPickerResultsWrapperBorderStyle: solid;
+$searchPickerResultsWrapperBorderColor: #CCC;
+$searchPickerLoadingRowsBorderWidth: 1px;
+$searchPickerLoadingRowsBorderStyle: solid;
+$searchPickerLoadingRowsBorderColor: #aaa;
+$searchPickerAddedItemBorderWidth: 1px;
+$searchPickerAddedItemBorderStyle: solid;
+$searchPickerAddedItemBorderColor: #aaaaaa;
+$searchPickerListedItemBorderWidth: 1px;
+$searchPickerListedItemBorderStyle: solid;
+$searchPickerListedItemBorderColor: #eee;
+$searchPickerItemHoverBorderBottomWidth: 1px;
+$searchPickerItemHoverBorderBottomStyle: solid;
+$searchPickerItemHoverBorderBottomColor: #999;
+$searchPickerResultsHeaderGradientTop: #ffffff;
+$searchPickerResultsHeaderGradientBottom: #eeeeee;
+$searchPickerSelectedItemsResultsHeaderSortableHoverGradientTop: #ededec;
+$searchPickerSelectedItemsResultsHeaderSortableHoverGradientBottom: #cfcfcf;
+$searchPickerItemHoverGradientTop: #f7f7f7;
+$searchPickerItemHoverGradientBottom: #dedede;
+$searchPickerNoResultsTextColor: #999;
+$searchPickerItemWarningTextColor: #000000;
+$searchPickerSelectedItemWarningTextColor: #cccccc;
+$searchPickerSelectedtextColor: #cccccc;
+
+//Accordion
+$accordionBackgroundColor: #4374C0;
+
+//Tabs
+$tabBackgroundColor: none;
+$tabHoverBackgroundColor: none;
+$tabsBorderTopColor: #E88505;
+$fingerLeftBorderColor: #ffa500;
+$fingerGradientTopColor: #fefefe;
+$fingerGradientBottomColor: #dddddd;
+$fingerHoverGradientTopColor: #dddddd;
+$fingerHoverGradientBottomColor: #bcbcbc;// Calculated SCSS Variables
+
+// Sprite Settings
+$imagePath: "../images/";
+$gridHeight: 100;
+
+// layout variables
+$boxPadding: 10px;
+$boxBorder: 1px;
+$sectionNavWidth: 175px;
+$sectionNavPaddingLeft: 10px;
+$sectionNavPaddingRight: 10px;
+$sectionNavBorderLeft: 0;
+$sectionNavBorderRight: 0;
+$contentAreaBorderLeft: 1px;
+$contentAreaBorderRight: 0;
+
+// unused in css files
+$totalSectionNavWidth: $sectionNavWidth + $sectionNavPaddingLeft + $sectionNavPaddingRight + $sectionNavBorderLeft + $sectionNavBorderRight;
+
+// USED in multiple css files
+$contentAreaWidth: $pageWidth - $totalSectionNavWidth - $contentAreaBorderLeft - $contentAreaBorderRight - $contentAreaPaddingLeft - $contentAreaPaddingRight;
+
+// used only for other calculations
+$boxTotalPaddingBorder: $boxPadding * 2 + $boxBorder * 2;
+
+// unused in css files
+$innerBoxWidth: $contentAreaWidth - ($boxTotalPaddingBorder * 3);
+
+// USED in multiple css files
+$gridWidth: floor(($innerBoxWidth - ($gridGutterWidth * ($numGridColumns - 1))) / $numGridColumns);
+
+// Move these to form.css
+$maxOneColGridUnits: $numGridColumns - $labelGridUnits;
+$maxTwoColGridUnits: ($numGridColumns / 2) - $labelGridUnits;
+$labelWidth: $labelGridUnits * $gridWidth + (($labelGridUnits - 1) * $gridGutterWidth);
+$outerBoxWidth: $contentAreaWidth - $boxTotalPaddingBorder;
+
+$themeID: "default";
+$headerBGImg: "../images/backgrounds/header.jpg";
+$headerGlobalCommerceBackgroundImage: " ";
+$headerMyCommerceBusinessBackgroundImage: " ";
+$headerCommerceExpressBackgroundImage: " ";
+$headerWorldPaymentsBackgroundImage: " ";
+$headerSubNavBGImg: "../images/sprites/sprite_backgrounds.gif";
+$bcBackgroundImg: "../images/sprites/sprite_misc.gif";
+$iBackgroundImg: "../images/sprites/sprite_backgrounds.gif";
+$navBGImg: "../images/sprites/sprite_backgrounds.gif";
+$navItemHoverBGImg: "../images/sprites/sprite_backgrounds.gif";
+$navHelpTextBGImg1: "sprites/icons/icons-blue-32.png";
+$navHelpTextBGImg2: "sprites/icons/icons-blue-32.gif";
+$navLowerTierBGImg1: "sprites/icons/icons-blue-16.png";
+$navLowerTierBGImg1: "sprites/icons/icons-blue-16.gif";
+$wizardBeadsBGImg: "../images/sprites/sprite_backgrounds.gif";
+$tabBGImg: "../images/sprites/sprite_backgrounds.gif";
+$toggleswitchSprite: "../images/toggleswitch/sprite_toggleswitch.gif";
+$loginPodH1BGImg: "../images/backgrounds/login_field_title_bkg.gif";
+$loginDivBGImg: "../images/backgrounds/public_bkg.jpg";
+$msgSprite: "../images/sprites/sprite_messages.gif";
+$modalConfirmIcon: "../images/messages/messages-question-50px.gif";
+$modalAlertIcon: "../images/messages/messages-info-50px.gif";
+$modalWarningIcon: "../images/messages/messages-warning-50px.gif";
+$modalSuccessIcon: "../images/messages/messages-success-50px.gif";
+$modalOverlyTitleBGImg: "../images/modalOverlay/modal-overlay-bg.gif";
+$globalNavTabUpImg: "../images/misc/globalnav_tab_up.png";
+$globalNavTabDownImg: "../images/misc/globalnav_tab_down.png";
+$navTieredSprites: "../images/sprites/icons/icons-black-16.gif";
+$buttonSprite: "../images/sprites/button_sprite.gif";
+$buttonProcessingSprite: "../images/buttons/button-process2.gif";
+$buttonWhiteIconSprite: "../images/sprites/icons/icons-white-16.png";
+$buttonBlackIconSprite: "../images/sprites/icons/icons-black-16.png";
+$buttonSecondaryWhiteIconSprite: "../images/sprites/icons/icons-white-16.png";
+$navInnerBackground: "../images/nav/nav-gradient.png";
+$megaMenuRecentItemsBackgroundImage: "../images/list/table_unsorted.gif";
+$footerBorderTop: " ";
+$footerBackgroundIESprite: "../images/sprites/sprite_backgrounds.gif";
+$icwBackgroundImage: "../images/sprites/sprite_misc.gif";
+$navCaretArrow: "../images/nav/caret.gif";
+$innerSupportEarthIcon: "../images/sprites/icons/icons-blue-32.png";
+$accordionGradientBar: "../images/backgrounds/blue_gradient.gif";
+$icwIcons: "../images/sprites/icons/icons-black-16.gif";
+$accordionHeaderBackground: "../images/sprites/sprite_backgrounds.gif";
+$tabsBackgroundImage: "../images/sprites/sprite_backgrounds.gif";
+$treeMenuTitleBackgroundImage: "../images/sprites/sprite_backgrounds.gif";
+$linkListLiIconImage: "../images/sprites/icons/icons-black-16.png";
+$processingSpinner: "../images/sprites/spinner-sprite-36-fff.gif";
+$linkListIcons: "../images/sprites/icons/icons-black-16.png";
+$spriteIconMixin1: "sprites/icons/icons-black-16.png";
+$spriteIconMixin2: "sprites/icons/icons-black-16.gif";
+$spriteMiscMixin: "sprites/sprite_misc.gif";
+$blackIconSprite: "../images/sprites/icons/icons-black-16.png";
+$colorIconSprite32: "../images/sprites/icons/icons-color-32.png";
+$greyIconSprite32: "../images/sprites/icons/icons-grey-32.png";
+$spinnerSmallF1F1F1: "../images/animated/spin-sm-f1f1f1.gif";
+$spinnerSmall: "../images/animated/spin-sm.gif";
+$spinner16D5D5D5: "../images/animated/spinner_16_d5d5d5.gif";
+$spinner16FFF: "../images/animated/spinner_16_FFF.gif";
+
+//Sprite Misc Mixin to be used as Variable when sprite-misc/background/etc() can't be used for whatever reason.
+$spriteMiscVar: "../images/sprites/sprite_misc.gif";
+$spriteBackgroundVar: "../images/sprites/sprite_backgrounds.gif";
+$spriteMessagesVar: "../images/sprites/sprite_messages.gif";
+$spriteAuditHistory: "../images/sprites/sprite_auditHistory.gif";
+$modalMaxMinSprite: "../images/modalOverlay/modal_max_min-sprites.png";
+
+//single icon image overrides
+$trendPositiveUp: "../images/icons/trend-positive-up.gif";
+$trendPositiveDown: "../images/icons/trend-positive-down.gif";
+$trendNeutralUp: "../images/icons/trend-neutral-up.gif";
+$trendNeutralDown: "../images/icons/trend-neutral-down.gif";
+$trendNoChange: "../images/icons/trend-nochange.gif";
+$trendNegativeUp: "../images/icons/trend-negative-up.gif";
+$trendNegativeDown: "../images/icons/trend-negative-down.gif";
+$btnPlus: "../images/treeMenu/plus.gif";
+$btnMinus: "../images/treeMenu/minus.gif";
+$dropdownHandle: "../images/misc/dropdown_handle.gif";
+$messageInfo: "../images/messages/message_info.png";
+$chevronLargeDown: "../images/icons/chevron_large_down.gif";
+$chevronLargeUp: "../images/icons/chevron_large_up.gif";
+$chevronSmallDown: "../images/icons/chevron_small_down.gif";
+$chevronSmallUp: "../images/icons/chevron_small_up.gif";
+$paginationSprite: "../images/list/pagination_sprite.gif";
+
+//Search Picker Images
+$searchPickerInputBackgroundIcon: "../images/searchPicker/search-icon.gif";
+$searchPickerspPopInputBackgroundIcon: "../images/searchPicker/search-icon.gif";
+$searchPickerSelectedItemsResultsHeaderAscendingBackgroundImage: "../images/searchPicker/ascending.gif";
+$searchPickerSelectedItemsResultsHeaderDescendingBackgroundImage: "../images/searchPicker/descending.gif";
+$searchPickerMultipleModeListedItemActionIcon: "../images/searchPicker/add_icon.gif";
+$searchPickerMultipleModeListedItemActionIconHover: "../images/searchPicker/add_icon_hover.gif";
+$searchPickerAddedItemActionIcon: "../images/searchPicker/delete_icon.gif";
+$searchPickerAddedItemActionIconHover: "../images/searchPicker/delete_icon.gif";
+
+//Default, old theme
+$trainingIconPosition: 10px -2880px;
+$trainingIconPositionHover: 10px -2989px;
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td {
+	border:0;
+	margin:0;
+	outline:0;
+	padding:0;
+	vertical-align:baseline;
+}
+:focus {
+	outline:0;
+}
+body {
+	color:black;
+	line-height:1;
+}
+ol,ul {
+	list-style:none;
+}
+table {
+	border-collapse:collapse; /* substitute 'border-collapse:seperate' */
+	border-spacing:0;
+}
+caption,th,td {
+	font-weight:normal;
+	text-align:left;
+}
+blockquote:before,blockquote:after,
+q:before,q:after {
+	content:"";
+}
+blockquote,q {
+	quotes:"" "";
+}
+
+body {
+	background-color:#E3E3E3;
+	font-family:arial,helvetica,sans-serif;
+	font-size:12px;
+	font-weight:normal;	
+}
+
+h1 {
+	clear:both;
+	font-size:24px;
+	font-weight:bold;	
+	margin-bottom:25px;
+}
+
+h1 span {
+	color:#999;
+	font-size:18px;
+}
+
+h2 {
+	clear:both;
+	color:#000;
+	font-size:20px;
+	font-weight:bold;	
+	margin-top:20px;
+	margin-bottom:10px;	
+}
+
+h3 {
+	clear:both;
+	font-size:13px;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+strong {
+	font-weight:bold;	
+}
+
+p {
+	line-height:18px;
+	margin-bottom:10px;
+}
+
+a{
+ 	color:#000;
+}
+
+a:active{
+	color:#666;
+} 
+ 
+
+// Returns the opposite of top, bottom, left, or right.
+// For example: dr-gradient-opposite-side(top) = bottom
+@function dr-gradient-opposite-side($side) {
+	@if $side == top {
+		@return bottom;
+	} @else if $side == bottom {
+		@return top;
+	} @else if $side == left {
+		@return right;
+	} @else if $side == right {
+		@return left;
+	} @else {
+		@return '';
+	}
+}
+
+// Returns the opposite side or corner.
+// For example: dr-gradient-opposite-side-or-corner(left top) = right bottom
+@function dr-gradient-opposite-side-or-corner($side-or-corner) {
+	$opposite-side-or-corner: ();
+	@each $side in $side-or-corner {
+		$opposite-side: dr-gradient-opposite-side($side);
+		@if $opposite-side != '' {
+			$opposite-side-or-corner: append($opposite-side-or-corner, dr-gradient-opposite-side($side));
+		}
+	}
+	@return $opposite-side-or-corner;
+}
+
+// Removes the "to" keyword.
+//For example: dr-gradient-drop-to-keyword(to left bottom) = left bottom.
+@function dr-gradient-drop-to-keyword($to-side-or-corner) {
+	$side-or-corner: ();
+	@each $side in $to-side-or-corner {
+		@if $side != to {
+			$side-or-corner: append($side-or-corner, $side);
+		}
+	}
+	@return $side-or-corner;
+}
+
+// Converts the color stops to use the color-stop keyword in -webkit-gradient.
+@function dr-gradient-convert-to-legacy-webkit-color-stops($color-stops...) {
+	$converted-color-stops: ();
+	$color: null;
+	$point: 0%;
+	// Used in case no points were specified with the colors.
+	$point-interval: 100% / (length($color-stops) - 1);
+	@each $color-stop in $color-stops {
+		$converted-color-stop: null;
+		@if length($color-stop) == 1 {
+			$converted-color-stop: color-stop($point, $color-stop);
+			$point: $point + $point-interval;
+		} @else {
+			$converted-color-stop: color-stop(nth($color-stop, 2), nth($color-stop, 1))
+		}
+
+		$converted-color-stops: append($converted-color-stops, $converted-color-stop, comma);
+	}
+
+	@return $converted-color-stops;
+}
+
+// Converts the side or corner to a point that can be used in -webkit-gradient.
+@function dr-gradient-convert-to-legacy-webkit-point($side-or-corner) {
+	@if length($side-or-corner) == 1 {
+		// If there's only one side specified, convert it to a point.
+		@if nth($side-or-corner, 1) == top or nth($side-or-corner, 1) == bottom {
+			@return left $side-or-corner;
+		} @else {
+			@return $side-or-corner top;
+		}
+	} @else {
+		// It's already a point. Make sure left or right is before top or bottom.
+		@if nth($side-or-corner, 1) == top or nth($side-or-corner, 1) == bottom {
+			@return nth($side-or-corner, 2) nth($side-or-corner, 1);
+		} @else {
+			@return $side-or-corner;
+		}
+	}
+}
+
+// Legacy IE6-9 gradient mixin.
+@mixin ms-gradient($start-color, $end-color) {
+	$filter: "progid:DXImageTransform.Microsoft.Gradient(startColorstr='#{$start-color}', endColorstr='#{$end-color}')";
+	-ms-filter: "filter:#{unquote($filter)}";
+	filter: unquote($filter);
+}
+
+// Linear gradient mixin for all supported browser versions.
+// This signature is intended to closely match the standard linear-gradient,
+// except angles are not yet supported.
+@mixin linear-gradient($to-side-or-corner, $color-stops...) {
+	$to-side-or-corner: dr-gradient-drop-to-keyword($to-side-or-corner);
+	$from-side-or-corner: dr-gradient-opposite-side-or-corner($to-side-or-corner);
+	$start-color-stop: nth($color-stops, 1);
+	$end-color-stop: nth($color-stops, length($color-stops));
+	$start-color: nth($start-color-stop, 1);
+	$end-color: nth($end-color-stop, 1);
+
+	background-color: $end-color; // Fallback if gradients are not supported.
+
+	@if $isIE {
+		@include ms-gradient($start-color, $end-color); // For IE 6 to 9.
+		background-image: -ms-linear-gradient($from-side-or-corner, $start-color-stop, $end-color-stop); // For IE 10 consumer preview
+	} @else if $browser == chrome {
+		background-image: -webkit-linear-gradient($from-side-or-corner, $color-stops...); // For Chrome 10 to 25 and Safari 5.1+
+	} @else if $browser == ff or $browser == ff2 {
+		background-image: -moz-linear-gradient($from-side-or-corner, $color-stops...); // For FF 3.6 to 15.0
+	} @else if $browser == opera {
+		background-image: -o-linear-gradient($from-side-or-corner, $color-stops...); // For Opera 11.1 to 12
+	} @else if $browser == safari {
+		background-image: -webkit-gradient(linear, dr-gradient-convert-to-legacy-webkit-point($from-side-or-corner), dr-gradient-convert-to-legacy-webkit-point($to-side-or-corner), dr-gradient-convert-to-legacy-webkit-color-stops($color-stops...)); // For Chrome 2 to 9 and Safari 4 to 5
+		background-image: -webkit-linear-gradient($from-side-or-corner, $color-stops...); // For Chrome 10 to 25 and Safari 5.1+
+	}
+
+	background-image: linear-gradient(to $to-side-or-corner, $color-stops...); // Standard. FF 16+, IE 10+, Chrome 26+, Opera 12.1+
+}
+
+// Mixin that disables legacy IE6-9 gradients.
+@mixin ms-gradient-disabled() {
+	$filter: "progid:DXImageTransform.Microsoft.Gradient(enabled='false')";
+	-ms-filter: "filter:#{$filter}";
+	filter: unquote($filter);
+}
+
+// Legacy IE shadow mixin.
+@mixin ms-shadow($color, $direction: 225, $strength: 1) {
+	// Use unquote because of sass bug: https://github.com/hcatlin/libsass/issues/72
+	filter: unquote("progid:DXImageTransform.Microsoft.Shadow(color='#{$color}', direction=#{$direction}, strength=#{$strength})");
+}
+
+// Legacy IE alpha image loader.
+@mixin ms-alpha-image-loader($image, $sizing-method: image) {
+	// Use unquote because of sass bug: https://github.com/hcatlin/libsass/issues/72
+	filter: unquote("progid:DXImageTransform.Microsoft.alphaImageLoader(src='#{$fullImagePath}#{$image}', sizingMethod='${sizing-method}')");
+}
+
+// Opacity mixin for all supported browser versions.
+// This signature is intended to closely match the standard opacity,
+// and takes a value between 0.0 and 1.0.
+@mixin opacity($opacity) {
+	@if $browser == ie6 or $browser == ie7 or $browser == ie8 {
+		$filter: unquote("alpha(opacity=#{$opacity*100})");
+		-ms-filter: "filter:#{$filter}"; // IE 8
+		filter: $filter; // IE 6 to 7
+	} @else if $browser == ff2 {
+		-moz-opacity: $opacity; // < FF 0.9
+		opacity: $opacity; // Standard.
+	} @else {
+		opacity: $opacity; // Standard. FF 2+, IE 9+, Chrome 4+, Safari 3.1+, Opera 9.5+
+	}
+}
+
+// Concatenates each prefix in the list of prefixes with the suffix and returns them as a list.
+@function dr-concat-prefixes($prefixes, $suffix) {
+	$result: ();
+	@each $prefix in $prefixes {
+		$result: append($result, unquote($prefix) unquote($suffix), comma);
+	}
+	@return $result;
+}
+
+// Generates CSS for grid widths.
+@mixin calculateGridValue($prefixes, $currentCol: 1, $maxCol: $numGridColumns) {
+	$colMultiplier: null;
+	@if ($currentCol < $maxCol) {
+		$colMultiplier: $currentCol;
+	} @else {
+		$colMultiplier: $maxCol;
+	}
+
+	$currentGridWidth: ($gridWidth * $colMultiplier) + ($gridGutterWidth * ($colMultiplier - 1));
+	$inputTextAreaWidth: $currentGridWidth - $inputPadding;
+
+	$rule: dr-concat-prefixes($prefixes, "div.gridSpan#{$currentCol}"), dr-concat-prefixes($prefixes, "select.gridSpan#{$currentCol}");
+	#{$rule} {
+		width: $currentGridWidth;
+	}
+
+	$rule: dr-concat-prefixes($prefixes, "input.gridSpan#{$currentCol}"), dr-concat-prefixes($prefixes, "textarea.gridSpan#{$currentCol}");
+	#{$rule} {
+		width: $inputTextAreaWidth;
+	}
+
+	@if $currentCol < $numGridColumns {
+		@include calculateGridValue($prefixes, $currentCol + 1, $maxCol);
+	}
+}
+ .fauxTree tr.folder td.iconColumn a, .fauxTree tr.item td.iconColumn a,  .fauxTree tr.folder td.iconColumn div, .fauxTree tr.item td.iconColumn div {
+        text-decoration: none;
+        display: inline-block;
+        line-height: 18px;
+    }
+	
+.fauxTree tr.folder td.iconColumn div{
+	cursor: pointer;
+}	
+	
+	
+ .fauxTree tr.folder td.iconColumn a span, .fauxTree tr.item td.iconColumn a span{
+ 	text-decoration: underline;
+ }	
+    
+    .fauxTree tr.folder td.iconColumn a,.fauxTree tr.folder td.iconColumn div{
+        background: url($spriteMiscVar) no-repeat 0 -1900px;
+    }
+    
+    .fauxTree tr.open td.iconColumn a, .fauxTree tr.open td.iconColumn div {
+        background: url($spriteMiscVar) no-repeat 0 -2000px;
+    }
+    
+    .fauxTree tr.item td.iconColumn a, .fauxTree tr.item td.iconColumn div {
+    	background: url($blackIconSprite) no-repeat 0 -3900px;
+    }
+    
+    .fauxTree tr.dr td.iconColumn a, .fauxTree tr.dr td.iconColumn div{
+        background: url("../images/FauxTree/dr_icon.jpg") no-repeat;
+    }
+    
+    .fauxTree tr.item td.iconColumn span {
+        padding-left: 19px;
+    }
+    
+    .fauxTree tr.folder td.iconColumn span {
+        padding-left: 37px;
+    }
+    
+    .fauxTree tr.level0 td.iconColumn a, .fauxTree tr.level0 td.iconColumn div {
+        margin-left: 0px;
+    }
+    
+    .fauxTree tr.level1 td.iconColumn a, .fauxTree tr.level1 td.iconColumn div {
+        margin-left: 33px;
+    }
+    
+    .fauxTree tr.level2 td.iconColumn a, .fauxTree tr.level2 td.iconColumn div{
+        margin-left: 70px;
+    }
+    
+    .fauxTree tr.level3 td.iconColumn a, .fauxTree tr.level3 td.iconColumn div {
+        margin-left: 108px;
+    }
+    
+    .fauxTree tr.level4 td.iconColumn a, .fauxTree tr.level4 td.iconColumn div {
+        margin-left: 130px;
+    }
+	
+	.fauxTree tr.level4 td.iconColumn a, .fauxTree tr.level4 td.iconColumn div {
+        margin-left: 152px;
+    }
+	
+	.fauxTree tr.level5 td.iconColumn a, .fauxTree tr.level5 td.iconColumn div {
+        margin-left: 174px;
+    }
+	
+	.fauxTree tr.level6 td.iconColumn a, .fauxTree tr.level6 td.iconColumn div {
+        margin-left: 196px;
+    }
+	
+	.fauxTree tr.level7 td.iconColumn a, .fauxTree tr.level7 td.iconColumn div {
+        margin-left: 218px;
+    }
+	
+	.fauxTree tr.level8 td.iconColumn a, .fauxTree tr.level8 td.iconColumn div{
+        margin-left: 240px;
+    }
+	
+	.fauxTree tr.level9 td.iconColumn a, fauxTree tr.level9 td.iconColumn div {
+        margin-left: 262px;
+    }
+	
+	.fauxTree tr.level10 td.iconColumn a, .fauxTree tr.level10 td.iconColumn div {
+        margin-left: 284px;
+    }
+	
+	.fauxTree tr.level11 td.iconColumn a, .fauxTree tr.level11 td.iconColumn div {
+        margin-left: 284px;
+    }
+	
+	.fauxTree tr.level12 td.iconColumn a, .fauxTree tr.level12 td.iconColumn div {
+        margin-left: 306px;
+    }
+	
+	.fauxTree tr.level13 td.iconColumn a, .fauxTree tr.level13 td.iconColumn div {
+        margin-left: 328px;
+    }
+	
+	.fauxTree tr.level14 td.iconColumn a, .fauxTree tr.level14 td.iconColumn div {
+        margin-left: 350px;
+    }
+	
+	.fauxTree tr.level15 td.iconColumn a, .fauxTree tr.level15 td.iconColumn div {
+        margin-left: 272px;
+    }
+	
+	.fauxTree tr.level16 td.iconColumn a, .fauxTree tr.level16 td.iconColumn div {
+        margin-left: 394px;
+    }
+	
+	.fauxTree tr.level17 td.iconColumn a, .fauxTree tr.level17 td.iconColumn div {
+        margin-left: 416px;
+    }
+	
+	.fauxTree tr.level18 td.iconColumn a, .fauxTree tr.level18 td.iconColumn div {
+        margin-left: 438px;
+    }
+	
+	.fauxTree tr.level19 td.iconColumn a, .fauxTree tr.level19 td.iconColumn div {
+        margin-left: 460px;
+    }
+	
+	.fauxTree tr.level20 td.iconColumn a, .fauxTree tr.level20 td.iconColumn div {
+        margin-left: 482px;
+    }
+    
+.errorMessage,
+.warningMessage,
+.successMessage,
+.infoMessage,
+.lockedMessage,
+.systemMessage {
+	background-color:#fff;
+	border:1px solid;
+	border-top:7px solid;
+	margin-bottom:15px;
+	padding:6px 10px 4px 50px;
+	line-height:18px;
+	@if $browser == ie6 {
+		height:38px;
+	}@else{
+		min-height:38px;
+	}
+}
+
+.content .messagesContainer{
+	max-width:634px;
+}
+
+.content .narrow .messagesContainer{
+	max-width:none;
+}
+
+fieldset .errorMessage,
+fieldset .warningMessage,
+fieldset .successMessage,
+fieldset .infoMessage,
+fieldset .lockedMessage {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.errorMessage h3,
+.warningMessage h3,
+.successMessage h3,
+.infoMessage h3,
+.lockedMessage h3 {
+	font-size:12px;
+	margin:0 0 15px 0;
+}
+.errorMessage ul,
+.warningMessage ul,
+.successMessage ul,
+.infoMessage ul,
+.lockedMessage ul {
+	list-style: square;
+	padding:0 0 0 15px;
+	background-color:#fff; /* this masks the sprite icon if the messages div gets over a 1000px tall */
+}
+.errorMessage li, .errorMessage p,.errorMessage div,
+.warningMessage li, .warningMessage p, .warningMessage div,
+.successMessage li, .successMessage p,.successMessage div,
+.infoMessage li, .infoMessage p,.infoMessage div,
+.lockedMessage li, .lockedMessage p, .lockedMessage p {
+	line-height:18px;
+	padding:0;
+	margin-bottom:5px;
+}
+.errorMessage a,
+.warningMessage a,
+.successMessage a,
+.infoMessage a,
+.lockedMessage a {
+	color:#000000;
+}
+.errorMessage {
+	background:#fff url($msgSprite) no-repeat 7px 7px;
+	border-color:$errorMessageColor;
+}
+.errorMessage h3 {
+	color:$errorMessageColor;
+}
+.warningMessage {
+	background:#fff url($msgSprite) no-repeat -109px -993px;
+	border-color:$warningMessageColor;
+}
+.warningMessage h3 {
+	color:$warningMessageColor;
+}
+.successMessage {
+	background:#fff url($msgSprite) no-repeat 7px -1993px;
+	border-color:$successMessageColor;
+}
+.successMessage h3 {
+	color:$successMessageColor;
+}
+.infoMessage {
+	background:#fff url($msgSprite) no-repeat -109px -2993px;
+	border-color:$infoMessageColor;
+}
+.infoMessage h3 {
+	color:$infoMessageColor;
+}
+.lockedMessage {
+	background:#fff url($msgSprite) no-repeat 7px -3993px;
+	border-color:$lockedMessageColor;
+}
+.lockedMessage h3 {
+	color:$lockedMessageColor;
+}
+
+.systemMessage {
+	background:#fff url($msgSprite) no-repeat scroll 7px -7993px;
+	border-color:$systemMessageColor;
+}
+
+.systemMessage h3 {
+	color:$systemMessageColor;
+}
+
+div.error,
+div.warning{
+	clear:both;
+	font-weight:bold;
+	line-height:16px;
+	margin-bottom:5px;
+	overflow:visible;
+	padding:0 0 0 20px;
+}
+div.error {
+	background:url($msgSprite) no-repeat -134px -5000px;
+	color:$errorMessageColor;
+}
+div.warning {
+	background:url($msgSprite) no-repeat 0px -5986px;
+	color:$warningMessageColor;
+}
+
+
+	/* Generic Error Page */
+	
+	div.errorPage {
+		background-color:#fff;
+		background-image:url(../images/backgrounds/public_bkg.jpg);
+		background-repeat:no-repeat;
+		background-position:50% 50px;
+		padding-top:50px;
+		padding-bottom:50px;
+		margin:0px;
+	}
+	.errorPage .infoMessage,
+	.errorPage .warningMessage,
+	.errorPage .errorPageMessage {
+		width:410px;
+		margin:auto;
+		margin-bottom:10px;
+	}
+    .errorPod {
+    	width:450px;
+    	margin:auto;
+    	background-color:#f1f1f1;
+    }	
+
+    .errorPod p.instructions {
+    	padding: 0 15px 0 15px;
+    }
+    .errorPod legend {
+		display:none;                                          
+    }                              
+    .errorPod label {
+        font-weight:bold;
+        clear:left;
+        float:left;
+        line-height:19px;
+    }
+    .errorPod h1 {
+    	background-image:url(../images/backgrounds/error_field_title_bkg.gif);
+    	background-repeat:no-repeat;
+    	background-position:top left;
+    	height:50px;
+    	color:#fff;
+    	padding-left:56px;
+    	padding-top:16px;
+    	background-color:#f1f1f1;
+    	margin-bottom:10px;
+    }
+    .errorPod li {
+    	padding:15px 15px 0 15px;
+    }
+    .errorPod li.buttons {
+    	background-image:url(../images/backgrounds/error_field_bkg.gif);
+    	background-repeat:no-repeat;
+    	background-position:top left;
+    	background-color:#fff;
+    	padding-top:35px;
+    	padding-bottom:20px;
+    	padding-left:0;
+    	padding-right:0;
+    }	
+	
+	/* End Generic Error Page */
+
+body{
+	background-color: $bodyBackgroundColor;
+}
+.public .header {
+	height:85px;
+}
+.header {
+  background:$headerBackgroundColor url($headerBGImg) $headerBackgroundRepeat $headerBackgroundPosition;
+  overflow:visible;
+  width:100%;
+  border-top: $headerBorderTopWidth $headerBorderTopStyle $headerBorderTopColor;
+}
+.header .logo {
+  background:transparent url() no-repeat left top;
+  float:left;
+  overflow:hidden;
+  height:$headerLogoHeight;
+  width:$headerLogoWidth;
+  text-decoration:none;
+}
+.header .logo h1 {
+	display:none;
+}
+.header .logoText{
+	display:block;
+	line-height:70px;
+	color:$headerTitleTextColor;
+	font-size:32px;
+	padding-left:20px;
+	text-shadow: 2px 2px 2px $headerTitleTextShadow;
+	font-family: Calibri, Arial, sans-serif;
+}
+.header .auth {
+	float:right;
+	overflow:hidden;
+	padding:10px 10px 10px 0;
+	width:auto;
+}
+.header .auth li {
+  float:left;
+  padding:0px 10px;
+  color:$headerText;
+}
+.header .auth li:first-child {
+  border-right:1px solid $headerText;
+}
+.header .auth a {
+  color:$headerText;
+}
+.header .subNav {
+  border-bottom:1px solid #ccc;
+  overflow:visible;
+  width:100%;
+  @if $isIE {
+    background:$bciBackgroundColor url($headerSubNavBGImg) repeat-x 0px -200px;
+  }
+  @else{
+    background-color: $bciBackgroundColor;
+    -moz-box-shadow: $bciBoxShadow;
+    -webkit-box-shadow: $bciBoxShadow;
+    box-shadow: $bciBoxShadow;
+  }
+  @if $browser == ie6{
+    height: 36px;
+  }@else {
+    min-height: 36px;
+  }
+}
+
+.header a.logo img{
+	zoom: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$headerLogoOpacityIEFilters})";
+	@include opacity($headerLogoOpacity);
+	opacity: $headerLogoOpacity;
+}
+.header a.logo{
+	background-image: url($headerGlobalCommerceBackgroundImage);
+}
+.public .header a.logo{
+	background-image: url("../images/themes/3.0/dr_logo_2.png");
+}
+.globalCommerce a.logo{
+	background-image: url($headerGlobalCommerceBackgroundImage);
+}
+
+.myCommerceBusiness a.logo{
+	background-image: url($headerMyCommerceBusinessBackgroundImage);
+}
+.commerceExpress a.logo{
+	background-image: url($headerCommerceExpressBackgroundImage);
+}
+
+.worldPayments a.logo{
+	background-image: url($headerWorldPaymentsBackgroundImage);
+}
+
+.header .breadcrumbs {
+  display:inline;
+  float:left;
+  overflow:hidden;
+  margin:0 0 0 $breadcrumbMarginLeft;
+  color:$breadcrumbColor;
+}
+.header .breadcrumbs li {
+	background:url($bcBackgroundImg) $bcBackgroundRepeat $bcBackgroundPosition;
+	float:left;
+	padding:0 14px 0 10px;
+	line-height:35px;
+}
+.header .breadcrumbs li a {
+  color:$breadcrumbColor;
+  line-height:35px;
+  text-decoration:underline;
+}
+.header .breadcrumbs li a:hover {
+	text-decoration:none;
+}
+.header.whitelabel {
+	background-color:#fff;
+	background-image:none;
+}
+.header.whitelabel .auth a {
+	color:#000;
+}
+.content {
+	background-color:#fff;
+	padding:20px 30px 40px 30px;
+	zoom:1; /* ie style to cause hasLayout */
+}
+.narrow{
+	@if $browser == ie6{
+		width:830px;
+	}@else {
+		max-width:830px;
+	}
+}
+
+.footer {
+	padding:35px 0 0 25px;
+  @if $isIE {
+	 background:transparent url($footerBackgroundIESprite) repeat-x left -400px;
+	 background-color: $footerBackgroundColor;
+	 border-top: $footerBorderTopWidth $footerBorderTopStyle $footerBorderTopColor;
+	}@else {
+		background-color: $footerBackgroundColor;
+		-moz-box-shadow: $footerBoxShadowInset $footerBoxShadowHShadow $footerBoxShadowVShadow $footerBoxShadowBlur $footerBoxShadowColor;
+		-webkit-box-shadow: $footerBoxShadowInset $footerBoxShadowHShadow $footerBoxShadowVShadow $footerBoxShadowBlur $footerBoxShadowColor;
+		box-shadow: $footerBoxShadowInset $footerBoxShadowHShadow $footerBoxShadowVShadow $footerBoxShadowBlur $footerBoxShadowColor;
+		border-top: $footerBorderTopWidth $footerBorderTopStyle $footerBorderTopColor;
+		-webkit-border-image: url($footerBorderTop) 5 0 repeat;
+		-o-border-image: url($footerBorderTop) 5 0 repeat;
+		border-image: url($footerBorderTop) 5 0 repeat;
+	}
+}
+.footer ul {
+	overflow:hidden;
+	padding:0 0 10px 0;
+	width:100%;
+}
+.footer ul li {
+	float:left;
+	font-weight:bold;
+	padding:0 10px;
+}
+.footer ul li.last {
+	border-left:1px solid #8e8e8e;
+	padding:0 0 0 11px;
+}
+.footer ul li a {
+	color:$footerLinkColor;
+	text-decoration:none;
+}
+.footer ul li a:hover {
+	text-decoration:underline;
+}
+.footer p {
+	color:$footerTextColor;
+	padding:0 0 10px 10px;
+	margin-bottom: 0;
+}
+.footer p a {
+	border-left:1px solid #8e8e8e;
+	color:$footerTextColor;
+	font-weight:bold;
+	padding: 0 0 0 7px;
+}
+
+.instructions {
+	clear:both;
+	display:block;
+	float:none;
+	font-size:12px;
+	line-height:15px;
+	font-weight:normal;
+	margin:0 0 10px;
+	padding:0;
+	max-width:634px;
+}
+
+div.login {
+	background-color:#fff;
+	background-image:url($loginDivBGImg);
+	background-repeat:no-repeat;
+	background-position:50% 50px;
+	padding-top:50px;
+	padding-bottom:50px;
+	margin:0px;
+}
+div.login a{
+	color:#000;
+}
+.login .infoMessage, .login .warningMessage, .login .errorMessage {
+	width: 388px;
+	margin: 0 auto 10px;
+}
+.loginPod {
+	width: 450px;
+	margin: auto;
+}
+.loginPod .loginPodInner {
+	background-color:#f1f1f1;
+	padding-top: 32px;
+	@if $isIE {
+		-moz-border-radius: 0 0 8px 8px;
+		-webkit-border-radius: 0 0 8px 8px;
+	}
+	border-radius: 0 0 8px 8px;
+}
+.loginPod dt {
+	width: 75px;
+}
+.loginPod label {
+	font-weight:bold;
+	clear:left;
+	float:left;
+	line-height:19px;
+	padding:0 10px 0 0;
+	text-align:right;
+	width:75px;
+}
+.loginPod h1 {
+	background: $loginH1BackgroundColor url($loginPodH1BGImg) no-repeat;
+	height:43px;
+	color:#fff;
+	padding: 16px 0 1px 56px;
+	margin-bottom: 0;
+}
+.loginPod .forgot {
+	padding-left:85px;
+	padding-bottom:10px;
+}
+.loginPod span.hint {
+	padding-bottom: 10px;
+	padding-top: 2px;
+	font-size: 10px!important;
+}
+.loginPod .buttons {
+	padding-top: 20px;
+}
+
+/* backwards compatibility for old HTML structure that used ul/li */
+.loginPod ul {
+	padding-top: 32px;
+	background-color: #f1f1f1;
+}
+.loginPod ul li.buttons {
+	background-color: #fff;
+}
+.loginPod ul li span.hint {
+	display: block;
+	padding: 5px 0 20px 87px;
+}
+
+	body.modalPage {
+		background-image:none;
+		background-color:#f1f1f1;
+		margin-bottom:0px;
+		padding-bottom:0px;
+	}
+
+	body.modalPage .content{
+		background-color:transparent;
+		padding:10px;
+	}
+
+	body.modalPage .pageButtons,
+	div.inlineDialog .pageButtons {
+		text-align:right;
+		padding-right:0px;
+		padding-top:10px;
+		margin-top:0;
+	}
+
+	body.modalPage .pageButtons button,
+	div.inlineDialog .pageButtons button{
+		margin-right:0;
+		@if $isIE {
+			margin-left:8px;
+		}@else if $browser == chrome{
+			margin-left:5px;
+		}@else if $browser == safari{
+			margin-left:5px;
+		}@else{
+			margin-left:0;
+		}
+	}
+
+	.modalContent {
+		background-color:#fff;
+		border:1px solid #ccc;
+		padding:10px;
+	}
+
+	.modalPage .modalScroller,
+	div.inlineDialog .modalScroller {
+		height:200px;
+		overflow:scroll;
+		overflow-x:auto;
+		position:relative;
+		background-color:#fff;
+		border:1px solid #ccc;
+		padding:10px;
+	}
+
+	.modalPage .modalScrollerSmallHeight,
+	div.inlineDailog .modalScroller {
+		height:415px;
+		overflow:scroll;
+		position:relative;
+		width:560px;
+	}
+
+	.modalPage .modalScrollerMediumHeight,
+	div.inlineDailog .modalScroller {
+		height:415px;
+		overflow:scroll;
+		position:relative;
+		width:730px;
+	}
+
+	.modalPage .modalScrollerLargeHeight,
+	div.inlineDialog .modalScroller {
+		height:415px;
+		overflow:scroll;
+		position:relative;
+		width:$contentAreaWidth + 32px;
+	}
+/* start print css */
+@media print
+{
+		
+	/*hide*/
+	.auth, .nav, .subNav {
+		display:none!important;
+	}
+	
+	/* hide page buttons */
+	.pageButtons {
+		display:none!important;
+	}
+	
+	/* hide table buttons */
+	.actionRow, .actionRowSingle, .actionRowMultiple,
+	dl dd .actionRow, dl dd dl dd .actionRowSingle, dl dd .actionRowMultiple {
+		display:none!important;
+	}
+	.actionRowBottom, .actionRowSingleBottom, .actionRowMultipleBottom {
+		display:none!important;
+	}
+		
+	.content {
+		border:0px!important;
+	}
+	
+	.header .logo {
+		width:auto;	
+	}
+	.header .logo h1 {
+		display:block;
+		padding:30px 0 0 20px;
+		font-size:18px;
+	}
+		
+}
+// Returns the item from the specified map that matches the specified name.
+// If no item is found, this returns null.
+@function dr-get-item($map, $name) {
+	@each $item in $map {
+		@if nth($item, 1) == $name {
+			@return $item;
+		}
+	}
+	@return null;
+}
+
+// Returns the name of the icon from the icon sprite.
+@function dr-get-sprite-icon-name($icon) {
+	@return nth($icon, 1);
+}
+
+// Returns the gridY of the icon from the icon sprite.
+@function dr-get-sprite-icon-gridY($icon) {
+	@return nth($icon, 2);
+}
+
+// Returns true if the icon from the icon sprite should be right aligned.
+@function dr-is-sprite-icon-right-aligned($icon) {
+	@return nth($icon, 3);
+}
+
+// Returns the name of the icon from the miscellaneous sprite.
+@function dr-get-sprite-misc-name($icon) {
+	@return nth($icon, 1);
+}
+
+// Returns the gridY of the icon from the miscellaneous sprite.
+@function dr-get-sprite-misc-gridY($icon) {
+	@return nth($icon, 2);
+}
+
+// Returns the name of the icon from the background sprite.
+@function dr-get-sprite-background-name($icon) {
+	@return nth($icon, 1);
+}
+
+// Returns the gridY of the icon from the background sprite.
+@function dr-get-sprite-background-gridY($icon) {
+	@return nth($icon, 2);
+}
+
+// Returns the fill color of the icon from the background sprite.
+@function dr-get-sprite-background-fill-color($icon) {
+	@return nth($icon, 3);
+}
+
+// Returns the url for the sprite image based on the browser.
+@function dr-sprite-image-url($relativeImage, $relativeImageIE6: $relativeImage) {
+	@if $browser == ie6 {
+		@return url(#{($imagePath + $relativeImageIE6)});
+	} @else {
+		@return url(#{($imagePath + $relativeImage)});
+	}
+}
+
+// Returns the position of the sprite image based on the (x,y) coordinates and adjusting for any optional offsets.
+@function dr-sprite-position($gridX, $gridY, $offsetX: 0, $offsetY: 0) {
+	@return #{($gridX + $offsetX)} #{(-($gridY * $gridHeight + $offsetY))};
+}
+
+// Generic mixin for sprites.
+@mixin sprite($relativeImage, $relativeImageIE6: $relativeImage, $gridX: 0, $gridY: 0, $offsetX: 0, $offsetY: 0, $repeat: no-repeat, $backgroundColor: '') {
+	background: dr-sprite-image-url($relativeImage, $relativeImageIE6) $repeat dr-sprite-position($gridX, $gridY, $offsetX, $offsetY) #{$backgroundColor};
+}
+
+// Mixin for the icon sprite.
+@mixin sprite-icon($name, $offsetX: 0, $offsetY: 0) {
+	$icon: dr-get-item($spriteIconMap, $name);
+	@if $icon != null {
+		@include sprite($spriteIconMixin1, $spriteIconMixin2, 0, dr-get-sprite-icon-gridY($icon), $offsetX, $offsetY);
+	}
+}
+
+// Mixin for the miscellaneous image sprite.
+@mixin sprite-misc($name, $offsetX: 0, $offsetY: 0) {
+	$icon: dr-get-item($spriteMiscMap, $name);
+	@if $icon != null {
+		@include sprite($spriteMiscMixin, $spriteMiscMixin, 0, dr-get-sprite-misc-gridY($icon), $offsetX, $offsetY);
+	}
+}
+
+// Mixin for the background image sprite.
+@mixin sprite-background($name) {
+	$icon: dr-get-item($spriteBackgroundMap, $name);
+	@if $icon != null {
+		@include sprite("sprites/backgrounds.gif", "sprites/backgrounds.gif", 0, dr-get-sprite-background-gridY($icon), 0, 0, repeat-x, dr-get-sprite-background-fill-color($icon));
+	}
+}
+
+// Icon format: (name gridY rightAlign)
+$spriteIconMap:
+	"abc" 117px false,
+	"account" 2px false,
+	"accounts_payable" 3px false,
+	"accounts_receivable" 4px false,
+	"add" 5px false,
+	"add_admin" 6px false,
+	"add_user" 7px false,
+	"adfav" 8px false,
+	"advanced_find" 54px false,
+	"alarm" 9px false,
+	"apply" 103px false,
+	"approve" 112px false,
+	"apps" 10px false,
+	"back" 11px false,
+	"bank" 12px false,
+	"barchart" 13px false,
+	"blank" 15px false,
+	"blocks" 118px false,
+	"bookmark" 16px false,
+	"bookmark_add" 17px false,
+	"browser" 91px false,
+	"calendar" 34px false,
+	"calendar_import" 139px false,
+	"calendar_week" 138px false,
+	"cancel" 19px false,
+	"card" 101px false,
+	"cart" 20px false,
+	"cash" 21px false,
+	"category" 22px false,
+	"cd" 23px false,
+	"chart" 24px false,
+	"chart_arrow" 72px false,
+	"check" 25px false,
+	"checking" 26px false,
+	"click" 14px false,
+	"close" 27px false,
+	"configure" 28px false,
+	"copy" 29px false,
+	"credit" 30px false,
+	"currency" 31px false,
+	"cut" 32px false,
+	"database" 33px false,
+	"date" 116px false,
+	"debit" 35px false,
+	"delete" 18px false,
+	"deploy" 37px false,
+	"document" 39px false,
+	"done" 61px false,
+	"down" 40px false,
+	"download" 45px false,
+	"earth" 132px false,
+	"edit" 42px false,
+	"edit_database" 43px false,
+	"email_refresh" 144px false,
+	"email_stack" 143px false,
+	"error" 44px false,
+	"export" 45px false,
+	"export_data" 46px false,
+	"favorite" 47px false,
+	"favorite_add" 48px false,
+	"favorites" 49px false,
+	"fees" 137px false,
+	"finish" 25px true,
+	"fields" 50px false,
+	"file_pdf" 51px false,
+	"file_pdf_2" 52px false,
+	"pdf" 52px false,
+	"filter" 53px false,
+	"flag" 55px false,
+	"folder" 56px false,
+	"folder_up" 90px false,
+	"forms" 57px false,
+	"forward" 58px false,
+	"fraud" 59px false,
+	"go" 60px false,
+	"go_back" 61px false,
+	"group" 62px false,
+	"hc" 65px false,
+	"help" 63px false,
+	"help_info" 64px false,
+	"help_topic" 65px false,
+	"history" 66px false,
+	"history_delete" 142px false,
+	"hold" 120px false,
+	"home" 67px false,
+	"image" 68px false,
+	"import" 70px false,
+	"import_data" 69px false,
+	"import_export" 135px false,
+	"info" 1px false,
+	"info_bubble" 113px false,
+	"invoice" 73px false,
+	"ledger" 74px false,
+	"linegraph" 76px false,
+	"link" 77px false,
+	"list" 115px false,
+	"lock" 78px false,
+	"login" 14px false,
+	"mail" 79px false,
+	"merchant" 80px false,
+	"contracts" 81px false,
+	"move" 82px false,
+	"move_bottom" 83px false,
+	"move_top" 84px false,
+	"network" 89px false,
+	"new" 86px false,
+	"new_email" 85px false,
+	"next" 58px true,
+	"notepad" 88px false,
+	"open_book" 36px false,
+	"options" 92px false,
+	"package" 111px false,
+	"page" 38px false,
+	"paint" 93px false,
+	"paste" 94px false,
+	"percentage" 123px false,
+	"phone" 95px false,
+	"picts" 96px false,
+	"piechart" 97px false,
+	"preferences" 98px false,
+	"preview" 91px false,
+	"previous" 11px false,
+	"price_tag" 106px false,
+	"print" 100px false,
+	"redo" 102px false,
+	"refresh" 103px false,
+	"relationship" 104px false,
+	"remove" 32px false,
+	"retire" 105px false,
+	"save" 107px false,
+	"script" 108px false,
+	"script_and_image" 109px false,
+	"search" 119px false,
+	"shield" 110px false,
+	"site_groups" 114px false,
+	"site_template" 136px false,
+	"small_icons" 115px false,
+	"stop" 120px false,
+	"success" 121px false,
+	"table" 122px false,
+	"thumbs" 75px false,
+	"toolbox" 124px false,
+	"trash" 125px false,
+	"undo" 127px false,
+	"unlock" 126px false,
+	"up" 128px false,
+	"upload" 70px false,
+	"uploadError" 145px false,
+	"uploadSuccess" 146px false,
+	"user" 130px false,
+	"user2" 129px false,
+	"viewImage" 68px false,
+	"warning" 131px false,
+	"window_white" 133px false,
+	"wizard" 134px false,
+	"social" 140px false,
+	"write_to_disk" 141px false;
+
+// Icon format: (name gridY)
+$spriteMiscMap:
+	"actionrow_down_arrow.gif" 10px,
+	"actionrow_up_arrow.gif" 11px,
+	"btnCollapse.gif" 15px,
+	"btnExpand.gif" 16px,
+	"close.gif" 13px,
+	"close-over.gif" 14px,
+	"folder.gif" 17px,
+	"folder_open.gif" 18px,
+	"ftree_expand_n_folder.gif" 19px,
+	"ftree_collapse_n_folder.gif" 20px,
+	"required.gif" 21px,
+	"calendar_left_arrow" 22px,
+	"calendar_right_arrow" 23px;
+
+// Icon format: (name gridY fillColor)
+$spriteBackgroundMap:
+	"content_box_bkg.gif" 0px #dcdcdc,
+	"error_pod_title_bkg.gif" 1px #c11b1b,
+	"inline_list_bkg.gif" 2px #dcdcdc,
+	"inline_tab.gif" 3px #626f89,
+	"inline_tab_hover.gif" 4px #b5c3dc,
+	"inline_tab_selected.gif" 5px #c8c8c8,
+	"list_column_bkg.gif" 6px #dcdcdc,
+	"list_sorted_column_bkg.gif" 7px #6a768d,
+	"list_sorted_column_bkg_off.gif" 8px #bdc3cf,
+	"page_list_bkg.gif" 9px #b2b1b1,
+	"page_list_content_bkg.gif" 10px #dcdcdc,
+	"pod_tasks_title_bar_bkg.gif" 11px #585b63,
+	"pod_title_bar_bkg.gif" 12px #ccc99d,
+	"pod_title_bar_over_bkg.gif" 13px #f3f2e2,
+	"sub_nav_bkg.gif" 14px #dcdcdc,
+	"tab_selected_bkg.gif" 15px #073186,
+	"button-bg.gif" 19px #616E88,
+	"button-bg-disabled.gif" 20px #B8BCC3,
+	"button-bg-lightened.gif" 21px #7F8EA0,
+	"button-bg-over.gif" 22px #B7C3DC,
+	"modal-bg.gif" 23px #123D95,
+	"modal-inactive-bg.gif" 24px #6986BC,
+	"modal-title-inactive-bg.gif" 25px #b3b3b3,
+	"live_change_title_bg.gif" 26px #e47c1d,
+	"success_title_bg.gif" 27px #76cb6a,
+	"warning_title_bg.gif" 28px #dcc820;
+/*
+ Styles for accordian
+*/
+.accordion {
+	border-top: 1px solid #ccc;
+	margin:10px 0;
+}
+
+dl.accordion dd.ui-accordion-content {
+	float: none;
+}
+
+.accordion .ui-accordion-header {
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	text-align: left;
+	float: none;
+	width: auto;
+	margin:0;
+	border:1px solid #ccc;
+	border-top: 0px none;
+	background-color:#eee;
+	cursor:pointer;
+	padding:5px 6px 5px 5px;
+	background: #ccc url($accordionHeaderBackground) repeat-x 0 -500px;
+	height:18px;
+	line-height:18px;
+	color:#333;
+	font-size:12px;
+	font-weight:bold;
+	clear:both;
+}
+
+.accordion .ui-state-default {
+	margin-bottom: 0px;
+}
+
+.accordion .loading{
+	font-weight:bold;
+}
+
+.accordion .ui-state-active {
+	background: $accordionBackgroundColor url($accordionGradientBar) repeat-x 0 0;
+	color:#fff;
+	cursor:default!important;
+}
+
+.ui-accordion-header .ui-icon{
+	float:left;
+	display:inline-block;
+	width:17px;
+	height:18px;
+	background: url($chevronLargeDown) no-repeat;
+	margin-right:5px;
+}
+
+.ui-accordion-header span.ui-icon-triangle-1-e{
+	background-image: url($chevronLargeUp);
+}
+
+.ui-accordion-header a{
+	text-decoration: none;
+}
+
+.accordion .ui-state-active a {
+	color:#fff;
+	cursor:default!important;
+}
+
+.accordion .ui-accordion-content{
+	padding: 10px;
+	padding-right: 10px;
+	border: 1px solid #ccc;
+	border-top: none 0px;
+	margin-bottom: 0px;
+	zoom:1; /* IE hasLayout problem with accordions inside accordions */
+}
+.beads ol {
+	cursor:default;
+	margin:0;
+	overflow:hidden;
+	padding:0;
+	width:100%;
+}			
+.beads li {
+	background:transparent url($wizardBeadsBGImg) repeat-x 50% -700px;
+	color:#999;
+	float:left;
+	font-weight:$beadsFontWeight;
+	margin-bottom:20px;
+	min-width:50px;
+	padding:15px 12px;
+	text-align:center;
+}
+.beads li.active {
+	background-position:50% -1000px;
+	color:$wizardBeads;
+	font-weight:bold;
+}
+.beads li:first-child {
+	background-position:50% -600px;
+}
+.beads li.active:first-child {
+	background-position:50% -900px;
+}
+.beads li.last {
+	background-position:50% -800px;
+}
+.beads li.lastActive {
+	background-position:50% -1100px;
+	color:#E88505;
+}
+.beads ol + ol li:first-child {
+	background-position:50% -700px;
+}
+.beads ol + ol li.active:first-child {
+	background-position:50% -1000px;
+	color:#E88505;
+}
+
+button.button {
+	text-align: center;
+	border: 0;
+	@if $isIE {
+		margin: 0 7px 0 0;
+		@if $browser == ie6 {
+			width: 0; /* fixes the problem where buttons have a phantom width when in TDs - not fixed in ie7 yet */
+		} @else {
+			height: 32px;
+		}
+	} @else {
+		margin: 0;
+	}
+	@if $browser == ff2 {
+		padding: 7px 0;
+	} @else {
+		padding: 0 1px 1px 0;
+	}
+	overflow: visible;
+	cursor: pointer;
+	font-weight: bold;
+	color: #000;
+	font-family: arial, verdana, sans-serif; /*mozilla user agent font family was overriding body*/
+	background-color: transparent;
+	white-space: nowrap;
+	vertical-align: top;
+}
+
+button.button span {
+	color: #fff;
+	overflow: visible;
+	display: inline-block;
+	padding-right: 3px;
+	white-space: nowrap;
+	margin: 0;
+	width: auto;
+}
+
+button.button span span span {
+	@if $browser == ff2 {
+		padding: 0 0 2px 0;
+	} @else {
+		padding: 0;
+	}
+	line-height: 16px;
+	height: 16px !important;
+	background-repeat: no-repeat;
+}
+
+button.button.small span > span > span, button.button.primarySmall > span > span > span, button.button.secondary > span > span > span {
+	@if $browser == ff2 {
+		padding: 0 0 2px 0;
+	} @else {
+		padding: 0;
+	}
+}
+
+button.button.primary span, button.button.primarySmall span {
+	color: $buttonPrimaryTextColor;
+}
+
+/* disabled buttons */
+button.button[disabled] {
+	cursor: default;
+}
+
+button.button[disabled] > span > span > span {
+	color: #fff;
+}
+
+@if $isIE {
+	button.button span, button.button span span {
+		background-image: url($buttonSprite);
+		background-position: 100% -662px;
+	}
+	button.button span span {
+		padding: 8px 10px 8px 13px;
+		background-position: 0 -622px;
+	}
+	button.button.small span span, button.button.primarySmall span span, button.button.secondary span span {
+		padding: 4px 10px 5px;
+	}
+	button.button.small span {
+		background-position: 100% -165px;
+	}
+	button.button.small span span {
+		background-position: 0 -132px;
+	}
+	button.button.primary span {
+		background-position: 100% -822px;
+	}
+	button.button.primary span span {
+		background-position: 0 -782px;
+	}
+	button.button.primarySmall span {
+		background-position: 100% -297px;
+	}
+	button.button.primarySmall span span {
+		background-position: 0 -264px;
+	}
+	button.button.secondary span {
+		background-position: 100% -363px;
+		color: #000;
+	}
+	button.button.secondary span span {
+		background-position: 0 -330px;
+	}
+/* button disabled */
+	button.button.small[disabled] > span,
+	button.button.small[disabled]:hover > span,
+	button.button.primarySmall[disabled] > span,
+	button.button.primarySmall[disabled]:hover > span,
+	button.button.secondary[disabled] > span,
+	button.button.secondary[disabled]:hover > span {
+		background-position: 100% -33px;
+	}
+	button.button.small[disabled] > span > span,
+	button.button.small[disabled]:hover > span > span,
+	button.button.secondary[disabled] > span > span,
+	button.button.secondary[disabled]:hover > span > span,
+	button.button.primarySmall[disabled] > span > span,
+	button.button.primarySmall[disabled]:hover > span > span {
+		background-position: 0 0;
+	}
+	button.button[disabled] > span,
+	button.button[disabled]:hover > span,
+	button.button.primary[disabled] > span,
+	button.button.primary[disabled]:hover > span {
+		background-position: 100% -502px;
+	}
+	button.button[disabled] > span > span,
+	button.button[disabled]:hover > span > span,
+	button.button.primary[disabled] > span > span,
+	button.button.primary[disabled]:hover > span > span {
+		background-position: 0 -462px;
+	}
+	@if $browser != ie6 {
+		button.button.secondary,
+		button.button.primarySmall,
+		button.button.small,
+		button.button.small span,
+		button.button.primarySmall span,
+		button.button.secondary span {
+			height: 25px;
+		}
+	/* right align does not work ie6 with PNG's */
+		button.button.rightAlign span span span {
+			padding-left: 0 !important;
+			padding-right: 20px !important;
+		}
+		button.button.secondary span span,
+		button.button.primarySmall span span,
+		button.button.small span span,
+		button.button.secondary span span {
+			height: 16px;
+		}
+	/* all hover states */
+		button.button:hover > span {
+			background-position: 100% -582px;
+		}
+		button.button:hover > span > span {
+			background-position: 0 -542px;
+		}
+		button.button.small:hover > span {
+			background-position: 100% -99px;
+		}
+		button.button.small:hover > span > span {
+			background-position: 0 -66px;
+		}
+		button.button.primary:hover > span {
+			background-position: 100% -742px;
+		}
+		button.button.primary:hover > span > span {
+			background-position: 0 -702px;
+		}
+		button.button.primarySmall:hover > span {
+			background-position: 100% -231px;
+		}
+		button.button.primarySmall:hover > span > span {
+			background-position: 0 -198px;
+		}
+		button.button.secondary:hover > span {
+			background-position: 100% -429px;
+		}
+		button.button.secondary:hover > span > span {
+			background-position: 0 -396px;
+		}
+	}
+} @else {
+	button.button span {
+		border-style: solid;
+		border-width: 1px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		@if $browser == ff2 {
+			padding: 8px 4px 8px 2px;
+		}
+	}
+	@if $browser == ff2 {
+		button.button.small, button.button.primarySmall {
+			padding: 5px 0;
+		}
+		button.button.secondary {
+			padding: 6px 0 5px;
+		}
+		button.button.small span, button.button.primarySmall span, button.button.secondary span {
+			padding: 6px 4px 5px 2px;
+		}
+	}
+	button.button span span {
+		padding: 7px 9px 7px 12px;
+	}
+	button.button.small span span, button.button.primarySmall span span, button.button.secondary span span {
+		padding: 3px 9px 4px;
+	}
+/* button and button.small */
+	button.button span, button.button.small span {
+		border-color: $buttonTopBorderColor $buttonSideBorderColor $buttonBottomBorderColor;
+		@include linear-gradient(to bottom, $buttonBackgroundTopColor, $buttonBackgroundBottomColor);
+	}
+	button.button:hover > span, button.small:hover > span {
+		border-color: $buttonHoverTopBorderColor $buttonHoverSideBorderColor $buttonHoverBottomBorderColor;
+		@include linear-gradient(to bottom, $buttonHoverBackgroundTopColor, $buttonHoverBackgroundBottomColor);
+	}
+/* button.primary and button.primarySmall */
+	button.button.primary span, button.button.primarySmall span {
+		border-color: $buttonPrimaryTopBorderColor $buttonPrimarySideBorderColor $buttonPrimaryBottomBorderColor;
+		@include linear-gradient(to bottom, $buttonPrimaryBackgroundTopColor, $buttonPrimaryBackgroundBottomColor);
+	}
+	button.button.primary:hover > span, button.button.primarySmall:hover > span {
+		border-color: $buttonPrimaryHoverTopBorderColor $buttonPrimaryHoverSideBorderColor $buttonPrimaryHoverBottomBorderColor;
+		@include linear-gradient(to bottom, $buttonPrimaryHoverBackgroundTopColor, $buttonPrimaryHoverBackgroundBottomColor);
+	}
+/* button.secondary */
+	button.button.secondary span {
+		border-color: $buttonSecondaryTopBorderColor $buttonSecondaryRightBorderColor $buttonSecondaryBottomBorderColor $buttonSecondaryLeftBorderColor;
+		@include linear-gradient(to bottom, $buttonSecondaryBackgroundTopColor, $buttonSecondaryBackgroundBottomColor);
+		color: #000;
+	}
+	button.button.secondary:hover > span {
+		border-color: $buttonSecondaryHoverTopBorderColor $buttonSecondaryHoverRightBorderColor $buttonSecondaryHoverBottomBorderColor $buttonSecondaryHoverLeftBorderColor;
+		@include linear-gradient(to bottom, $buttonSecondaryHoverBackgroundTopColor, $buttonSecondaryHoverBackgroundBottomColor);
+	}
+/* button disabled */
+	button.button.small[disabled] > span,
+	button.button.small[disabled]:hover > span,
+	button.button.primarySmall[disabled] > span,
+	button.button.primarySmall[disabled]:hover > span,
+	button.button.secondary[disabled] > span,
+	button.button.secondary[disabled]:hover > span {
+		border-color: $buttonSmallDisabledTopBorderColor $buttonSmallDisabledSideBorderColor $buttonSmallDisabledBottomBorderColor;
+		@include linear-gradient(to bottom, $buttonSmallDisabledBackgroundTopColor, $buttonSmallDisabledBackgroundBottomColor);
+	}
+	button.button[disabled] > span,
+	button.button[disabled]:hover > span,
+	button.button.primary[disabled] > span,
+	button.button.primary[disabled]:hover > span {
+		border-color: $buttonDisabledTopBorderColor $buttonDisabledSideBorderColor $buttonDisabledBottomBorderColor;
+		@include linear-gradient(to bottom, $buttonDisabledBackgroundTopColor, $buttonDisabledBackgroundBottomColor);
+	}
+/* cancel out the background and border for the nested spans */
+	button.button span span, button.button[disabled] span span, button.button:hover span span {
+		background-image: none;
+	}
+	button.button span span, button.button[disabled] span span, button.button:hover span span, button.button span span span, button.button:hover span span span {
+		border: none !important;
+		background-color: transparent !important;
+		-moz-border-radius: 0 !important;
+		-webkit-border-radius: 0 !important;
+		border-radius: 0 !important;
+	}
+}
+
+@if $browser == ie6 {
+	button.button span span span,
+	button.button.small span span span {
+		background-image: url(../images/sprites/icons/icons-white-16-4576c2.gif);
+	}
+	button.button.primary span span span,
+	button.button.primarySmall span span span {
+		background-image: url(../images/sprites/icons/icons-white-16-6cba42.gif);
+	}
+	button.button.secondary span span span {
+		background-image: url($buttonBlackIconSprite);
+	}
+	.more-actions button.button span span span {
+		background-image: url($buttonBlackIconSprite) !important;
+	}
+} @else {
+	button.button > span > span > span,
+	button.button:hover > span > span > span,
+	button.button[disabled] > span > span > span,
+	button.button.small > span > span > span,
+	button.button.primary > span > span > span,
+	button.button.primarySmall > span > span > span {
+		background-image: url($buttonWhiteIconSprite);
+	}
+	button.button.secondary > span > span > span, button.button.secondary:hover > span > span > span {
+		background-image: url($buttonBlackIconSprite);
+	}
+	.more-actions button.button span span span {
+		background-image: url($buttonBlackIconSprite) !important;
+	}
+	button.button.secondary[disabled] > span > span > span,
+	button.button.secondary[disabled]:hover > span > span > span{
+		background-image: url($buttonSecondaryWhiteIconSprite);
+	}
+}
+
+@if $themeID != "three" {
+	@each $icon in $spriteIconMap {
+		button.button.#{dr-get-sprite-icon-name($icon)} span span span {
+			@if dr-is-sprite-icon-right-aligned($icon) {
+				background-position: dr-sprite-position(100%, dr-get-sprite-icon-gridY($icon));
+				padding-left: $buttonPaddingLeftWithRightAlign !important;
+				padding-right: $buttonPaddingRightWithRightAlign !important;
+			} @else {
+				padding-left: $buttonPaddingLeftWithLeftAlign;
+				background-position: dr-sprite-position(0, dr-get-sprite-icon-gridY($icon));
+			}
+		}
+	}
+}
+
+@each $icon in $spriteIconMap {
+	button.button.#{dr-get-sprite-icon-name($icon)}.secondary span span span {
+		@if dr-is-sprite-icon-right-aligned($icon) {
+			background-position: dr-sprite-position(100%, dr-get-sprite-icon-gridY($icon));
+			padding-left: $buttonSecondaryPaddingLeftWithRightAlign !important;
+			padding-right: $buttonSecondaryPaddingRightWithRightAlign !important;
+		} @else {
+			padding-left: $buttonSecondaryPaddingLeftWithLeftAlign;
+			background-position: dr-sprite-position(0, dr-get-sprite-icon-gridY($icon));
+		}
+	}
+}
+
+/* processing animated gif */
+button.button.processing span {
+	cursor: wait;
+}
+
+button.button.processing span span span {
+	background-image: url($buttonProcessingSprite) !important;
+	background-position: 0 0;
+	padding-left: $buttonIconPaddingLeft !important;
+	padding-right: 0 !important;
+}
+
+button.button.saveDraft span span span {
+	padding-left: $buttonIconPaddingLeft;
+	background-position: 0 -14100px;
+}
+
+button.button.expired span span span {
+	padding-left: $buttonIconPaddingLeft;
+	background-position: 0 -14200px;
+}
+
+button.button.mailProgram span span span {
+	padding-left: $buttonIconPaddingLeft;
+	background-position: 0 -14300px;
+}
+
+button.button.recurringMail span span span {
+	padding-left: $buttonIconPaddingLeft;
+	background-position: 0 -14400px;
+}
+
+.nav ul.tier2-list li.recurringMail {
+	background-position: 12px -14391px;
+}
+
+.nav ul.tier2-list ul li.recurringMail a {
+	background-position: 12px -14396px !important;
+}
+
+.mega-menu h2.recurringMail {
+	background-position: 2px -14400px;
+}
+
+.nav ul.tier2-list li.mailProgram {
+	background-position: 12px -14291px;
+}
+
+.nav ul.tier2-list ul li.mailProgram a {
+	background-position: 12px -14296px !important;
+}
+
+.mega-menu h2.mailProgram {
+	background-position: 2px -14300px;
+}
+
+.taskbar .saveDraft .icon {
+	background-position: 50% -14094px;
+}
+
+.taskbar .expired .icon {
+	background-position: 50% -14194px;
+}
+
+.taskbar .mailProgram .icon {
+	background-position: 50% -14294px;
+}
+
+.taskbar .recurringMail .icon {
+	background-position: 50% -14394px;
+}
+
+/* Date Picker */
+
+INPUT.datePicker {
+	width: 80px !important;
+	/* Add space below the input in case the hint is dynamically created */
+	margin-bottom: 16px;
+	float: left;
+	margin-right: 5px;
+}
+
+/* Remove the space below the input after the hint is dynamically created */
+INPUT.datePickerEnabled {
+	margin-bottom: 0 !important;
+}
+
+/* field and icon */
+DIV.datePicker TABLE TD {
+	vertical-align: middle;
+	height: 20px;
+}
+
+DIV.datePicker INPUT {
+	margin-right: 5px;
+}
+
+DIV.datePickerHandle {
+	display: inline-block;
+	@include sprite-icon("calendar", 0, -1px);
+	width: 16px;
+	height: 18px;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.listTabsContent .twoCol input.datePicker {
+	float: none;
+	margin-bottom: 0 !important;
+}
+
+.listTabsContent .twoCol .datePickerHandle {
+	vertical-align: middle;
+}
+
+DIV.datePickerOverlay {
+	position: absolute !important;
+}
+
+DIV.datePickerOverlay DIV.inlineDialog {
+	padding: 5px !important;
+}
+
+DIV.datePickerContent {
+	width: 220px;
+}
+
+DIV.datePickerContent DIV.todayLink {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+DIV.datePickerContent DIV.todayLink A, DIV.datePickerContent DIV.todayLink A:hover, DIV.datePickerContent DIV.todayLink A:visited, DIV.datePickerContent DIV.todayLink A:link {
+	color: $darkGrayTextColor;
+	font-weight: bold;
+}
+
+DIV.calendarArea {
+	/*height:138px;*/
+}
+
+DIV.datesArea {
+	border: 1px solid #565656;
+	background-color: #fff;
+}
+
+DIV.datePickerContent TABLE {
+
+}
+
+DIV.datePickerContent TABLE.calendar {
+	background-image: url(../images/backgrounds/gray_pod_bkg.gif);
+	background-position: 0 100%;
+	background-color: #fff;
+	background-repeat: repeat-x;
+}
+
+DIV.datePickerContent TABLE.calendar TBODY TD:hover {
+
+}
+
+DIV.datePickerContent .monthYearPicker {
+	border: 1px solid #565656;
+	border-bottom: 0;
+}
+
+DIV.datePickerContent .monthYearPicker  table {
+	@include sprite-background("list_column_bkg.gif");
+	width: 100%;
+}
+
+DIV.datePickerContent .monthYearPicker A {
+	cursor: pointer;
+	display: block;
+	float: left;
+	background-repeat: no-repeat;
+	height: 15px;
+	width: 15px;
+	padding: 0;
+}
+
+DIV.datePickerContent .monthYearPicker TD {
+	text-align: center;
+}
+
+DIV.datePickerContent .monthYearPicker A SPAN {
+	display: none;
+}
+
+.monthYearPicker TD {
+	vertical-align: middle;
+}
+
+.monthYearPicker TD.monthTD {
+	width: 100px;
+	text-align: right;
+}
+
+.monthYearPicker TD.yearTD {
+	width: 60px;
+	text-align: left;
+}
+
+DIV.datePickerContent .monthYearPicker TD.previousArrow,
+DIV.datePickerContent .monthYearPicker TD.nextArrow {
+
+	padding: 4px;
+}
+
+DIV.datePickerContent .monthYearPicker TD.previousArrow A {
+	@include sprite-misc("calendar_left_arrow");
+}
+
+DIV.datePickerContent .monthYearPicker TD.nextArrow A {
+	@include sprite-misc("calendar_right_arrow");
+	float: right;
+}
+
+DIV.datePickerContent TABLE.calendar TD A,
+DIV.datePickerContent TABLE.calendar TD A:hover,
+DIV.datePickerContent TABLE.calendar TD A:visited,
+DIV.datePickerContent TABLE.calendar TD A:link {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 12px;
+}
+
+DIV.datePickerContent TABLE.calendar TBODY TD A:hover {
+	background-color: #eee;
+}
+
+DIV.datePickerContent TABLE.calendar THEAD TH {
+	color: #333;
+	font-size: 12px;
+	font-weight: bold;
+	cursor: default;
+	text-align: center;
+	width: 25px;
+	height: 22px;
+	vertical-align: middle;
+	font-size: 12px;
+}
+
+DIV.datePickerContent TABLE.calendar TD {
+	text-align: center;
+}
+
+DIV.datePickerContent TABLE.calendar TD.todaysDate {
+	border: 1px solid $mediumBorderColor;
+}
+
+DIV.datePickerContent TABLE.calendar TD.displayDate {
+	border: 1px solid $darkBrightBlueColor;
+	@include sprite-background("list_column_bkg.gif");
+}
+
+DIV.datePickerContent TABLE.calendar TD.displayDate A {
+	color: #AB1217;
+	font-weight: bold;
+}
+
+DIV.datePickerContent TABLE.calendar TD.otherMonthDate A {
+	color: #ccc;
+}
+
+/* Overrides for list search panels */
+.listTabsContent .twoCol input.datePickerEnabled {
+	margin-right: 5px !important;
+}
+
+.listTabsContent .twoCol div.datePicker {
+	white-space: nowrap;
+	width: 240px;
+}
+
+.listTabsContent .twoCol input.datePicker {
+	display: block;
+	float: left;
+	margin-right: 27px;
+	margin-bottom: 0 !important;
+}
+
+.listTabsContent .twoCol .datePickerHandle {
+	vertical-align: middle;
+	display: block;
+	float: left;
+}
+
+.listTabsContent .twoCol .hint {
+	margin: 0;
+	display: block;
+	clear: none;
+	width: auto;
+	vertical-align: middle;
+	padding-top: 3px;
+}
+
+ .fauxTree tr.folder td.iconColumn a, .fauxTree tr.item td.iconColumn a,  .fauxTree tr.folder td.iconColumn div, .fauxTree tr.item td.iconColumn div {
+        text-decoration: none;
+        display: inline-block;
+        line-height: 18px;
+    }
+	
+.fauxTree tr.folder td.iconColumn div{
+	cursor: pointer;
+}	
+	
+	
+ .fauxTree tr.folder td.iconColumn a span, .fauxTree tr.item td.iconColumn a span{
+ 	text-decoration: underline;
+ }	
+    
+    .fauxTree tr.folder td.iconColumn a,.fauxTree tr.folder td.iconColumn div{
+        background: url($spriteMiscVar) no-repeat 0 -1900px;
+    }
+    
+    .fauxTree tr.open td.iconColumn a, .fauxTree tr.open td.iconColumn div {
+        background: url($spriteMiscVar) no-repeat 0 -2000px;
+    }
+    
+    .fauxTree tr.item td.iconColumn a, .fauxTree tr.item td.iconColumn div {
+    	background: url($blackIconSprite) no-repeat 0 -3900px;
+    }
+    
+    .fauxTree tr.dr td.iconColumn a, .fauxTree tr.dr td.iconColumn div{
+        background: url("../images/FauxTree/dr_icon.jpg") no-repeat;
+    }
+    
+    .fauxTree tr.item td.iconColumn span {
+        padding-left: 19px;
+    }
+    
+    .fauxTree tr.folder td.iconColumn span {
+        padding-left: 37px;
+    }
+    
+    .fauxTree tr.level0 td.iconColumn a, .fauxTree tr.level0 td.iconColumn div {
+        margin-left: 0px;
+    }
+    
+    .fauxTree tr.level1 td.iconColumn a, .fauxTree tr.level1 td.iconColumn div {
+        margin-left: 33px;
+    }
+    
+    .fauxTree tr.level2 td.iconColumn a, .fauxTree tr.level2 td.iconColumn div{
+        margin-left: 70px;
+    }
+    
+    .fauxTree tr.level3 td.iconColumn a, .fauxTree tr.level3 td.iconColumn div {
+        margin-left: 108px;
+    }
+    
+    .fauxTree tr.level4 td.iconColumn a, .fauxTree tr.level4 td.iconColumn div {
+        margin-left: 130px;
+    }
+	
+	.fauxTree tr.level4 td.iconColumn a, .fauxTree tr.level4 td.iconColumn div {
+        margin-left: 152px;
+    }
+	
+	.fauxTree tr.level5 td.iconColumn a, .fauxTree tr.level5 td.iconColumn div {
+        margin-left: 174px;
+    }
+	
+	.fauxTree tr.level6 td.iconColumn a, .fauxTree tr.level6 td.iconColumn div {
+        margin-left: 196px;
+    }
+	
+	.fauxTree tr.level7 td.iconColumn a, .fauxTree tr.level7 td.iconColumn div {
+        margin-left: 218px;
+    }
+	
+	.fauxTree tr.level8 td.iconColumn a, .fauxTree tr.level8 td.iconColumn div{
+        margin-left: 240px;
+    }
+	
+	.fauxTree tr.level9 td.iconColumn a, fauxTree tr.level9 td.iconColumn div {
+        margin-left: 262px;
+    }
+	
+	.fauxTree tr.level10 td.iconColumn a, .fauxTree tr.level10 td.iconColumn div {
+        margin-left: 284px;
+    }
+	
+	.fauxTree tr.level11 td.iconColumn a, .fauxTree tr.level11 td.iconColumn div {
+        margin-left: 284px;
+    }
+	
+	.fauxTree tr.level12 td.iconColumn a, .fauxTree tr.level12 td.iconColumn div {
+        margin-left: 306px;
+    }
+	
+	.fauxTree tr.level13 td.iconColumn a, .fauxTree tr.level13 td.iconColumn div {
+        margin-left: 328px;
+    }
+	
+	.fauxTree tr.level14 td.iconColumn a, .fauxTree tr.level14 td.iconColumn div {
+        margin-left: 350px;
+    }
+	
+	.fauxTree tr.level15 td.iconColumn a, .fauxTree tr.level15 td.iconColumn div {
+        margin-left: 272px;
+    }
+	
+	.fauxTree tr.level16 td.iconColumn a, .fauxTree tr.level16 td.iconColumn div {
+        margin-left: 394px;
+    }
+	
+	.fauxTree tr.level17 td.iconColumn a, .fauxTree tr.level17 td.iconColumn div {
+        margin-left: 416px;
+    }
+	
+	.fauxTree tr.level18 td.iconColumn a, .fauxTree tr.level18 td.iconColumn div {
+        margin-left: 438px;
+    }
+	
+	.fauxTree tr.level19 td.iconColumn a, .fauxTree tr.level19 td.iconColumn div {
+        margin-left: 460px;
+    }
+	
+	.fauxTree tr.level20 td.iconColumn a, .fauxTree tr.level20 td.iconColumn div {
+        margin-left: 482px;
+    }
+    
+form {
+	margin: 0px;
+}
+
+.contentBox {
+	background: #F1F1F1 none repeat scroll 0 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	width: auto;
+}
+
+fieldset.noBackground {
+	background-image: none !important;
+}
+
+.tabs .tabContainer  > fieldset:first-child {
+	margin-top: 1px;
+}
+
+fieldset {
+	background-color: #F1F1F1;
+	clear: both;
+	border: 1px solid #ccc;
+	padding: 15px 20px 20px 20px;
+	margin: 15px 0 20px;
+	@if $browser == ie6 or $browser == ie7 or $browser == ie8 {
+		margin-top: 10px;
+		padding-top: 10px;
+		margin-bottom: 10px;
+		background-repeat: repeat-x;
+		@if $browser == ie8 {
+			background-position: 0 -1px;
+			background-image: url(data:image/gif;base64,R0lGODlhAQATAIAAAP///////yH5BAEHAAEALAAAAAABABMAAAIEhI+JBQA7);
+		} @else {
+			background-image: url(../images/backgrounds/ie_fieldset_header_ffffff.gif);
+		}
+	} @else if $browser != 'opera' and $isIE != true {
+		display: table-column; /* this prevents the problem where tables wrapped in dataTableContainers will not scroll in firefox, does not fix webkit browsers though */
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+	}
+	@if $browser != 'ie9' {
+		border-radius: 8px;
+	}
+}
+
+fieldset > .inlineListContainer {
+	margin-top: 0;
+}
+
+fieldset > .contentBox:last-child {
+
+}
+
+fieldset .contentBox,
+fieldset .instructions,
+fieldset h2,
+fieldset h3 {
+	/*
+	margin-left:10px;
+	margin-right:10px;
+	padding-left:0;
+	padding-right:0;
+	*/
+}
+
+fieldset fieldset:last-child {
+	margin-bottom: 0;
+}
+
+.tabs fieldset fieldset,
+fieldset fieldset,
+.tabs .tabs fieldset {
+	background-color: #fff;
+	margin: 15px 0 15px;
+	@if $browser == ie8 {
+		background-position: 0 -1px;
+		background-image: url(data:image/gif;base64,R0lGODlhAQASAIABAPHx8f///yH5BAEHAAEALAAAAAABABIAAAIEhI95BQA7);
+	} @else if $browser == ie6 or $browser == ie7 {
+		background-image: url(../images/backgrounds/ie_fieldset_header_f1f1f1.gif);
+	}
+}
+
+fieldset .tabs fieldset,
+fieldset fieldset fieldset {
+	background-color: #f1f1f1;
+	border: 1px solid #ccc;
+	@if $browser == ie6 or $browser == ie7 or $browser == ie8 {
+		background-position: 0 -2px;
+		@if $browser == ie8 {
+			background-image: url(data:image/gif;base64,R0lGODlhAQATAIAAAP///////yH5BAEHAAEALAAAAAABABMAAAIEhI+JBQA7);
+		} @else {
+			background-image: url(../images/backgrounds/ie_fieldset_header_ffffff.gif);
+		}
+	}
+}
+
+fieldset fieldset fieldset fieldset,
+.tabs .tabs  .tabs  fieldset,
+.tabs .tabs  fieldset  fieldset,
+.tabs fieldset  fieldset  fieldset,
+fieldset .tabs  .tabs  fieldset,
+fieldset .tabs  fieldset  fieldset,
+fieldset fieldset  .tabs  fieldset,
+.tabs fieldset  .tabs  fieldset {
+	padding: 10px 0 0 0;
+	border-width: 0px;
+	border-top-width: 1px;
+	border-color: #ccc;
+	border-style: solid;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	background: none;
+}
+
+fieldset.noPadding {
+	padding: 0px;
+	border-width: 0px;
+	border-top-width: 1px;
+	border-color: #999999;
+	border-style: solid;
+}
+
+fieldset legend {
+
+	color: #000000;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 3px;
+	padding-right: 3px;
+	@if $isIE {
+		margin-bottom: 15px;
+	}
+}
+
+fieldset fieldset legend {
+	background-color: transparent;
+	color: #1659AA;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.tabs dt,
+fieldset dl dt {
+	width: $labelWidth + 21px;
+}
+
+fieldset .tabs .tabs dt,
+fieldset .tabs fieldset dt,
+.tabs fieldset dt,
+.tabs .tabs dt,
+fieldset fieldset dl dt {
+	width: $labelWidth;
+}
+
+/*
+
+unused styles
+
+fieldset fieldset fieldset dl dt,
+.tabs .tabs  .tabs   dl dt,
+.tabs fieldset  .tabs  dl dt ,
+.tabs .tabs  fieldset dl dt ,
+.tabs .tabs  .tabs dl dt ,
+fieldset fieldset  fieldset dl dt,
+fieldset fieldset  .tabs  dl dt,
+.tabs .tabs  fieldset  dl dt,
+.tabs .tabs  .tabs dl dt,
+fieldset .tabs  .tabs,
+fieldset .tabs  .tabs dl dt{
+
+}
+
+*/
+
+fieldset.expanded a {
+	@include sprite-misc("btnCollapse.gif", 5px, -7px);
+	padding: 0 0 0 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+fieldset.collapsed a {
+	@include sprite-misc("btnExpand.gif", 5px, -7px);
+	padding: 0 0 0 20px;
+	color: #000000;
+	text-decoration: none;
+}
+
+fieldset.expanded a:hover, fieldset.collapsed a:hover {
+	text-decoration: underline;
+}
+
+fieldset.expanded .contents {
+	display: block;
+}
+
+fieldset.collapsed .contents {
+	display: none;
+}
+
+fieldset.inlineExpanded legend,
+fieldset.inlineCollapsed legend {
+	@if $isIE {
+		padding-left: 5px;
+	}
+}
+
+fieldset.inlineExpanded legend  a,
+fieldset.inlineCollapsed legend  a {
+	padding: 0 0 0 16px;
+	color: #1659aa;
+	text-decoration: none;
+}
+
+fieldset.inlineExpanded legend  a:hover, fieldset.inlineCollapsed legend  a:hover {
+	text-decoration: underline;
+}
+
+fieldset.inlineExpanded legend  a {
+	@include sprite-misc("btnCollapse.gif", 2px, -3px);
+}
+
+fieldset.inlineCollapsed legend  a {
+	@include sprite-misc("btnExpand.gif", 2px, -3px);
+}
+
+fieldset.inlineExpanded .hiddenMsg {
+	display: none;
+}
+
+fieldset.inlineCollapsed .hiddenMsg {
+	display: block;
+}
+
+fieldset.inlineExpanded .contents {
+	display: block;
+}
+
+fieldset.inlineCollapsed .contents {
+	display: none;
+}
+
+/*
+	These styles will center the DLs on the page, commented out for now.
+
+	dl,
+	dl.tabs dd dl {
+		clear:both;
+		margin:0 auto;
+		overflow:hidden;
+		padding:0;
+		width:800px;
+	}
+
+	dd dl,
+	body.modalPage dl,
+	dl.tabs dl dd dl{
+		margin:0;
+		width:100%;
+	}
+*/
+
+dl {
+	clear: both;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+
+dl dt {
+	float: left;
+	text-align: right;
+	overflow: hidden;
+	padding: 0 $gridGutterWidth 10px 0;
+	width: $labelWidth + 42px;
+}
+
+.modalPage dl dt {
+	width: $labelWidth;
+}
+
+dl dd {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 10px;
+}
+
+dl dt label {
+	font-weight: bold;
+	line-height: 18px;
+}
+
+dl dt span.hint {
+	display: block;
+	clear: both;
+	margin-top: 3px;
+	max-width: 200px;
+}
+
+span.hint {
+	color: #666;
+	font-size: $fontSizeXXSmall;
+}
+
+dl dd label {
+	line-height: 18px;
+	vertical-align: middle;
+	@if $isIE == false {
+		padding-top: 3px;
+	}
+	margin-right: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	vertical-align: middle;
+}
+
+input[type="checkbox"] + label {
+	@if $isIE == false {
+		padding-top: 0px;
+	}
+}
+
+dl dd .text {
+	max-width: 527px; /* prevents the text from "falling" down to below the label. */
+	line-height: 18px;
+}
+
+.largeText,
+span.largeText {
+	font-size: 20px;
+	color: #333;
+}
+
+span.highlightText {
+	color: #ff0000;
+}
+
+label.largeText {
+	@if $browser == ie6 {
+		padding-top: 6px;
+	} @else {
+		padding-top: 4px;
+	}
+}
+
+dl dd span.hint {
+	font-size: 11px;
+	color: #666;
+	display: block;
+	clear: both;
+	margin-top: 3px;
+	width: 250px;
+	padding: 0px;
+}
+
+dl.twoCol dd span.hint {
+	width: 170px;
+}
+
+label.required {
+	padding-left: 12px;
+	color: #000000;
+	@include sprite-misc("required.gif");
+}
+
+.summaryEditButton {
+	position: relative;
+}
+
+.summaryEditButton button {
+	position: absolute;
+	top: 0;
+	@if $browser == ie6 {
+		right: 30px;
+		margin-right: 10px !important;
+	} @else {
+		right: 0;
+		margin-right: 0 !important;
+	}
+}
+
+label {
+	color: #000;
+}
+
+dl label {
+	font-size: 12px;
+}
+
+input, select, textarea {
+	font-size: 11px;
+	font-family: verdana, tahoma, sans-serif;
+	font-weight: normal;
+}
+
+textarea.smallHeight {
+	height: 60px;
+}
+
+textarea.mediumHeight {
+	height: 120px;
+}
+
+textarea.largeHeight {
+	height: 250px;
+}
+
+dl.twoCol dd {
+	width: ($maxTwoColGridUnits * $gridWidth) + (($maxTwoColGridUnits - 1) * $gridGutterWidth);
+}
+
+dl.twoCol dd.col1 {
+	padding-right: 10px;
+}
+
+/********************************************************/
+/* Form Elements */
+/********************************************************/
+input.hint {
+	font-style: italic;
+	color: #999999;
+}
+
+@if $browser != ie6 {
+	input[type="text"], input[type="password"] {
+		border: 1px solid $mediumBorderColor;
+		background-color: #fff;
+		@if $isIE {
+			padding: 2px;
+		} @else {
+			padding: 1px 1px 3px 1px;
+		}
+	}
+}
+
+input.inputFocus {
+	border: 1px solid #009;
+	background-color: #fffdd9;
+	@if $isIE {
+		padding: 2px;
+	} @else {
+		padding: 1px 1px 3px 1px;
+	}
+}
+
+input.inputError {
+	border: 1px solid #f00;
+	background-color: #FFE8E9;
+	@if $isIE {
+		padding: 2px;
+	} @else {
+		padding: 1px 1px 3px 1px;
+	}
+}
+
+textarea {
+	border: 1px solid $mediumBorderColor;
+	background-color: #fff;
+	margin-bottom: 0;
+	@if $isIE {
+		padding: 2px;
+	} @else {
+		padding: 1px 1px 2px 1px;
+	}
+}
+
+textarea.inputFocus {
+	border: 1px solid #009;
+	background-color: #fffdd9;
+}
+
+textarea.inputError {
+	border: 1px solid #f00;
+	background-color: #FFE8E9;
+}
+
+select {
+	border: 1px solid $mediumBorderColor;
+	background-color: #fff;
+	padding: 1px;
+}
+
+select.inputFocus {
+	border: 1px solid #009;
+	background-color: #fffdd9;
+}
+
+select.inputError {
+	border: 1px solid #f00;
+	background-color: #FFE8E9;
+}
+
+@if $browser != ie6 {
+	select[disabled], select[disabled="disabled"], select[disabled="true"],
+	input[type="text"][disabled], input[type="text"][disabled="disabled"], input[type="text"][disabled="true"],
+	input[type="password"][disabled], input[type="password"][disabled="disabled"], input[type="password"][disabled="true"],
+	textarea[disabled], textarea[disabled="disabled"], textarea[disabled="true"] {
+		border: 1px solid #ccc;
+	}
+}
+
+/********************************************************/
+/* Links and Buttons */
+/********************************************************/
+a.plusIcon {
+	padding-left: 24px;
+	display: inline-block;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 4px;
+	background-image: url(../images/buttons/textarea_expand.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+a.smallPlusIcon {
+	text-decoration: underline;
+	cursor: pointer;
+	background-image: url(../images/icons/btnExpand.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	padding-left: 16px;
+
+}
+
+a.smallMinusIcon {
+	text-decoration: underline;
+	cursor: pointer;
+	background-image: url(../images/icons/btnCollapse.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	padding-left: 16px;
+}
+
+.lineHeading {
+	clear: both;
+	font-weight: bold;
+	color: rgb(8, 50, 136);
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	padding-top: 0;
+}
+
+div.pageButtons {
+	clear: both;
+	display: block;
+	margin-top: 0px;
+}
+
+@if $browser == chrome or $browser == safari{
+	div.pageButtons button {
+		margin-right: 5px;
+	}
+}
+
+/********************************************************/
+/* Copy Icon used next to text inputs */
+/********************************************************/
+a.copyIcon {
+	padding-left: 20px;
+	padding-bottom: 2px;
+	@include sprite-icon("copy");
+}
+
+a.copyToClipboard {
+	@if $isIE {
+		padding-left: 25px;
+		padding-bottom: 10px;
+		display: inline-block;
+		@include ms-alpha-image-loader("icons/png/copy_24.png", crop);
+		background-position: 0px 0px;
+	} @else {
+		display: none;
+	}
+}
+
+
+/********************************************************/
+/* Small ajax Loading indicator                         */
+/********************************************************/
+li.ajaxLoad a, input.ajaxLoad {
+	background-image: url(../images/animated/indicator.gif);
+	background-repeat: no-repeat;
+	background-position: 99% 5px;
+}
+
+/********************************************************/
+/* Expand Collapse Legends                              */
+/********************************************************/
+fieldset.expand {
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+fieldset.collapse {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset.collapse legend {
+	cursor: pointer;
+	padding-left: 22px;
+	@include sprite-misc("btnCollapse.gif", 7px, -8px);
+}
+
+fieldset.expand legend {
+	cursor: pointer;
+	padding-left: 22px;
+	@include sprite-misc("btnExpand.gif", 7px, -8px);
+}
+
+/********************************************************/
+/* Used for two selects type=multiple with buttons      */
+/* in between for moving options across                 */
+/********************************************************/
+table.twoColSelectTable {
+	margin-top: 15px;
+	width: 100%;
+}
+
+table.twoColSelectTable select {
+	width: 270px;
+	margin-bottom: 10px;
+}
+
+table.twoColSelectTable button {
+	margin-bottom: 10px;
+}
+
+table.twoColSelectTable td {
+	vertical-align: top;
+	width: 40%
+}
+
+table.twoColSelectTable td.buttonCol {
+	text-align: center;
+	width: auto;
+	vertical-align: middle;
+}
+
+/********************************************************/
+/* Build up grid CSS                                    */
+/********************************************************/
+@include calculateGridValue(("table.dataTable tr ", "dl dd ", ""), 1, $maxOneColGridUnits);
+@include calculateGridValue("dl.twoCol dd ", 1, $maxTwoColGridUnits);
+/* Global Header, a.k.a. Digital River Suite */
+#globalSuitePanel, #globalSuiteMenu, .globalSuitePod, .globalSuiteBottom span {position: relative;}
+#globalSuitePanel {
+	width: 100%;
+	background-color: $globalHeaderBackgroundColor;
+	border-bottom: $globalHeaderBorderBottomStyle $globalHeaderBorderBottomWidth $globalHeaderBorderBottomColor;
+}
+#globalSuiteMenu {
+	margin: 0 auto;
+	padding: 0;
+	overflow: auto;
+	@if $browser == ie6 {
+		width: 987px;
+	} @else {
+		width: 960px;
+	}
+}
+.globalSuiteOpen #globalSuiteMenu {height: 175px;}
+.globalSuiteClosed #globalSuiteMenu {height: 0;}
+.globalSuitePod {
+	width: 225px;
+	height: 150px;
+	float: left;
+	border: $globalHeaderPodBorderStyle $globalHeaderPodBorderWidth $globalHeaderPodBorderColor;
+	margin: 10px 5px 0;
+	@if $isIE == false {
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+	}
+	border-radius:8px;
+}
+.globalSuiteTop {
+	height: 47px;
+	padding: 7px 0 0 8px;
+	@include linear-gradient(to bottom, $globalHeaderTopPodTopColor, $globalHeaderTopPodBottomColor);
+	@if $isIE == false {
+		-moz-border-radius: 8px 8px 0 0;
+		-webkit-border-radius: 8px 8px 0 0;
+	}
+	border-radius: 8px 8px 0 0;
+}
+.globalSuiteLogo {font: normal 20px Arial; color: #FFF;}
+.globalSuiteLogoSubtitle {font: normal 11px Arial; color: #DDD;}
+.globalSuiteBottom {
+	height: 82px;
+	line-height: 13px;
+	padding: 7px 10px;
+	color: #FFFFFF;
+	@include linear-gradient($globalHeaderBottomPodGradientDirection, $globalHeaderBottomPodTopColor, $globalHeaderBottomPodBottomColor);
+	@if $isIE == false {
+		-moz-border-radius: 0 0 8px 8px;
+		-webkit-border-radius: 0 0 8px 8px;
+	}
+	border-radius: 0 0 8px 8px;
+}
+.globalSuiteBottom a {color: #FFFFFF;}
+.globalSuiteJumpTo {position: absolute; right: 10px; bottom: 10px;}
+#globalSuiteTab {
+	position: absolute;
+	left: 50%;
+	height:$globalHeaderTabHeight;
+	width:$globalHeaderTabWidth;
+	padding:0px;
+	margin-left: $globalHeaderTabMarginLeft;
+	cursor:pointer;
+	background-repeat: no-repeat;
+}
+
+.globalSuiteOpen #globalSuiteTab {
+	@if $browser == ie6 {
+		@include ms-alpha-image-loader($globalNavTabDownImg);
+	} @else {
+		background-image: url($globalNavTabDownImg);
+	}
+}
+.globalSuiteClosed #globalSuiteTab {
+	@if $browser == ie6 {
+		@include ms-alpha-image-loader($globalNavTabUpImg);
+	} @else {
+	 background-image: url($globalNavTabUpImg);
+	}
+}
+
+.iconWell {
+	display: inline;
+	float: right;
+	line-height: 1;
+	margin: 0 20px 0 0;
+}
+
+.iconWell li {
+    background: url($iBackgroundImg) $iBackgroundRepeat left -300px;
+	float: left;
+	padding: 0 0 0 2px;
+}
+
+.iconWell li.hover {
+	/*background-position:left -335px;*/
+}
+
+.iconWell li.hover a.text,
+.iconWell li.hover a.icon {
+	background-color: $icwBackgroundColorHover;
+	color: $icwTextColorHover;
+}
+
+/*  reset the list items inside the popup to be normal list items */
+.iconWell .popup li,
+.iconWell li.hover .popup li {
+	background: none;
+	float: none;
+	padding: 0;
+	line-height: 18px;
+}
+
+/*
+ Styles for top row links
+*/
+
+.iconWell li a.print {
+	background-position: 12px 9px;
+	width: 32px;
+	padding: 0 !important;
+}
+
+.iconWell li.hover a.print {
+	background-position: 12px -42px;
+}
+
+.iconWell li a.search {
+	background-position: 12px -91px;
+}
+
+.iconWell li.hover a.search {
+	background-position: 12px -140px
+}
+
+.iconWell li a.favorites {
+	background-position: 12px -191px;
+}
+
+.iconWell li.hover a.favorites {
+	background-position: 12px -241px;
+}
+
+.iconWell li a.preview {
+	background-position: 12px -2689px;
+}
+
+.iconWell li.hover a.preview {
+	background-position: 12px -2789px;
+}
+
+.iconWell li a.help {
+	background-position: 12px -291px;
+	color: $icwHelpTextColor !important;;
+}
+
+.iconWell li.hover a.help {
+	background-position: 12px -341px;
+	color: #fff !important;
+}
+
+.iconWell li a.help span {
+	background-position: right -484px;
+}
+
+.iconWell li a.training {
+	background-position: $trainingIconPosition;
+}
+.iconWell li:hover a.training {
+	background-position: $trainingIconPositionHover;
+}
+.iconWell li a.training span{
+	background:none;
+}
+.iconWell li a span.newFlag {
+	display: inline;
+	background-color: #FF245E;
+	font-size: 9px;
+	padding: 1px 5px 1px 3px;
+	margin-left: 4px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	color: #EEE;
+}  
+.iconWell li a:hover span.newFlag {
+	background-color: white;
+	color:#FF245E;
+}
+
+.iconWell a.text {
+	color: #333;
+	display: block;
+	font-weight: bold;
+	line-height: 35px;
+	padding: 0 12px 0 35px;
+	text-decoration: none;
+	width: auto;
+}
+
+.iconWell a.text,
+.iconWell a.icon {
+	color: $icwTextColor;
+	display: block;
+	font-weight: bold;
+	line-height: 35px;
+	padding: 0 10px;
+	text-decoration: none;
+	width: auto;
+}
+
+.iconWell a.icon {
+	padding: 0 12px 0 35px;
+	background-image: url($icwBackgroundImage);
+	background-repeat: no-repeat;
+}
+
+.iconWell a.text span,
+.iconWell a.icon span {
+	display: block;
+	padding: 0 12px 0 0;
+	background: url($icwBackgroundImage) no-repeat right -384px;
+}
+
+.iconWell li.hover a.text span,
+.iconWell li.hover a.icon span {
+	background-position: right -434px;
+}
+
+.iconWell li.icon a.icon {
+	padding: 0 12px 0 0;
+	text-indent: -5000px;
+	width: 40px;
+}
+
+.iconWell li.icon a.icon span {
+	padding: 0 12px 0 0;
+}
+
+.iconWell .popup {
+	display: none;
+	position: absolute;
+	z-index: 10;
+	cursor: default;
+	@if $browser == ie6 {
+		right: 19px; /* ie6 specific rule */
+	} @else {
+		right: 10px;
+	}
+}
+
+.iconWell li.hover .popup {
+	display: block;
+}
+
+.iconWell li .wrapper {
+	width: 366px; /* must be even number so the shadow effect has no gap */
+	background-color: $icwBackgroundColor;
+	overflow: hidden;
+	@if $browser == ie6 {
+		border: 1px solid #999; /* ie6 specific rule */
+	}
+	border-top: 7px solid $icwBackgroundColorHover;
+	color: $icwWrapperTextColor;
+}
+
+.iconWell .inner {
+	padding: 10px 20px;
+}
+
+.iconWell p.largeHeader {
+	display: block;
+	font-size: 10pt;
+	line-height: 20px;
+	margin: 0;
+	padding: 5px 10px;
+	background-color: $icwLargeHeaderBackgroundColor;
+	font-weight: bold;
+}
+
+.iconWell li.smallHeader {
+	color: $icwSmallHeaderTextColor;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 0 0 5px 0;
+	padding: 0;
+	border-bottom: 1px dotted #ccc;
+}
+
+.iconWell ul.linkList {
+	margin-bottom: 10px;
+}
+
+.iconWell ul.linkList:last-child {
+	margin-bottom: 0px;
+}
+
+.iconWell ul.linkList li {
+	line-height: 20px;
+}
+
+.iconWell ul.linkList li a {
+	background: transparent url($icwBackgroundImage) no-repeat scroll 18px -692px;
+	color: $icwSmallHeaderTextColor;
+	display: block;
+	font-weight: normal;
+	line-height: 20px;
+	padding: 0 0 2px 30px;
+	text-decoration: none;
+	@if $browser == ie6 {
+		height: 1%; /* ie6 specific rule */
+	}
+}
+
+.iconWell ul.linkList li a:hover {
+	background-color: $icwSmallHeaderLinkHoverBackgroundColor !important;
+	color: $icwSmallHeaderLinkHoverTextColor;
+	text-decoration: $icwSmallHeaderLinkHoverTextDecoration;
+}
+
+.iconWell .inner p {
+	font-size: 12px;
+	line-height: 16px;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+.iconWell .popup li.line {
+	padding: 0;
+}
+
+.iconWell .popup li.line span {
+	background: transparent none repeat scroll 0 0;
+	border-top: 1px dotted #aaa;
+	display: block;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	padding: 0;
+}
+
+/*
+ styles for search interface
+*/
+
+.iconWell .inner dt {
+	width: 80px;
+}
+
+.iconWell .inner select {
+	width: 214px;
+}
+
+.iconWell .inner input {
+	width: 210px;
+}
+
+.iconWell .searchButton {
+	padding-left: 90px;
+}
+
+.iconWell .inner label {
+	color: $icwSearchLabelColor;
+}
+
+/*
+ Icon styles
+*/
+
+.iconWell ul.linkList li.hc a,
+.iconWell ul.linkList li.helpTopic a {
+	background: url($icwIcons) no-repeat 7px -6497px !important;
+}
+
+.iconWell ul.linkList li.favorite a {
+	background: url($icwIcons) no-repeat 7px -4897px !important;
+}
+
+.iconWell ul.linkList li.addFavorite a {
+	background: url($icwIcons) no-repeat 7px -4797px !important;
+}
+
+.iconWell ul.linkList li.configure a {
+	background: url($icwIcons) no-repeat 7px -2797px !important;
+}
+
+.iconWell ul.linkList li.pdf a {
+	background: url(../images/icons/pdf_16x16.gif) no-repeat 7px 3px;
+}
+
+.iconWell ul.linkList li.video a {
+	background: url($icwIcons) no-repeat 7px -8897px !important;
+}
+
+.iconWell ul.linkList li.network a {
+	background: url($icwIcons) no-repeat 7px -8897px !important;
+}
+
+.iconWell ul.linkList li.add a {
+	background: url($icwIcons) no-repeat 7px -497px !important;
+}
+
+
+.listControl {
+	clear: both;
+	padding: 0;
+	width: auto;
+}
+
+.listTabsContent {
+	border-top: 1px solid #ccc;
+	background-color: #F1F1F1;
+	padding: 10px 0;
+	clear: both;
+	z-index: 2;
+}
+
+.inlineListContainer {
+
+}
+
+.listTabsContent .search {
+	overflow: hidden;
+}
+
+.listTabsContent .splitTable {
+	width: 100%;
+}
+
+.listTabsContent .splitTable .column {
+	vertical-align: top;
+	width: 50%;
+}
+
+.listTabsContent .twoCol tr.searchButton td {
+	padding: 0 0 0 2px !important;
+}
+
+.listTabsContent .twoCol {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.listTabsContent .twoCol td.middle {
+	width: 10%;
+}
+
+.listTabsContent .twoCol td.left,
+.listTabsContent .twoCol td.right {
+	width: 45%;
+	vertical-align: top;
+}
+
+.listTabsContent .twoCol td.left > table,
+.listTabsContent .twoCol td.right > table {
+	max-width: 500px;
+}
+
+.listTabsContent .twoCol label {
+	float: right;
+	font-weight: bold;
+	white-space: nowrap;
+	@if $isIE {
+		padding-top: 4px;
+	} @else {
+		padding-top: 3px;
+	}
+}
+
+.listTabsContent .twoCol td.left td,
+.listTabsContent .twoCol td.right td {
+	padding: 0 5px 7px 5px;
+	vertical-align: top;
+}
+
+.listTabsContent .twoCol td.left td:first-child,
+.listTabsContent .twoCol td.right td:first-child {
+	padding-left: 20px;
+	padding-top: 0px;
+}
+
+.listTabsContent div.button {
+	@if $isIE {
+		padding: 0 0 0 189px;
+	} @else {
+		padding: 0 0 0 185px;
+	}
+	clear: both;
+}
+
+.listTabsContent div.button button {
+	margin-bottom: 10px;
+}
+
+/* fixes an error in IE 6 rendering search buttons */
+@if $browser == ie6 {
+	div.search button.button {
+		width: auto;
+		overflow: visible;
+	}
+}
+
+@if $isIE {
+/* fixes an error in IE 7 rendering search buttons */
+	div.search button.button {
+		overflow: visible;
+	}
+}
+
+/*new list button classes, listTabs start*/
+
+.listControl .listButtonBar {
+	/*min-width:540px;*/
+	white-space: nowrap;
+}
+
+.listControl .noSearch {
+	margin-bottom: 15px;
+}
+
+.listButtonBar .left {
+	padding-top: 0;
+	display: inline-block;
+	/*width: 540px;*/
+}
+
+.listButtonBar .items {
+	display: inline-block;
+	padding: 15px 0 0;
+	float: left;
+}
+
+fieldset .listButtonBar .items {
+	padding-left: 10px;
+}
+
+.listButtonBar .listTabs + .items {
+	padding-left: 10px;
+}
+
+.listTabs {
+	padding-left: 10px;
+	margin-bottom: -1px;
+	z-index: 1;
+	float: left;
+}
+
+.listTabs div {
+	display: inline-block;
+	float: left;
+	padding: 11px;
+	margin: 0 5px 0 0;
+	margin-bottom: -1px;
+}
+
+.listTabs div a {
+	float: left;
+	display: inline-block;
+	background-repeat: no-repeat;
+	height: 18px;
+	color: #000;
+	padding-left: 0;
+	line-height: 18px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.listTabs .selected a,
+.listTabs div a:hover {
+	text-decoration: none;
+}
+
+.listTabs span.arrow {
+	background: url(../images/list/arrow_closed_down.gif) no-repeat 3px 7px;
+	display: inline-block;
+	height: 16px;
+	width: 13px;
+}
+
+.listTabs .selected span.arrow {
+	background: url(../images/list/arrow_open_up.gif) no-repeat 3px 5px;
+}
+
+.listTabs .selected {
+	padding: 10px 10px 11px 10px;
+	background-color: #F1F1F1;
+	border-top: 1px solid #CCC;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC;
+}
+
+.listTabs .search  a {
+	margin-left: 3px;
+	padding-left: 22px;
+	background-image: url(../images/list/magnify_glass_closed.gif);
+	background-position: 0 -1px;
+}
+
+.listTabs .selected.search  a {
+	background-image: url(../images/list/magnify_open.gif);
+	background-position: 0 1px;
+}
+
+/*listTabs end*/
+
+/* Buttons Row */
+.actionRow,
+.actionRowBottom {
+	background-image: url($spriteMiscVar);
+	background-position: 10px -1000px;
+	background-repeat: no-repeat;
+	clear: both;
+	float: none;
+	padding-left: 35px;
+	margin-bottom: 10px;
+}
+
+.actionRowBottom {
+	background-position: 7px -1100px;
+	margin: 10px 0 3px 0;
+	padding-left: 35px;
+}
+
+ul.buttons,
+.actionRow ul,
+.actionRowBottom ul {
+	clear: both;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.buttons li,
+.actionRow ul li,
+.actionRowBottom ul li {
+	display: inline;
+	padding-left: 0;
+}
+
+/* dataTable start */
+.dataTable {
+	clear: both;
+	overflow: auto;
+	width: 100%;
+	border-collapse: separate;
+}
+
+.dataTable th.actionCol,
+.dataTable tr.filterRow th.actionCol,
+.dataTable thead th.innerActionCol {
+	padding: 0 0 0 0;
+	text-align: center;
+	width: 30px;
+	border-left: 0;
+	margin: 0;
+}
+
+.dataTable th {
+	background: #DCDCDC url(../images/list/table_unsorted.gif) repeat-x;
+	color: #000000;
+	padding: 8px 10px 8px 5px;
+	text-align: left;
+	white-space: nowrap;
+	font-weight: bold;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #fff;
+}
+
+.dataTable th.actionCol + th {
+	border-left: 0;
+}
+
+.dataTable th.sortable {
+	padding: 0;
+}
+
+.dataTable th.sortable a,
+.dataTable th.sortable span {
+	padding: 8px 15px 8px 5px;
+}
+
+.dataTable th.sortable:hover {
+	background-image: url(../images/list/table_unsorted_hover.gif);
+}
+
+.dataTable th:last-child {
+	border-right: 0;
+}
+
+.dataTable th.ascending,
+.dataTable th.descending {
+	background-image: url(../images/list/table_sorted.gif);
+}
+
+.dataTable th.ascending.sortable:hover,
+.dataTable th.descending.sortable:hover {
+	background-image: url(../images/list/table_sorted_hover.gif);
+}
+
+.dataTable th.ascending span,
+.dataTable th.ascending a {
+	background-image: url(../images/list/ascending.gif);
+}
+
+.dataTable th.descending span,
+.dataTable th.descending a {
+	background-image: url(../images/list/descending.gif);
+}
+
+.dataTable th.ascending span,
+.dataTable th.descending span {
+	text-decoration: none;
+}
+
+.dataTable th.actionCol input,
+.dataTable th.innerActionCol input {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dataTable th a,
+.dataTable th span {
+	background-position: 99% 50%;
+	background-repeat: no-repeat;
+	color: #000000;
+	padding-right: 15px;
+	text-decoration: underline;
+	display: block;
+}
+
+.dataTable td.actionCol,
+.dataTable td.innerActionCol {
+	background-color: #f1f1f1;
+	border-right: 1px solid #CCCCCC;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 30px;
+}
+
+.dataTable tbody td {
+	font-size: 11px;
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.dataTable td {
+	background-color: #FFFFFF;
+	border-right: 0;
+	border-top: 1px solid #eAeAeA;
+	border-right: 0 solid #999999;
+	padding: 5px 10px 5px 5px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.dataTable tr.selected td {
+	background-color: #fdfbd3;
+}
+
+.dataTable tbody tr:hover td,
+.dataTable tbody tr:hover td.innerActionCol,
+.dataTable tbody tr:hover td table tbody tr:hover td,
+.dataTable tbody tr:hover td.innerActionCol table tr:hover tbody td {
+	background-color: #fffdd9;
+}
+
+.dataTable tbody tr.childTableRow:hover td,
+.dataTable tbody tr.unselectable:hover td {
+	background-color: #fff;
+}
+
+.dataTable tbody tr.childTableRow:hover td.actionCol,
+.dataTable tbody tr.unselectable:hover td.actionCol {
+	background-color: #f1f1f1;
+}
+
+.dataTable tbody tr.unselectable td span {
+	text-decoration: none;
+}
+
+.dataTable tr.childTableParent td.expanded,
+.dataTable tr.childTableParent td.collapsed {
+	padding-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.dataTable tr.childTableParent td.expanded span:hover,
+.dataTable tr.childTableParent td.collapsed span:hover {
+	text-decoration: underline;
+}
+
+.dataTable tr.childTableParent td.collapsed span {
+	display: block;
+	background: url($spriteMiscVar) no-repeat scroll 0 -1900px;
+	padding-left: 42px;
+	line-height: 20px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dataTable tr.childTableParent td.expanded span {
+	display: block;
+	background: url($spriteMiscVar) no-repeat scroll 0 -2000px;
+	padding-left: 42px;
+	line-height: 20px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dataTable td a {
+	color: #000;
+}
+
+/*end dataTable*/
+
+/*start pagination*/
+
+.pagination {
+	/*background-color:red;*/
+	float: right;
+	padding: 10px 5px 0 0;
+	clear: left;
+	margin-top: 0;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+.pagination input {
+	width: 45px;
+}
+
+.pagination a {
+	background-repeat: no-repeat;
+	/*border: 1px solid #B2B1B1;*/
+	background-position: 50% 50%;
+	cursor: pointer;
+	display: inline-block;
+	height: 22px;
+	padding: 0 0 0 0;
+	width: 22px;
+	background-image: url($paginationSprite);
+	float: left;
+}
+
+.pagination a.off {
+	cursor: default;
+	@include opacity(.4);
+}
+
+@mixin pagination-first {
+	background-position: 0 -30px;
+	margin-right: 3px;
+}
+@if $browser != ie6 {
+	.pagination a.first, .pagination a.first.off:hover {
+		@include pagination-first;
+	}
+} @else {
+	.pagination a.first {
+		@include pagination-first;
+	}
+}
+
+.pagination a.first:hover {
+	background-position: 0 0;
+}
+
+@mixin pagination-prev {
+	background-position: 0 -90px;
+}
+@if $browser != ie6 {
+	.pagination a.prev, .pagination a.prev.off:hover {
+		@include pagination-prev;
+	}
+} @else {
+	.pagination a.prev {
+		@include pagination-prev;
+	}
+}
+
+.pagination a.prev:hover {
+	background-position: 0 -60px;
+}
+
+@mixin pagination-next {
+	background-position: 0 -210px;
+}
+@if $browser != ie6 {
+	.pagination a.next, .pagination a.next.off:hover {
+		@include pagination-next;
+	}
+} @else {
+	.pagination a.next {
+		@include pagination-next;
+	}
+}
+
+.pagination a.next:hover {
+	background-position: 0 -180px;
+}
+
+@mixin pagination-last {
+	background-position: 0 -150px;
+	margin-left: 3px;
+}
+@if $browser != ie6 {
+	.pagination a.last, .pagination a.last.off:hover {
+		@include pagination-last;
+	}
+} @else {
+	.pagination a.last {
+		@include pagination-last;
+	}
+}
+
+.pagination a.last:hover {
+	background-position: 0 -120px;
+}
+
+.pagination strong {
+	font-weight: normal;
+}
+
+.pagination span {
+	display: inline-block;
+	float: left;
+	padding: 5px 4px 0 4px;
+	overflow: visible;
+	@if $isIE {
+		margin-top:1px;
+	}
+}
+
+.pagination span.pageInput {
+	@if $isIE {
+		padding: 0 2px 0 2px;
+		margin-top: 1px;
+	} @else {
+		padding: 2px;
+	}
+}
+
+/*end pagination*/
+
+.itemCount {
+	clear: both;
+	background-color: #F1F1F1;
+	background-image: url(../images/list/background_inset.gif);
+	padding: 4px 2px 4px 2px;
+	border-top: 1px solid #ccc;
+	border-bottom: 0;
+	font-size: 12px;
+	min-height: 22px;
+	cursor: default;
+}
+
+.itemCount td {
+	font-size: 12px; /* FF is having a hard time showing the correct default font when going to page 2 of a list in a modal overlay */
+}
+
+.itemCount .count {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 0 5px 0 8px;
+	color: #334664;
+}
+
+.itemCount .link {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #000 !important;
+}
+
+.itemCount .selectedFilter,
+.itemCount .selected {
+	border: 1px solid #4F4A18;
+	background-color: #fffdd9;
+	padding: 2px 10px 2px 10px;
+	color: #000;
+	margin-left: 10px;
+}
+
+.itemCount .selectAll span,
+.itemCount .clear span,
+.itemCount .view span {
+	display: inline-block;
+	border-left: 1px solid #999;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+.itemCount .msgLink {
+	cursor: pointer;
+	font-weight: bold;
+	color: #009 !important;
+}
+
+.itemCount .msgLink:hover {
+	text-decoration: underline;
+}
+
+.contentBox .titleRow {
+	text-align: left;
+	clear: both;
+	margin-bottom: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #666;
+}
+
+.dataTableScroller {
+	overflow: auto;
+	overflow-y: scroll;
+	overflow-x: auto;
+}
+
+.dataTableContainer {
+	overflow: auto;
+	border: 1px solid #ccc;
+}
+
+.listControl .dataTableContainer {
+	border: 0;
+}
+
+body .inlineListContainer .dataTableContainer,
+.listControl fieldset .dataTableContainer {
+	border: 1px solid #ccc;
+}
+
+.dataTableContainerSmall {
+	border: 1px solid #ccc;
+	overflow: auto;
+	overflow-y: scroll;
+	overflow-x: auto;
+	height: 240px;
+}
+
+.dataTableContainerMedium {
+	border: 1px solid #ccc;
+	overflow: auto;
+	overflow-y: scroll;
+	overflow-x: auto;
+	height: 450px;
+}
+
+td.colHighlight {
+	background-color: #f7f7f7;
+}
+
+.actionAndPageButtons, .actionAndPageButtonsBottom {
+	width: 100%;
+}
+
+.actionAndPageButtons TD {
+	vertical-align: top;
+	text-align: left;
+}
+
+.actionAndPageButtonsBottom TD {
+	vertical-align: bottom;
+	text-align: left;
+}
+
+.actionAndPageButtons TD.listButtons,
+.actionAndPageButtonsBottom TD.listButtons {
+	text-align: right;
+}
+
+@if $browser == chrome {
+	.fixedTable {
+		table-layout: fixed;
+	}
+	.fixedTable td.truncate {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.fixedTable thead th a {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+.nav-wrapper {
+	@if $browser == ff2 {
+		position: relative;
+	}
+
+	clear: both;
+}
+
+.nav li ul.mega-menu li {
+	float: left;
+}
+
+.nav li ul.mega-menu li ul li {
+	float: none;
+}
+
+.mega-menu {
+	position: absolute;
+	left: -5000px;
+	z-index: 200;
+}
+
+.mega-menu .wrapper {
+	border: 5px solid $megaMenuBorder;
+	padding: 5px;
+	background: $navWrapperBackgroundColor;
+}
+
+.mega-menu .inner {
+	background: $navInnerBackgroundColor url($navInnerBackground) repeat-y 190px;
+	width: 690px;
+	position: relative;
+	min-height: 220px;
+}
+
+.mega-menu .inner-support {
+	background: $megaMenuInnerSupportBackgroundColor none;
+	width: 500px;
+	position: relative;
+	padding: 0 10px;
+	min-height: 220px;
+	color: $megaMenuInnerSupportTextColor;
+}
+
+.mega-menu .inner-support h2{
+	color: $megaMenuInnerSupportTextColor;
+}
+
+.mega-menu .inner-support a {
+	background: none !important;
+	color: $megaMenuInnerSupportTextColor;
+	padding: 0;
+}
+
+.mega-menu .inner-support p a.blue-link {
+	color: $megaMenuInnerSupportBlueLinkTextColor;
+}
+.nav li.hover .mega-menu {
+	left: auto;
+}
+
+.nav li .mega-menu li {
+	float: none;
+	border-left: none 0px;
+	border-right: none 0px;
+}
+
+.nav li ul li ul.tier3-list li {
+	font-size: 12px;
+	line-height: 12px !important;
+}
+
+.mega-menu ul li a {
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	line-height: 12px;
+	color: $megaMenuLiTextColor;
+	cursor: pointer;
+}
+
+.mega-menu .tier2-list {
+	width: 190px;
+	margin: 7px 0;
+	padding: 0;
+	border: none 0px;
+	float: left;
+	background-color: transparent;
+}
+
+.nav li ul.tier2-list li {
+	padding: 0;
+	background-color: transparent !important;
+	/*background-image: none;*/
+	background-repeat: no-repeat;
+	/*background-position: 10px 8px;*/
+	width: auto;
+	margin: 0;
+}
+
+.nav li ul li.more, .nav li ul li.standalone, .nav li ul li.external {
+	border-top: $navLiTier2BorderTopWidth $navLiTier2BorderTopStyle $navLiTier2BorderTopColor;
+	border-bottom: $navLiTier2BorderBottomWidth $navLiTier2BorderBottomStyle $navLiTier2BorderBottomColor;
+}
+
+.nav li ul li.more a, .nav li ul li.external a {
+	cursor: default;
+}
+
+.nav li ul li.more a.active-link {
+	cursor: pointer !important;
+	text-decoration: underline !important;
+}
+
+.tier3-container {
+	position: absolute;
+	top: 0px;
+	overflow: visible;
+	left: 190px;
+	padding: 7px 0;
+}
+
+.nav li ul li ul.tier3-list {
+	width: 210px;
+	overflow: visible;
+}
+
+.nav li ul.tier2-list li.active {
+	background-color: $navItemTier2BackgroundColorActive !important;
+	border-bottom-color: #eaeaea;
+	border-top-color: #eaeaea;
+}
+
+.nav li ul.tier2-list li.active ul li {
+	background-color: transparent;
+}
+
+.header .nav li ul li ul.tier3-list li a:hover {
+	background-color: transparent;
+}
+
+.nav li ul.tier3-list li a, .nav li.hover ul.tier3-list li a, .nav li.active ul.tier3-list li a {
+	cursor: pointer;
+	color: $megaMenuLiTier3TextColor;
+}
+
+.tier2-list li.mega-menu-stanalone a {
+	color: #000 !important;
+}
+
+.nav li ul li ul.tier3-list li a, .nav li:hover ul li ul.tier3-list li a, .nav li.hover ul li ul.tier3-list li a, .nav li ul li ul.tier3-list li a:hover {
+	display: block;
+	padding: 6px 10px 6px 32px;
+	color: $megaMenuLiTier3TextColor;
+	line-height: 12px;
+}
+
+.nav li ul li ul li a, .nav li:hover ul li ul li a, .nav li.hover ul li ul li a, .nav li ul li ul li a:hover {
+	background: none;
+}
+
+.mega-menu ul.tier2-list li a {
+	display: block;
+	padding: 11px 10px 11px 32px;
+	font-weight: normal;
+	font-weight: bold;
+}
+
+.mega-menu ul.tier3-list li a {
+	display: block;
+	padding: 2px 10px 2px 32px;
+	color: #000;
+}
+
+.help-text {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 190px;
+	top: 0px;
+	color: $megaMenuHelpTextColor;
+}
+
+.help-text h2{
+	color: $megaMenuHelpTextColor;
+}
+
+.mega-menu-help-expanded {
+	width: 500px;
+	left: 190px;
+	top: 0px;
+	overflow: hidden;
+	z-index: 2000;
+}
+
+.mega-menu-help-collapsed {
+	width: 290px;
+	left: 400px;
+	top: 0px;
+	overflow: hidden;
+	z-index: 20000;
+	background-color: $megaMenuHelpBackgroundColor;
+}
+
+.help-text-container {
+	padding: 7px 20px;
+	overflow: auto;
+}
+
+.recent-items-container {
+	padding: 0 0 5px 5px;
+	overflow: auto;
+}
+
+.nav li ul.tier2-list li ul.tier3-list li {
+	/* background-position: 10px 5px;*/
+	background-repeat: no-repeat;
+
+}
+
+.nav li ul.tier2-list li ul.tier3-list li a:hover {
+	text-decoration: underline;
+}
+
+.nav li ul.tier2-list li ul.active {
+	background-color: $navItemTier2BackgroundColor;
+}
+
+/* tier 3 icons */
+/***** Help Topic icons *****/
+.help-text h2 {
+	font-size: 18px;
+	margin: 0 0 8px 0;
+	padding-left: 40px;
+	margin-top: 7px;
+	line-height: 32px;
+	background-repeat: no-repeat;
+	background-position: $navHelpTextBGPosition;
+	background-image: dr-sprite-image-url($navHelpTextBGImg1, $navHelpTextBGImg2);
+}
+
+.mega-menu .inner .hover {
+	background-color: $navInnerBackgroundColor !important;
+}
+
+.mega-menu .divider {
+	height: 1px;
+	line-height: 1px;
+	font-size: 1px;
+	border-top: $megaMenuDividerBorderTopWidth $megaMenuDividerBorderTopStyle $megaMenuDividerBorderTopColor;
+	border-bottom: $megaMenuDividerBorderBottomWidth $megaMenuDividerBorderBottomStyle $megaMenuDividerBorderBottomColor;
+	margin-left: 32px;
+	width: 178px;
+	margin-bottom: 0;
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+}
+
+.nav li ul.tier2-list li.more a, .nav li ul.tier2-list li.external a {
+	background-image: url($navCaretArrow);
+	background-repeat: no-repeat;
+	background-position: right 14px;
+}
+
+/*.nav li ul.tier2-list li.standalone a {
+	background-image: none;
+}*/
+
+.nav li ul li ul.tier3-list li a,
+.nav li ul li ul.tier3-list li a:hover,
+.nav ul.tier2-list li {
+	background-repeat: no-repeat !important;
+	background-position: 0 0;
+	background-image: dr-sprite-image-url($navTieredSprites, $navTieredSprites) !important;
+}
+
+.nav ul.tier2-list li.hover,
+.nav ul.tier2-list li.active,
+.nav li ul li ul.tier3-list li a.over:hover,
+.nav li ul li ul.tier3-list li a.over {
+	background-repeat: no-repeat !important;
+	background-position: 0 0;
+	background-image: dr-sprite-image-url($navLowerTierBGImg1, $navLowerTierBGImg1) !important;
+}
+
+.nav li ul li ul.tier3-list li {
+	background-image: none !important;
+}
+
+.nav li ul.tier2-list li.standalone a:hover {
+	text-decoration: underline;
+}
+.inner-support h2.earth{
+	background-image: url($innerSupportEarthIcon) !important;
+}
+
+.nav li .help-text-container a {
+	background-image: none;
+	text-decoration: underline;
+	padding: 0;
+	color: $megaMenuHelpTextColor;
+	font-weight: normal;
+	text-align: right;
+}
+
+.help-text p {
+	margin-bottom: 10px;
+}
+
+li .recent-items-container h2 {
+	border-top: $megaMenuRecentItemsBorderTopWidth $megaMenuRecentItemsBorderTopStyle $megaMenuRecentItemsBorderTopColor;
+	padding: 8px 15px;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 12px;
+	background: $megaMenuRecentItemsBackgroundColor url($megaMenuRecentItemsBackgroundImage) repeat-x;
+}
+
+body .recent-items-container .recentScroller {
+	overflow: auto;
+}
+
+body .recent-items-container ul li a {
+	padding-left: 20px;
+	text-decoration: underline !important;
+}
+
+.nav .loadingSmall {
+	min-height: 220px;
+}
+
+.nav li .help-text ul {
+	width: auto;
+	background: none;
+	border: none;
+	font-weight: normal;
+	color: $megaMenuHelpTextColor;
+}
+
+.nav li.hover .help-text a, .nav li:hover .help-text a, .nav li .help-text a:hover {
+	background: none !important;
+	font-weight: normal;
+	display: block;
+	padding: 6px 10px 6px 0px;
+	line-height: 12px;
+}
+
+.nav li.hover .help-text li, .nav li:hover .help-text li, .nav li .help-text li {
+	background: none;
+}
+
+.help-text h2 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 22px;
+	margin: 7px 0 8px;
+	padding: 5px 5px 5px 42px;
+}
+
+.nav .scroller {
+	width: 211px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	margin-bottom: 25px;
+}
+
+.nav.noIcons ul.tier2-list li, .nav.noIcons li ul li ul.tier3-list li a:hover {
+	background-image: none !important;
+}
+
+.nav.noIcons ul.tier2-list li a {
+	background-position: right 10px;
+	height: 10px;
+	padding-left: 5px;
+	padding-top: 8px;
+
+}
+
+.nav.noIcons li ul li ul.tier3-list li a {
+	background-position: right 10px;
+	height: 16px;
+	padding-left: 5px;
+	padding-top: 8px;
+	background-image: none !important;
+}
+
+.nav.noIcons .divider {
+	margin-left: 0px;
+	width: 215px;
+}
+
+.nav.noIcons .tier3-container {
+	background-color: #ffffff;
+}
+
+//.nav. ul.tier2-list li, .nav li ul li ul.tier3-list li a
+
+/**** sprite icons *****/
+@each $icon in $spriteIconMap {
+	.nav ul.tier2-list li.#{dr-get-sprite-icon-name($icon)} {
+		background-position: dr-sprite-position(12px, dr-get-sprite-icon-gridY($icon), 0, -9px);
+	}
+	.nav ul.tier2-list ul li.#{dr-get-sprite-icon-name($icon)} a {
+		background-position: dr-sprite-position(12px, dr-get-sprite-icon-gridY($icon), 0, -4px) !important;
+	}
+	.mega-menu h2.#{dr-get-sprite-icon-name($icon)} {
+		background-position: dr-sprite-position(2px, dr-get-sprite-icon-gridY($icon));
+	}
+}
+
+
+
+.nav {
+	background: $navBackgroundColor url($navBGImg) repeat-x 0px 1px;
+	border-bottom: $navBorderBottomWidth $navBorderBottomStyle $navBorderBottomColor;
+	border-top: $navBorderTopWidth $navBorderTopStyle $navBorderTopColor;
+	clear: both;
+	overflow: hidden;
+	@if $browser == ie6 {
+		padding: 0;
+		width: 100%;
+	} @else {
+		padding: 0 0 0 10px;
+		width: auto;
+	}
+	cursor: default;
+}
+
+.nav li {
+	border-left: $navLiBorderWidth $navLiBorderStyle $navLiBorderLeftColor;
+	border-right: $navLiBorderWidth $navLiBorderStyle $navLiBorderRightColor;
+	float: left;
+}
+
+.nav li.current {
+
+}
+
+.nav li a {
+	color: #fff;
+	display: block;
+	font-weight: bold;
+	padding: 9px 15px;
+	text-decoration: none;
+}
+
+.nav > li.hover > a,
+.nav > li:hover > a,
+.nav > li > a:hover {
+	background: url($navItemHoverBGImg) $navItemHoverBackgroundRepeat $navItemHoverBackgroundPosition $navItemHoverBackgroundColor;
+}
+
+.nav ul.tier2-list>li.hover.standalone,
+.nav ul.tier2-list>li.hover.external,
+.nav ul.tier2-list>li.active ul.tier3-list li:hover a,
+.nav ul.tier2-list>li.active ul.tier3-list li a:hover
+{
+	background-color: $navItemTier2BackgroundColorActive !important;
+}
+.nav .menu {
+	left: -5000px;
+	position: absolute;
+	z-index: 10;
+}
+
+.nav li:hover .menu,
+.nav li.hover .menu {
+	left: auto;
+}
+
+.nav li ul {
+	background-color: #fff;
+	border: 5px solid #94CE48;
+	overflow: hidden;
+	padding: 0 0 15px 15px;
+	width: 795px;
+}
+
+.nav li ul.oneCol {
+	width: 265px;
+}
+
+.nav li ul.twoCol {
+	width: 530px;
+}
+
+.nav li ul.wide {
+	width: 575px;
+}
+
+.nav li ul.noIcon {
+	padding-top: 10px;
+}
+
+.nav li ul li {
+	background-color: #f1f1f1;
+	border: medium none;
+	margin: 0 15px 0 0;
+	padding: 0;
+	width: 250px;
+}
+
+.nav li ul li.line {
+	padding: 0 10px !important;
+	display: block;
+}
+
+.nav li ul li.line span {
+	background: none !important;
+	display: block;
+	border-top: 1px dashed #aaa;
+	padding: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.nav li ul.oneCol li {
+	margin: 0;
+}
+
+.nav li ul.wide li {
+	margin: 0;
+	width: 550px;
+}
+
+.nav li ul li span.largeHeader {
+	background: #fff url(../images/sprites/sprite_icons.gif) no-repeat 10px 12px;
+	display: block;
+	font-size: 21px;
+	line-height: 20px;
+	margin: 0;
+	padding: 15px 0 10px 45px;
+	cursor: default;
+}
+
+.nav li ul li span.smallHeader {
+	background-color: #fff;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 13px;
+	margin: 0;
+	padding: 10px 0 5px 0;
+	color: #333;
+	cursor: default;
+}
+
+.nav li ul li.search span {
+	background: #fff url(../images/sprites/sprite_icons.gif) no-repeat 10px 12px;
+}
+
+.nav li ul li.list span {
+	background: #fff url(../images/sprites/sprite_icons.gif) no-repeat 10px -88px;
+}
+
+.nav li ul li.tasks span {
+	background: #fff url(../images/sprites/sprite_icons.gif) no-repeat 10px -188px;
+}
+
+.nav li ul li.categories span {
+	background: #fff url(../images/sprites/sprite_icons.gif) no-repeat 10px -288px;
+}
+
+.nav li ul li.documents span {
+	background: #fff url(../images/sprites/sprite_icons.gif) no-repeat 10px -388px;
+}
+
+.nav li ul li.documents span {
+	background: #fff url(../images/sprites/sprite_icons.gif) no-repeat 10px -388px;
+}
+
+.nav li ul li ul {
+	background: none;
+	border: none;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+.nav li ul li ul li {
+	border: medium none;
+	float: none;
+	line-height: 20px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+.nav li ul li ul li a,
+.nav li:hover ul li ul li a,
+.nav li.hover ul li ul li a,
+.nav li ul li ul li a:hover {
+	@if $browser == ie6 {
+		height: 1%; /* fixes the problem where extra line shows up in between each LI */
+	}
+	border: none;
+	background: url($spriteMiscVar) no-repeat 18px -692px;
+	color: #000;
+	display: block;
+	font-weight: normal;
+	line-height: 20px;
+	padding: 0 0 2px 30px;
+	text-decoration: none;
+}
+
+.nav li ul.noIcon a {
+	padding-left: 30px !important;
+	background-position: 18px -692px !important;
+}
+
+.nav li ul.noIcon li {
+	background-color: #fff;
+}
+
+.header .nav li ul li ul li a:hover {
+	background-color: #E5E5E5;
+}
+
+/* Overrides to the default styles for modal overlay */
+
+.modalConfirm .inner {
+	border: 0 !important;
+}
+
+.modalConfirm .titleBar td {
+	color: #000 !important;
+	border-bottom: 0 !important;
+	background-image: none !important;
+	background-color: #f1f1f1;
+	border-top: 7px solid $modalConfirmBorder;
+
+}
+
+.modalConfirm .titleBar td.title div {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+/* Modal Prompt and Confirm common styles */
+
+.modalConfirm button span span span {
+	@if $browser == ie6 {
+		width: 40px;
+	} @else {
+		min-width: 40px;
+	}
+}
+
+body .modalConfirm .pageButtons {
+	clear: both;
+	padding: 0 0 0 0;
+}
+
+.modalConfirm a.moreLink {
+	font-weight: bold;
+	color: #000;
+	text-decoration: underline;
+}
+
+.modalConfirm .moreInfo {
+	background-color: #fff;
+	margin-top: 10px;
+	height: 120px;
+	border: 1px solid #999;
+	overflow: auto;
+	padding: 5px;
+	margin-bottom: 5px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* Change the icon for the various types of dialogs */
+
+.modalConfirm {
+	background-position: top left;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	color: #000;
+}
+
+.modalConfirm .inlineDialog {
+	background-position: 10px 10px;
+	background-image: url($modalConfirmIcon);
+	background-repeat: no-repeat;
+	background-color: #fff !important;
+}
+
+/* Default - Alert */
+
+.modalConfirm .questionBg {
+	font-size: 12px;
+}
+
+.modalConfirm .question {
+	padding-left: 65px;
+	padding-right: 10px;
+}
+
+.modalConfirm .question div {
+	padding-bottom: 10px;
+	line-height: normal;
+}
+
+body .modalAlert .inlineDialog {
+	background-image: url($modalAlertIcon);
+}
+
+/* Prompt */
+
+body .modalPrompt .pageButtons {
+	padding-right: 3px;
+}
+
+.modalPrompt div.input {
+	padding: 0 0 10px 65px;
+
+}
+
+.modalPrompt .question div {
+	padding-bottom: 15px;
+}
+
+.modalPrompt input,
+.modalLiveChange input {
+	@if $browser == ie6 {
+		width: 327px;
+	} @else {
+		width: 325px;
+	}
+
+}
+
+/* checkbox prompt */
+.checkbox-prompt input {
+	width: auto;
+	margin-right: 5px;
+	text-align: left;
+}
+
+.checkbox-prompt label {
+	font-weight: bold;
+}
+
+/* Live Change */
+body .modalLiveChange .inlineDialog {
+	background-image: url($modalWarningIcon);
+}
+
+.modalLiveChange .liveChangeText {
+	padding: 10px 0 10px 65px;
+}
+
+.modalLiveChange .question div {
+	border-bottom: 1px dashed #ccc;
+}
+
+.modalOverlay .modalLiveChange div.input {
+	padding: 0 0 10px 65px;
+}
+
+.modalOverlay .modalLiveChange .pageButtons {
+	padding-right: 3px;
+}
+
+.modalLiveChange .titleBar td {
+	border-top-color: $modalLiveChangeBorder;
+}
+
+/* Warning */
+body .modalWarning .inlineDialog {
+	background-image: url($modalWarningIcon);
+}
+
+.modalWarning .titleBar td {
+  border-top-color: $modalWarningBorder;
+}
+
+/* Success */
+body .modalSuccess .inlineDialog {
+	background-image: url($modalSuccessIcon);
+}
+
+.modalSuccess  .titleBar td {
+	border-top-color: $modalSuccessBorder;
+}
+
+.modalSuccess p {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+
+/* start modal overlay css */
+
+DIV.modalOverlayMask {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 5000;
+	background-color: #000;
+	@include opacity(.4);
+}
+
+DIV.modelessOverlayMask {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 4999;
+	background-color: #000;
+	@include opacity(0);
+}
+
+IFRAME.modelessOverlayMaskIframe {
+	width: 100%;
+	@include opacity(0);
+}
+
+DIV.modalOverlayMaskDiv {
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 5001;
+	background-color: #000;
+	@include opacity(0);
+}
+
+DIV.modalLoading {
+	text-align: center;
+	position: relative;
+	background-color: #f1f1f1;
+}
+
+DIV.modalLoadingTextWrapper {
+	text-align: center;
+	position: absolute;
+	width: auto;
+}
+
+DIV.modalLoadingText {
+	font-size: $fontSizeSmall;
+	background-image: url($spinnerSmallF1F1F1);
+	background-position: right;
+	background-repeat: no-repeat;
+	padding-right: 25px;
+	color: #666;
+}
+
+DIV.modalLoadingImg {
+
+}
+
+IFRAME.modalOverlayMaskIframe {
+	width: 100%;
+	height: 200px;
+	border: 0px;
+}
+
+DIV.modalOverlay {
+	display: none;
+	@if $browser == ie6 {
+		position: absolute;
+	} @else {
+		position: fixed;
+	}
+
+}
+
+DIV.modalOverlay DIV.modalWrapper {
+	position: relative;
+}
+
+DIV.modalOverlay DIV.modalWrapper DIV.divFloat {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+
+DIV.modalOverlay DIV.modalWrapper DIV.iframeFloat {
+	position: absolute;
+	z-index: 9;
+	top: 0;
+	left: 0;
+}
+
+DIV.modalOverlay IFRAME {
+	border: 0px;
+}
+
+DIV.modalOverlay DIV.inner {
+	background-color: #f1f1f1;
+	border: 1px solid #545454;
+}
+
+DIV.modalOverlay DIV.inlineDialog {
+	clear: left;
+	padding: 10px;
+	overflow: auto;
+}
+
+DIV.modalOverlay DIV.inlineDialog DIV.inlineDialog {
+	padding: 0;
+}
+
+DIV.modalOverlay TABLE.wrapperTbl {
+	width: 100%;
+}
+
+/*
+ * Dropshadow effect using PNG's
+ */
+DIV.modalOverlay TD.topLeft {
+	height: 18px;
+	@if $browser != ie6 {
+		background: url(../images/modalOverlay/topLeft.png);
+		background-repeat: no-repeat;
+		background-position: top left;
+	}
+}
+
+DIV.modalOverlay TD.topRight {
+	@if $browser != ie6 {
+		background-image: url(../images/modalOverlay/topRight.png);
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+}
+
+DIV.modalOverlay TD.leftTop {
+	width: 18px;
+	@if $browser != ie6 {
+		background-image: url(../images/modalOverlay/leftTop.png);
+		background-repeat: no-repeat;
+		background-position: top left;
+	}
+}
+
+DIV.modalOverlay TD.leftBottom {
+	@if $browser != ie6 {
+		background-image: url(../images/modalOverlay/leftBottom.png);
+		background-repeat: no-repeat;
+		background-position: bottom left;
+	}
+}
+
+DIV.modalOverlay TD.rightTop {
+	width: 18px;
+	@if $browser != ie6 {
+		background-image: url(../images/modalOverlay/rightTop.png);
+		background-position: top right;
+		background-repeat: no-repeat;
+	}
+}
+
+DIV.modalOverlay TD.rightBottom {
+	@if $browser != ie6 {
+		background-image: url(../images/modalOverlay/rightBottom.png);
+		background-position: bottom right;
+		background-repeat: no-repeat;
+	}
+}
+
+DIV.modalOverlay TD.bottomLeft {
+	height: 18px;
+	@if $browser != ie6 {
+		background-image: url(../images/modalOverlay/bottomLeft.png);
+		background-position: top left;
+		background-repeat: no-repeat;
+	}
+}
+
+DIV.modalOverlay TD.bottomRight {
+	@if $browser != ie6 {
+		background-image: url(../images/modalOverlay/bottomRight.png);
+		background-position: top right;
+		background-repeat: no-repeat;
+	}
+}
+
+DIV.modalOverlay TABLE.titleBar {
+	width: 100%;
+	table-layout: fixed;
+}
+
+DIV.modalOverlay TABLE.titleBar TD {
+	background-image: url($modalOverlyTitleBGImg);
+	background-repeat: repeat-x;
+	color: #fff;
+	font-family: arial;
+	font-weight: bold;
+	border-bottom: 1px solid $modalOverlayBottomBorderColor;
+	white-space: nowrap;
+	padding: 0;
+}
+
+DIV.modalOverlay DIV.inActive DIV.inner  TABLE.titleBar TD {
+	background-image: url(../images/modalOverlay/modal-overlay-inactive-bg.gif);
+	background-repeat: repeat-x;
+}
+
+DIV.modalOverlay .titleBar TD.title {
+	padding: 0 10px 0 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: move;
+	font-size: 12pt;
+}
+
+DIV.modalOverlay TABLE.titleBar TD.title DIV {
+	line-height: 31px;
+}
+
+DIV.modalOverlay TABLE.titleBar TD.close {
+	width: 27px;
+	padding: 0;
+	vertical-align: middle;
+}
+
+DIV.modalOverlay TABLE.titleBar TD.close A {
+	font-size: 10px;
+	height: 17px;
+	width: 17px;
+	display: block;
+	cursor: pointer;
+	@include sprite-misc("close.gif");
+}
+
+div.modalOverlay table.titleBar td.maximize,
+div.modalOverlay table.titleBar td.minimize {
+	padding: 0;
+	vertical-align: middle;
+	width: 27px;
+}
+
+DIV.modalOverlay TD.maximize A {
+	font-size: 10px;
+	width: 17px;
+	height: 17px;
+	display: block;
+	cursor: pointer;
+	background-position: 0 0;
+	background-image: url($modalMaxMinSprite);
+	background-repeat: no-repeat;
+}
+
+DIV.modalOverlay TD.maximize A:hover {
+	background-image: url($modalMaxMinSprite);
+	background-position: 0 -44px;
+	width: 17px;
+	height: 17px;
+}
+
+DIV.modalOverlay TD.minimize A {
+	font-size: 10px;
+	width: 17px;
+	height: 17px;
+	display: block;
+	cursor: pointer;
+	background-position: 0 -22px;
+	background-image: url($modalMaxMinSprite);
+	background-repeat: no-repeat;
+
+}
+
+DIV.modalOverlay TD.minimize A:hover {
+	background-image: url($modalMaxMinSprite);
+	background-position: 0 -66px;
+	width: 17px;
+	height: 17px;
+
+}
+
+DIV.modalOverlay TABLE.titleBar TD.close A:hover {
+	@include sprite-misc("close-over.gif");
+}
+
+DIV.modalOverlay DL DT {
+	width: 120px;
+}
+
+@if $browser == ie6 {
+	DIV.modalOverlay TABLE.wrapperTbl {
+		table-layout: fixed;
+	}
+
+	DIV.modalOverlay TD.rightTop {
+		width: 8px;
+		display: inline-block;
+		@include ms-alpha-image-loader("modalOverlay/modal-shadow-right-top.png", crop);
+	}
+
+	DIV.modalOverlay TD.bottomLeft {
+		height: 8px;
+		display: inline-block;
+		@include ms-alpha-image-loader("modalOverlay/modal-shadow-bottom-left.png", crop);
+	}
+
+	DIV.modalOverlay TD.bottomRight {
+		width: 8px;
+		height: 8px;
+
+		display: inline-block;
+		@include ms-alpha-image-loader("modalOverlay/modal-shadow-bottom-right.png", crop);
+	}
+}
+
+DIV.inner DIV.inlineDialog  DL {
+	width: auto;
+}
+
+.instructions {
+	max-width: 100%;
+}
+
+/* end modal overlay css */
+
+select.multiselect {
+	visibility: hidden !important;
+	height: 18px;
+}
+
+a.multiSelect.inputError {
+	border: 1px solid red;
+	background-color: #FFE8E9;
+}
+
+a.multiSelect {
+	background: #FFF url(//ui1.img.digitalrivercontent.net/drui/1.7.0.0.11.1/images/Autocomplete/handle.gif) right center no-repeat;
+	border: solid 1px #AAA;
+	padding-right: 19px;
+	cursor: default;
+	text-decoration: none;
+	color: black;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+}
+
+a.multiSelect:link, a.multiSelect:visited, a.multiSelect:hover, a.multiSelect:active {
+	color: black;
+	text-decoration: none;
+}
+
+a.multiSelect span {
+	font-size: 11px;
+	font-family: verdana, tahoma, sans-serif;
+	line-height: 10px;
+	padding: 3px 0px;
+	margin: 1px 0px 1px 5px;
+	overflow: hidden;
+	display: -moz-inline-stack;
+	display: inline-block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+a.multiSelect.disabled {
+	color: #666666;
+	border: 1px solid #ccc;
+}
+
+a.multiSelect.hover {
+	background-image: url(//ui1.img.digitalrivercontent.net/drui/1.7.0.0.11.1/images/Autocomplete/handle.gif);
+	cursor: pointer;
+}
+
+a.multiSelect.active {
+	background-image: url(//ui1.img.digitalrivercontent.net/drui/1.7.0.0.11.1/images/Autocomplete/handle.gif);
+}
+
+.multiSelectOptions {
+	display: none;
+	margin-top: -1px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: solid 1px #B2B2B2;
+	background: #FFF;
+	position: absolute;
+	z-index: 99999;
+	@include ms-shadow(#a0a0a0, $direction: 120, $strength: 7);
+	-moz-box-shadow: 0px 5px 15px #a0a0a0;
+	-webkit-box-shadow: 0px 5px 15px #a0a0a0;
+	box-shadow: 0px 5px 15px #a0a0a0;
+}
+
+.multiSelectOptions LABEL {
+	padding: 0px 2px;
+	padding: 2px 0px 2px 0px;
+	display: block;
+	white-space: nowrap;
+	float: none !important;
+	font-weight: normal !important;
+	margin: 0 !important;
+	cursor: default;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.multiSelectOptions LABEL.multiSelectAll {
+	border-bottom: 1px dotted #CCC;
+	font-style: italic;
+}
+
+.multiSelectOptions LABEL.optGroup {
+	font-weight: bold !important;
+	padding-left: 4px;
+}
+
+.multiSelectOptions LABEL.optGroup input {
+	margin-left: 0px;
+}
+
+.multiSelectOptions .optGroupContainer LABEL {
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+.multiSelectOptions.optGroupHasCheckboxes .optGroupContainer LABEL {
+	padding-left: 18px;
+}
+
+.multiSelectOptions input {
+	vertical-align: middle;
+}
+
+.multiSelectOptions LABEL.checked {
+	background-color: #FDFBD3;
+}
+
+.multiSelectOptions LABEL.selectAll {
+	border-bottom: dotted 1px #CCC;
+	font-style: italic;
+}
+
+.multiSelectOptions LABEL.hover {
+	font-weight: bold !important;
+}
+
+.multiSelectOptions LABEL:hover {
+	background-color: #FDFBD3;
+}
+
+.multiSelectOptions LABEL.checked:hover {
+	background-color: #F6F4CC;
+}
+
+.multiselectSearchTerms {
+	z-index: 999999;
+	border: 1px solid #999;
+	border-top: 0px;
+	padding: 3px;
+	font-style: italic;
+	background-color: white;
+	color: #888;
+	@include ms-shadow(#a0a0a0, $direction: 120, $strength: 7);
+	-moz-box-shadow: 0px 5px 15px #a0a0a0;
+	-webkit-box-shadow: 0px 5px 15px #a0a0a0;
+	box-shadow: 0px 5px 15px #a0a0a0;
+
+}
+
+.searchTermsBottom {
+	border: 1px solid #999;
+	border-top: 0px;
+}
+
+.searchTermsTop {
+	border: 1px solid #999;
+	border-bottom: 0px;
+}
+
+.processingDialog {
+	position: fixed;
+	z-index: 1000;
+	cursor: wait;
+	-moz-user-select: none;
+}
+
+.processingDialog span {
+	background-color: #fff;
+	background-image: url($processingSpinner);
+	background-repeat: no-repeat;
+	border: 5px solid #94CE48;
+	color: #000;
+	display: block;
+	height: 100px;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 100px;
+	padding-left: 80px;
+	width: 140px;
+	@if $browser == ie6 {
+		@include ms-shadow(#999999, $direction: 135);
+	}
+}
+
+.processingDialog .bg0 {
+	background-position: 35px 30px;
+}
+
+.processingDialog .bg1 {
+	background-position: 35px -70px;
+}
+
+.processingDialog .bg2 {
+	background-position: 35px -170px;
+}
+
+.processingDialog .bg3 {
+	background-position: 35px -270px;
+}
+
+.processingDialog .bg4 {
+	background-position: 35px -370px;
+}
+
+.processingDialog .bg5 {
+	background-position: 35px -470px;
+}
+
+.processingDialog .bg6 {
+	background-position: 35px -570px;
+}
+
+.processingDialog .bg7 {
+	background-position: 35px -670px;
+}
+.currentValTbl {
+	width: 542px;
+	margin-bottom: 10px;
+}
+
+.currentValTbl .leftLabel {
+	white-space: nowrap;
+	padding-right: 10px;
+}
+
+.currentValTbl .rightValue {
+	width: 100%;
+}
+
+.currentValTbl .rightValue div {
+	min-height: 16px;
+	max-height: 50px;
+	overflow: hidden;
+}
+
+input.searchPicker {
+	background: url($searchPickerInputBackgroundIcon) no-repeat scroll 100% 1px $searchPickerInputBackgroundColor !important;
+	padding-top: 3px !important;
+	padding-right: 20px !important;
+	cursor: pointer;
+}
+
+div.searchPicker:not(.embedded) div {
+	min-height: 14px;
+	max-height: 80px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border: $searchPickerNotEmbeddedBorderStyle $searchPickerNotEmbeddedBorderWidth $searchPickerNotEmbeddedBorderColor;
+	padding: 3px;
+	margin-bottom: 7px;
+}
+
+.spPop .searchPickerInput {
+	background: url($searchPickerspPopInputBackgroundIcon) no-repeat scroll 3px 1px $searchPickerspPopInputBackgroundColor;
+	padding-top: 3px !important;
+	padding-left: 20px !important;
+	margin-bottom: 5px;
+}
+
+.spPop .searchPickerInput {
+	width: 542px;
+}
+
+.spPop .resultsHeader {
+	font-weight: bold;
+	border: $searchPickerResultsHeaderBorderWidth $searchPickerResultsHeaderBorderStyle $searchPickerResultsHeaderBorderColor;
+	border-bottom: 0px;
+	display: inline-block;
+	overflow: hidden;
+	@include linear-gradient(to bottom, $searchPickerResultsHeaderGradientTop, $searchPickerResultsHeaderGradientBottom);
+}
+
+.spPop .selectedItems .resultsHeader.sortable:hover {
+	cursor: pointer;
+	@include linear-gradient(to bottom, $searchPickerSelectedItemsResultsHeaderSortableHoverGradientTop, $searchPickerSelectedItemsResultsHeaderSortableHoverGradientBottom);
+}
+
+.spPop .resultsCount {
+	padding-left: 5px;
+	display: inline;
+}
+
+.spPop .resultsHeaderBar {
+	float: left;
+	cursor: default;
+}
+
+.spPop .selectedItems .resultsHeader.ascending .resultsHeaderBar {
+	background: url($searchPickerSelectedItemsResultsHeaderAscendingBackgroundImage) no-repeat scroll right 7px transparent;
+	padding-right: 12px;
+}
+
+.spPop .selectedItems .resultsHeader.descending .resultsHeaderBar {
+	background: url($searchPickerSelectedItemsResultsHeaderDescendingBackgroundImage) no-repeat scroll right 7px transparent;
+	padding-right: 12px;
+}
+
+.spPop .resultsHeaderRight {
+	float: right;
+}
+
+.spPop .resultsHeaderRight.clickable {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.spPop .pagingBar {
+	background-color: $searchPickerPaginBarBackGroundColor;
+	border: $searchPickerPagingBarBorderWidth $searchPickerPagingBarBorderStyle $searchPickerPagingBarBorderColor;
+	border-top: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.spPop .pagingBar .paging-toolbar {
+	height: 23px;
+	margin-right: 5px;
+}
+
+/* widths for single picker mode */
+.spPop .listedItem,
+.spPop .addedItem {
+	width: 100%;
+}
+
+.spPop .resultsBox {
+	width: 100%;
+}
+
+.spPop .resultsHeader,
+.spPop .selectedItems,
+.spPop .resultsWrapper,
+.spPop .availableItems {
+	width: 560px;
+}
+
+/* override widths for multiple mode */
+.spPop .multipleMode .listedItem,
+.spPop .multipleMode .addedItem {
+	width: 100%;
+}
+
+.spPop .multipleMode .resultsBox {
+	width: 100%;
+}
+
+.spPop .multipleMode .resultsHeader,
+.spPop .multipleMode .selectedItems,
+.spPop .multipleMode .resultsWrapper,
+.spPop .multipleMode .availableItems {
+	width: 278px;
+}
+
+.spContentWrapper {
+	overflow: hidden;
+}
+
+.spPop .resultsHeader div {
+	padding: 5px;
+}
+
+.spPop .selectedItems {
+	float: right;
+	margin-top: 10px;
+	margin-right: 2px;
+}
+
+.spPop .availableItems {
+	float: left;
+	margin-top: 10px;
+}
+
+.spPop .resultsWrapper {
+	border: $searchPickerResultsWrapperBorderWidth $searchPickerResultsWrapperBorderStyle $searchPickerResultsWrapperBorderColor;
+	height: 240px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	overflow: scroll;
+	overflow-x: hidden;
+	background: $searchPickerResultWrapperBackGroundColor;
+}
+
+.spPop .loading_rows {
+	width: 100%;
+	text-align: center;
+	padding-top: 100px;
+	border-top: $searchPickerLoadingRowsBorderWidth $searchPickerLoadingRowsBorderStyle $searchPickerLoadingRowsBorderColor;
+	background-color: $searchPickerLoadingRowsBackGroundColor;
+	height: 139px;
+}
+
+.spPop .loading_rows div {
+	margin: 0 auto;
+	padding-left: 18px;
+	padding-top: 2px;
+	background-image: url($spinner16D5D5D5);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 75px;
+}
+
+.spPop .dataTable td.project_name {
+	min-width: 120px;
+	width: auto;
+	max-width: 200px;
+}
+
+.spPop .dataTable tr:hover td.project_name {
+	text-decoration: underline !important;
+}
+
+.spPop .contentBox tr td:hover {
+	cursor: pointer;
+}
+
+.spPop .contentBox tr.unselectable td {
+	cursor: default !important;
+}
+
+.spPop .listedItem strong {
+	background-color: $searchPickerListedItemStrongBackGroundColor;
+	font-weight: normal;
+}
+
+.spPop .selectable {
+	cursor: pointer;
+}
+
+.spPop em.noresults {
+	display: block;
+	padding: 5px;
+	font-style: normal;
+	color: $searchPickerNoResultsTextColor;
+}
+
+.spPop em.error {
+	display: block;
+	padding: 5px;
+	font-style: normal;
+	color: red;
+}
+
+.spPop div.addedItem {
+	border-bottom: $searchPickerAddedItemBorderWidth $searchPickerAddedItemBorderStyle $searchPickerAddedItemBorderColor;
+	display: inline-block;
+	/* need to have a filter in place or text jumps around on hover*/
+	@if $isIE {
+	  filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e6f0', endColorstr='#e2e6f0',GradientType=0 )"); /* IE6-9 */
+	}
+	cursor: pointer;
+}
+
+.spPop div.listedItem {
+	border-bottom: $searchPickerListedItemBorderWidth $searchPickerListedItemBorderStyle $searchPickerListedItemBorderColor;
+	display: inline-block;
+	background: $searchPickerListedItemBackGroundColor;
+	/* need to have a filter in place or text jumps around on hover*/
+	@if $isIE {
+		filter: unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 )"); /* IE6-9 */
+	}
+	cursor: pointer;
+}
+
+.spPop div.addedItem span,
+.spPop div.listedItem span {
+	display: block;
+}
+
+.spPop div.addedItem span.actionIcon,
+.spPop div.listedItem span.actionIcon {
+	margin-right: 3px;
+}
+
+.spPop div.addedItem span.actionIcon span,
+.spPop div.listedItem span.actionIcon span {
+	padding: 3px;
+	margin: 3px;
+        word-wrap:break-word;
+}
+
+.spPop div.addedItem div.warning,
+.spPop div.listedItem div.warning {
+	color: $searchPickerItemWarningTextColor;
+	font-weight: normal;
+	line-height: 1;
+	margin: 3px 0 0 3px;
+}
+
+.spPop div.selected div.warning {
+	color: $searchPickerSelectedItemWarningTextColor !important;
+}
+
+.spPop .multipleMode div.listedItem span.actionIcon {
+	background: url($searchPickerMultipleModeListedItemActionIcon) 100% 4px no-repeat;
+	padding-right: 10px;
+}
+
+.spPop .multipleMode div.listedItem:hover span.actionIcon {
+	background: url($searchPickerMultipleModeListedItemActionIconHover) 100% 4px no-repeat;
+}
+
+.spPop div.listedItem:hover,
+.spPop div.addedItem:hover {
+	border-bottom: $searchPickerItemHoverBorderBottomWidth $searchPickerItemHoverBorderBottomStyle $searchPickerItemHoverBorderBottomColor;
+	@include linear-gradient(to bottom, $searchPickerItemHoverGradientTop, $searchPickerItemHoverGradientBottom);
+}
+
+.spPop div.addedItem span.actionIcon {
+	background: url($searchPickerAddedItemActionIcon) 100% 4px no-repeat;
+	padding-right: 10px;
+}
+
+.spPop div.addedItem:hover span.actionIcon {
+	background: url($searchPickerAddedItemActionIconHover) 100% 4px no-repeat;
+}
+
+.spPop div.selected {
+	color: $searchPickerSelectedtextColor !important;
+	background: none !important;
+  @if $isIE {
+    filter: none !important;
+  }
+	border-bottom: $searchPickerSelectedBorderWidth $searchPickerSelectedBorderStyle $searchPickerSelectedBorderColor !important;
+}
+
+.spPop div.selected strong {
+	background-color: $searchPickerSelectedStrongBackGroundColor !important;
+}
+
+.spPop div.selected span.actionIcon {
+	background: none !important;
+	cursor: default !important;
+}
+
+.spPop div.selected:hover {
+	background: $searchPickerSelectedBackGroundColorHover;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) !important;
+	cursor: default !important;
+}
+
+.spPop .itemResults {
+	width: 100%;
+}
+
+.spPop .searchPickerOverlay {
+	display: inline-block;
+}
+
+table.dataTable tr input.searchPicker.gridSpan1 {
+	width: 13px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan2 {
+	width: 62px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan3 {
+	width: 111px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan4 {
+	width: 160px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan5 {
+	width: 209px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan6 {
+	width: 258px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan7 {
+	width: 307px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan8 {
+	width: 356px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan9 {
+	width: 405px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan10 {
+	width: 454px;
+}
+
+table.dataTable tr input.searchPicker.gridSpan11, table.dataTable tr input.searchPicker.gridSpan12,
+table.dataTable tr input.searchPicker.gridSpan13, table.dataTable tr input.searchPicker.gridSpan14 {
+	width: 503px;
+}
+
+dl dd input.searchPicker.gridSpan1 {
+	width: 13px;
+}
+
+dl dd input.searchPicker.gridSpan2 {
+	width: 62px;
+}
+
+dl dd input.searchPicker.gridSpan3 {
+	width: 111px;
+}
+
+dl dd input.searchPicker.gridSpan4 {
+	width: 160px;
+}
+
+dl dd input.searchPicker.gridSpan5 {
+	width: 209px;
+}
+
+dl dd input.searchPicker.gridSpan6 {
+	width: 258px;
+}
+
+dl dd input.searchPicker.gridSpan7 {
+	width: 307px;
+}
+
+dl dd input.searchPicker.gridSpan8 {
+	width: 356px;
+}
+
+dl dd input.searchPicker.gridSpan9 {
+	width: 405px;
+}
+
+dl dd input.searchPicker.gridSpan10 {
+	width: 454px;
+}
+
+dl dd input.searchPicker.gridSpan11, dl dd input.searchPicker.gridSpan12,
+dl dd input.searchPicker.gridSpan13, dl dd input.searchPicker.gridSpan14 {
+	width: 503px;
+}
+
+dl.twoCol dd input.searchPicker.gridSpan1 {
+	width: 13px;
+}
+
+dl.twoCol dd input.searchPicker.gridSpan2 {
+	width: 62px;
+}
+
+dl.twoCol dd input.searchPicker.gridSpan3 {
+	width: 111px;
+}
+
+dl.twoCol dd input.searchPicker.gridSpan4, dl.twoCol dd input.searchPicker.gridSpan5,
+dl.twoCol dd input.searchPicker.gridSpan6, dl.twoCol dd input.searchPicker.gridSpan7,
+dl.twoCol dd input.searchPicker.gridSpan8, dl.twoCol dd input.searchPicker.gridSpan9,
+dl.twoCol dd input.searchPicker.gridSpan10, dl.twoCol dd input.searchPicker.gridSpan11,
+dl.twoCol dd input.searchPicker.gridSpan12, dl.twoCol dd input.searchPicker.gridSpan13,
+dl.twoCol dd input.searchPicker.gridSpan14 {
+	width: 160px;
+}
+
+input.searchPicker.gridSpan1 {
+	width: 13px;
+}
+
+input.searchPicker.gridSpan2 {
+	width: 62px;
+}
+
+input.searchPicker.gridSpan3 {
+	width: 111px;
+}
+
+input.searchPicker.gridSpan4 {
+	width: 160px;
+}
+
+input.searchPicker.gridSpan5 {
+	width: 209px;
+}
+
+input.searchPicker.gridSpan6 {
+	width: 258px;
+}
+
+input.searchPicker.gridSpan7 {
+	width: 307px;
+}
+
+input.searchPicker.gridSpan8 {
+	width: 356px;
+}
+
+input.searchPicker.gridSpan9 {
+	width: 405px;
+}
+
+input.searchPicker.gridSpan10 {
+	width: 454px;
+}
+
+input.searchPicker.gridSpan11, input.searchPicker.gridSpan12, input.searchPicker.gridSpan13, input.searchPicker.gridSpan14 {
+	width: 503px;
+}
+
+.tabs {
+	margin: 10px 0;
+	padding: 0;
+	width: auto;
+}
+
+fieldset *:last-child {
+	margin-bottom: 0;
+}
+
+.tabs dt.tab, .tabs dt.navTab {
+	background: url($tabsBackgroundImage) repeat-x 0px -500px;
+	background-color: $tabBackgroundColor;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	cursor: pointer;
+	float: left;
+	font-weight: bold;
+	line-height: 35px;
+	margin-top: 4px;
+	margin-bottom: -1px;
+	padding: 0px 15px;
+	width: auto !important;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-left: 0 !important;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.tabs dt.tab:hover {
+	background-color: $tabHoverBackgroundColor;
+}
+
+dl.tabs dt.tabLink {
+	padding: 0;
+}
+
+.tabs dt.tabLink label {
+	color: #000;
+}
+
+.tabs dt.tabLink a {
+	color: #000;
+	text-decoration: none;
+	padding: 0px 15px;
+	display: block;
+}
+
+.tabs dt.first {
+	border-left: 1px solid #ccc;
+}
+
+.tabs fieldset .tabs dt.active,
+.tabs dt.active,
+.tabs dt.active:hover {
+	background: none;
+	background-color: #FFF;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #ccc;
+	border-top: 5px solid $tabsBorderTopColor;
+	cursor: default;
+	margin-top: 0px;
+}
+
+.tabs dd.inactive {
+	display: none;
+}
+
+.tabs .tabs dt.active,
+fieldset fieldset .tabs dt.active,
+fieldset fieldset .tabs dt.active:hover {
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.tabs dd.tabContainer,
+.tabs fieldset .tabs dd.tabContainer {
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	clear: left;
+	float: none;
+	margin: 0;
+	padding: 10px 20px 20px 20px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 8px;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	border-radius: 0 8px 8px 8px;
+	/* this causes a line under the active tabs */
+	@if $browser == ie6 {
+		zoom: 1;
+	}
+
+}
+
+.tabs .tabs dd.tabContainer,
+fieldset fieldset .tabs dd.tabContainer {
+	background-color: #f1f1f1;
+	/* this causes a line under the active tabs */
+	@if $browser == ie6 {
+		zoom: 1;
+	}
+}
+
+.tabs div.tabContent {
+	/* Tabs currently have hasLayout = -1, so there is a phantom margin
+	 * until this can be fixed, this negative margin pulls up the tab content 10px
+	 * */
+	@if $browser == ie7 {
+		margin-top: -10px;
+	}
+	padding: 0;
+}
+
+dt.tab .errorIcon {
+	@include sprite-icon("error", 5px, 0);
+	padding-left: 25px;
+	padding-bottom: 1px;
+}
+
+.tabs dt.navTab {
+	padding: 0px 7px;
+	width: 10px !important;
+}
+
+.navTab:active {
+	background: url($tabsBackgroundImage) 0px -535px repeat-x;
+}
+
+.navTab.disabled {
+	color: #999999;
+}
+
+.navTab.disabled:active {
+	background: url($tabsBackgroundImage) 0px -500px repeat-x;
+}
+
+.navTab.disabled:hover {
+	cursor: default;
+}
+
+.tabs dt.tabBack {
+	border-left: 1px solid #ccc;
+}
+
+
+.overflowFlyout {
+	padding: 0px;
+	min-width: 100px;
+	border-width: 2px;
+	border-radius: 0px;
+	border-radius: none;
+	border-color: #111;
+	background-color: #f4f4f4;
+}
+
+.overflowTabItem {
+	font-weight: bold;
+}
+
+.overflowTabItem {
+	padding: 0px 3px 0px 3px;
+	height: 25px;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #fff;
+	line-height: 25px;
+}
+
+.overflowTabItem:hover {
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.doubleBorder {
+	border-top: 2px solid #ccc;
+}
+
+.createNewTab {
+	font-size: 13px;
+}
+
+.removeTab {
+	width: 11px;
+	height: 11px;
+	padding: 0px;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	color: #444;
+	line-height: 9.5px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #dd2222;
+}
+
+.removeTab:hover {
+	cursor: pointer;
+}
+
+@if $browser != ie6 {
+	div.tabFingers {
+		overflow: hidden;
+	}
+	div.fingerRightWrapper {
+		margin-left: 149px;
+	}
+}
+
+dl.fingertabs {
+	float: left;
+	clear: none;
+	overflow: visible;
+}
+
+dl.fingerLeft {
+	width: 150px;
+	margin-left: -100%;
+	border-top: 1px solid #ccc;
+}
+
+/* need to add "body dl.fingertabs"  on DT rules, otherwise fingertabs inside tabs get the wrong width applied. */
+body dl.fingertabs dt.fingerLeft {
+	width: 134px;
+	float: none;
+	cursor: pointer;
+	overflow: visible;
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px 5px 10px 9px;
+	line-height: normal;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0 1px 1px 1px;
+	background-color: $fingerGradientBottomColor;
+	@include linear-gradient(to bottom, $fingerGradientTopColor, $fingerGradientBottomColor);
+}
+
+/* need to add "body dl.fingertabs"  on DT rules, otherwise fingertabs inside tabs get the wrong width applied. */
+body dl.fingerLeft dt.active {
+	width: 135px;
+	background-color: #fff;
+	background-image: none;
+	border-left-color: $fingerLeftBorderColor;
+	border-width: 0 0 1px 4px;
+	padding-left: 6px;
+	cursor: default;
+}
+
+dt.fingerLeft a {
+	text-decoration: none;
+}
+
+dl.fingerRight {
+	width: 100%;
+}
+
+dd.fingerRight {
+	overflow: auto;
+	float: none;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 1px;
+	padding: 5px 20px 15px;
+	-moz-border-radius: 0 8px 8px 8px;
+	-webkit-border-radius: 0 8px 8px 8px;
+	border-radius: 0 8px 8px 8px;
+}
+
+@if $isIE {
+	body dl.fingertabs dt.fingerLeft {
+		@include ms-gradient(#fefefe, #dddddd);
+	}
+	body dl.fingertabs dt.fingerLeftHover, dt.fingerLeft:hover {
+		@include ms-gradient(#dddddd, #bcbcbc);
+	}
+	body dl.fingertabs dt.active, body dl.fingerLeft dt.active:hover {
+		@include ms-gradient-disabled();
+	}
+	@if $browser == ie6 {
+		table.tabFingers {
+			table-layout: fixed;
+			border-spacing: 0;
+			width: 100%;
+		}
+		td.fingerLeft, td.fingerRight {
+			vertical-align: top;
+		}
+		td.fingerLeft {
+			width: 150px;
+		}
+		td.fingerRight {
+			border: 1px solid #ccc;
+		}
+		dl.fingertabs {
+			float: none;
+		}
+		dl.fingerLeft {
+			margin-left: 0;
+			border-top: 1px solid #ccc;
+		}
+		/* need to add "body dl.fingertabs"  on DT rules, otherwise fingertabs inside tabs get the wrong width applied. */
+		body dl.fingertabs dt.fingerLeft {
+			width: 135px;
+			border-right-width: 0;
+		}
+		dl.fingerRight {
+			overflow: auto;
+		}
+		dd.fingerRight {
+			border-width: 0;
+		}
+	}
+} @else {
+	body dl.fingertabs dt.fingerLeft:hover {
+		@include linear-gradient(to bottom, $fingerHoverGradientTopColor, $fingerHoverGradientBottomColor);
+	}
+	body dl.fingerLeft dt.active:hover {
+		background-color: #fff;
+		background-image: none;
+	}
+}
+
+/* Normalize the top margin of the first item in the right side of the finger tabs*/
+dd.fingerRight > *:first-child {
+	margin-top: 10px;
+}
+
+dd.fingerRight > *:last-child {
+	margin-bottom: 10px;
+}
+
+.taskbar {
+	background-color: #F1F1F1;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-left: 35px;
+	border: 1px solid #CCCCCC;
+	clear: both;
+	@if $browser == ie6 {
+		overflow: visible;
+		height: 74px;
+	} @else {
+		overflow: hidden;
+		min-height: 74px;
+		@if $isIE == false {
+			-moz-border-radius: 8px;
+			-webkit-border-radius: 8px;
+		}
+	}
+	border-radius: 8px;
+}
+
+.taskbar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	visibility: hidden;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #dfdfdf;
+}
+
+.taskbar ul li {
+	float: left;
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+	color: #636363;
+	border-top: 1px solid #f1f1f1;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #fff;
+	@if $isIE {
+		border-bottom: 1px solid #f1f1f1;
+	}
+	background-color: #f1f1f1;
+	font-weight: bold;
+}
+
+.taskbar div.related {
+	background: none;
+	@if $browser == ie6 {
+		height: 50px;
+	} @else {
+		min-height: 50px;
+	}
+	clear: none;
+	float: left;
+	padding: 0 0 4px 0;
+	margin: 5px 0 0 0;
+	text-align: left;
+	visibility: hidden;
+}
+
+.taskbar div.related  p.text {
+	float: none;
+	margin: 0 0 0 0;
+	padding: 0 0 0 15px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+.taskbar div.related ul {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.taskbar div.related  li {
+	float: none;
+	list-style: square outside;
+	border: 0;
+	margin: 4px 3px 0 31px;
+}
+
+.taskbar div.related li a {
+	@if $browser == ie6 {
+		display: inline-block;
+	} @else {
+		display: block;
+	}
+	text-align: left;
+	color: #000;
+	line-height: 17px;
+}
+
+.taskbar div.related  a:hover {
+	color: #666;
+	text-decoration: none;
+}
+
+.taskbar div.related  a:hover {
+	text-decoration: none;
+}
+
+.taskbar button {
+	font-family: arial;
+	font-size: 12px;
+	cursor: pointer;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border-width: 0;
+	text-align: center;
+	padding: 0;
+	overflow: visible;
+	@if $isIE {
+		width: 114px;
+		@include ms-gradient-disabled();
+	} @else {
+		max-width: 114px;
+	}
+}
+
+.taskbar button span {
+	display: block;
+	text-align: center;
+}
+
+.taskbar button  span span {
+	margin-left: 2px;
+	float: left;
+	@if $isIE {
+		padding: 49px 0 0 0;
+	} @else {
+		padding: 44px 0 0 0;
+	}
+}
+
+.taskbar button span.icon {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border-width: 0;
+	margin: 0;
+	padding: 0 3px 0 3px;
+	font-size: 12px;
+	@if $browser == ie6 {
+		background-image: url(../images/sprites/icons/icons-color-32-f1f1f1.gif);
+		height: 57px;
+	} @else {
+		background-image: url($colorIconSprite32);
+		min-height: 57px;
+	}
+}
+
+.taskbar button.hover,
+.taskbar button:hover {
+	@include linear-gradient(to bottom, $taskbarHoverBGColorTop, $taskbarHoverBGColorBottom);
+}
+
+.taskbar button.selected,
+.taskbar button.selected:hover {
+	cursor: default;
+	@include linear-gradient(to bottom, $taskbarSelectedBGColorTop, $taskbarSelectedBGColorBottom);
+}
+
+@if $browser != ie6 {
+	.taskbar button[disabled], .taskbar button.hover[disabled], .taskbar button[disabled]:hover {
+		cursor: default;
+		@include opacity(.6);
+		@if $isIE == false {
+			background: none;
+		}
+	}
+	.taskbar button[disabled] span.icon, .taskbar button.hover[disabled] span.icon, .taskbar button[disabled]:hover span.icon {
+		background-image: url($greyIconSprite32);
+	}
+}
+
+/* icon styles */
+@each $icon in $spriteIconMap {
+	@if $isIE {
+		.taskbar .#{dr-get-sprite-icon-name($icon)} .icon {
+			background-position: dr-sprite-position(50%, dr-get-sprite-icon-gridY($icon), 0, -9px);
+		}
+	} @else {
+		.taskbar .#{dr-get-sprite-icon-name($icon)} .icon {
+			background-position: dr-sprite-position(50%, dr-get-sprite-icon-gridY($icon), 0, -6px);
+		}
+	}
+}
+
+/********************************************************/
+/* Character counter and expand/collapse widget         */
+/********************************************************/
+.textareaInfo {
+	clear: both;
+	padding: 0px;
+	border: 1px solid #999;
+	border-top: 0;
+	@include sprite-background("list_column_bkg.gif");
+	margin: 0 0 5px 0;
+	@if $browser == ie6 {
+		height: 20px;
+	} @else {
+		min-height: 20px;
+	}
+
+	@if $isIE == false {
+		margin-right: 2px;
+	}
+	font-size: 11px;
+}
+
+.dataTable tr:hover .textareaInfo td,
+.dataTable .textareaInfo td {
+	background-color: transparent !important;
+	border: 0 !important;
+}
+
+.textareaInfo TD.remaining {
+	padding: 0px 10px 0px 5px;
+	line-height: 20px;
+	vertical-align: top;
+}
+
+.textareaInfo TD.limit {
+	color: #c00;
+	font-weight: bold;
+}
+
+.textareaInfo TD.expandCollapseButton {
+	text-align: right;
+	vertical-align: top;
+	padding: 2px 5px 0 0;
+}
+
+.textareaInfo TD.expandCollapseButton A {
+	display: inline-block;
+	height: 16px;
+	line-height: 15px;
+	padding: 0 0 0 20px;
+	background: url($spriteMiscVar) no-repeat 0px -800px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.textareaInfo TD.expandCollapseButton A:hover {
+	text-decoration: none;
+}
+
+.textareaInfo TD.expandCollapseButton A.collapse {
+	background: url($spriteMiscVar) no-repeat 0px -900px;
+}
+.toggleswitch {
+	overflow:hidden;
+	display:inline-block;
+}
+.toggleswitchDisabled {
+	@include opacity(.4)  
+}
+.toggleswitch div {
+	user-select:none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+}
+.toggleswitch .back{
+	position:relative;
+	overflow:hidden;
+	height:$toggleswitchBackHeight;
+	border-radius: 5px;  
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+}
+.toggleswitch .backLeft{
+	width:4px;
+	height:26px;
+	background:url($toggleswitchSprite) no-repeat left -900px;
+	float:left;
+}
+.toggleswitch .backRight{
+	width:4px;
+	height:26px;
+	background:url($toggleswitchSprite) no-repeat left -1000px;
+	float:left;
+}
+.toggleswitch .backMiddle{
+	height:26px;
+	background:url($toggleswitchSprite) no-repeat left -1100px;
+	float:left;
+}
+.toggleswitch .toggle{
+	position:absolute;
+	left:0;
+	top:0;
+	display:inline-block;
+}
+.toggleswitch .front{
+	width:39px;
+	height:26px;
+	cursor:pointer;
+	display:inline-block;
+	float:left;
+	background:url($toggleswitchSprite) no-repeat left -1200px;
+}
+.toggleswitchDisabled .front{
+	cursor:auto;
+}
+.toggleswitch div.leftLabel{
+	float:left;
+	padding:7px 6px 0 9px; 
+	white-space:nowrap;
+}
+.toggleswitch div.rightLabel{
+	float:left;
+	padding:7px 9px 0 6px; 
+	text-align:left; 
+	white-space:nowrap;
+}
+.toggleswitch div.leftLabel label{
+	color:$toggleswitchLeftFontColor; 
+	margin-left:0px;
+	height:19px;
+	font-size:$toggleswitchFontSize;
+	font-weight:bold;
+	letter-spacing:$toggleswitchLetterSpacing;
+	text-align:center;
+	line-height:1;
+}
+.toggleswitch div.rightLabel label{
+	color:$toggleswitchRightFontColor; 
+	height:19px;
+	font-size:$toggleswitchFontSize;
+	font-weight:bold;
+	letter-spacing:$toggleswitchLetterSpacing;
+	text-align:center;
+	line-height:1;
+}
+div.colorBoxLegend {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin-right: 1px
+
+}
+
+div#primarySiteLegend {
+	background-color: #46659E;
+}
+
+div#otherSiteLegend {
+	background-color: #FFE28A;
+	float: left;
+}
+
+span.legendSpanLeft {
+	padding-top: 3px;
+	float: left;
+}
+
+span.legendSpanRight {
+	margin-top: 1px;
+	margin-left: 3px;
+}
+
+table#marketPulseTable td, table#marketPulseTable th {
+	border-left: solid 1px #dadada;
+	border-bottom: solid 1px #dadada;
+
+}
+
+table#marketPulseTable td {
+	padding: 2px 25px 2px 4px;
+	text-align: right;
+
+}
+
+table#marketPulseTable td.noTableBorder {
+	background-color: #efefef;
+	border: 0;
+	text-align: left;
+	padding-left: 5px;
+}
+
+table#marketPulseTable th {
+	padding: 4px;
+	border-right: solid 1px #ccc;
+	/*background-color: #efefef;*/
+	background: #efefef url(../images/charting/MarketPulseHeader.gif) repeat-x;
+	text-align: center;
+}
+
+table#marketPulseTable {
+	border-spacing: 0;
+	border: solid 1px #dcdcdc;
+	background-color: #FDFEF8;
+	width: 100%;
+
+}
+
+div#reportComparisonData {
+	padding: 0;
+	height: 100%;
+	width: auto;
+	margin-top: 10px;
+	background-color: #b2b1b1;
+}
+
+DIV.controlBox, DIV#sitePulse DIV.contentBox DIV.pod {
+	background-color: #fdfef8;
+	border: solid 1px #e3e3e1;
+	padding: 10px;
+}
+
+DIV#sitePulse SPAN.contentBox DIV.inner {
+	background-color: #ffffff;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+}
+
+DIV#sitePulse H2 {
+	color: #244ea4;
+	margin: 0px;
+	font-size: 22px;
+}
+
+DIV.reportingHighlightPod {
+	width: 145px;
+	border: solid 1px #e3e2e0;
+	background-color: #fefdf8;
+	padding: 10px;
+	float: left;
+}
+
+DIV.reportingHighlightPod + DIV.reportingHighlightPod {
+	margin-left: 10px;
+}
+
+DIV.reportingHighlightPod DL DT, DIV.reportingHighlightPod DL DT LABEL, DIV.reportingHighlightPod DL DD {
+	color: #676767;
+}
+
+DIV.reportingHighlightPod DL {
+	padding: 10px 0 0 0;
+	float: none !important;
+	position: static;
+	display: block;
+	height: auto;
+	width: auto;
+}
+
+DIV.reportingHighlightPod DL DT {
+	float: none;
+	text-align: left;
+	padding: 0;
+}
+
+DIV.reportingHighlightPod DL DT LABEL {
+	float: none;
+}
+
+DIV.reportingHighlightPod DL DD {
+	float: none;
+	padding: 0;
+}
+
+.total {
+	margin: 0;
+	padding: 0;
+	color: #073186;
+	text-align: right;
+	font-size: 14px;
+	background-position: 0px 3px;
+	background-repeat: no-repeat;
+	font-weight: bold;
+}
+
+/* these styles were not fully built out, so they have been commented out.
+
+DIV.reportingHighlightPod DIV P.up_positive {
+	color: #84ae06;
+	padding-left: 15px;
+	background-image: url(../images/charting/up_arrow.gif);
+}
+
+DIV.reportingHighlightPod DIV P.down_positive {
+	color: #84ae06;
+	padding-left: 15px;
+	background-image: url(../images/icons/down_arrow_positive.gif);
+}
+
+
+DIV.reportingHighlightPod DIV P.even {
+	color: black;
+	padding-left: 15px;
+	background-image: none;
+}
+
+DIV.reportingHighlightPod DIV P.down_negative {
+	color: #ed1c24;
+	padding-left: 15px;
+	background-image: url(../images/icons/down_arrow.gif);
+	background-position: 0px 3px;
+}
+
+DIV.reportingHighlightPod DIV P.up_negative {
+	color: #ed1c24;
+	padding-left: 15px;
+	background-image: url(../images/icons/up_arrow_negative.gif);
+	background-position: 0px 3px;
+}
+ */
+
+DIV.largeSymbol {
+	border-width: 0;
+	background-image: none;
+	background-color: transparent !important;
+	font-size: 24px;
+	font-weight: normal;
+	color: #84ae06;
+}
+
+DIV.reportingHighlightPod DIV.podMainInfo {
+	padding: 0 0 10px 40px !important;
+	border: solid 0px #D6D6D6;
+	border-bottom-width: 1px;
+	background-image: none;
+	position: relative;
+	margin-bottom: 0px;
+}
+
+DIV.podMainInfo H4 {
+	font-weight: normal;
+
+	padding: 0px;
+	margin-bottom: 0px;
+	margin: 0 0 5px 0;
+	color: #ff9d36;
+	font-size: 18px;
+}
+
+div.listPageContainer div.listButtonBar a.filterIcon {
+	background-color: transparent;
+	background-image: url($spriteMiscVar);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: 0pt -1200px;
+
+}
+
+.upLevel {
+	background-image: url($blackIconSprite);
+	background-position: 5px -8997px;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 21px;
+	width: 21px;
+	padding: 0;
+}
+
+DIV.listPageContainer TD.sideBar span.legendSpanRight SELECT {
+	float: right;
+	width: 90%;
+	@if $isIE {
+		margin-right: 10px;
+	}
+}
+
+table.trendCallouts {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.trendCallout {
+	border: 1px solid #999;
+	padding: 10px;
+	margin1: 10px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.trendCallout H3 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #999;
+	margin: 0px;
+	padding-bottom: 10px;
+}
+
+.trendCallout .current {
+	text-align: center;
+}
+
+.trendCallout .current {
+	display: inline-block;
+	background-image: none;
+	background-position: 100% 2px;
+	background-repeat: no-repeat;
+	padding-right: 20px;
+}
+
+.trendCallout.down .current {
+	background-image: url(../images/charting/red_down_16.gif);
+}
+
+.trendCallout.up .current {
+	background-image: url(../images/charting/up_16.gif);
+}
+
+.trendCallout P {
+	margin: 0px;
+}
+
+.trendCallout .current {
+	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.prevDaysCalloutText {
+	font-weight: bold;
+}
+
+.graphNTabularData {
+	width: 100%;
+}
+
+.graphNTabularData td {
+	vertical-align: top;
+}
+
+.graphNTabularData td table {
+	width: 100%;
+}
+
+TD.graph {
+	width: 300px;
+	height: 325px;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+}
+
+.tabularData {
+	width: 417px;
+	height: 325px;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	border-left-width: 0px;
+}
+
+.barGraphContainer {
+	margin-bottom: 10px;
+}
+ .fauxTree tr.folder td.iconColumn a, .fauxTree tr.item td.iconColumn a,  .fauxTree tr.folder td.iconColumn div, .fauxTree tr.item td.iconColumn div {
+        text-decoration: none;
+        display: inline-block;
+        line-height: 18px;
+    }
+	
+.fauxTree tr.folder td.iconColumn div{
+	cursor: pointer;
+}	
+	
+	
+ .fauxTree tr.folder td.iconColumn a span, .fauxTree tr.item td.iconColumn a span{
+ 	text-decoration: underline;
+ }	
+    
+    .fauxTree tr.folder td.iconColumn a,.fauxTree tr.folder td.iconColumn div{
+        background: url($spriteMiscVar) no-repeat 0 -1900px;
+    }
+    
+    .fauxTree tr.open td.iconColumn a, .fauxTree tr.open td.iconColumn div {
+        background: url($spriteMiscVar) no-repeat 0 -2000px;
+    }
+    
+    .fauxTree tr.item td.iconColumn a, .fauxTree tr.item td.iconColumn div {
+    	background: url($blackIconSprite) no-repeat 0 -3900px;
+    }
+    
+    .fauxTree tr.dr td.iconColumn a, .fauxTree tr.dr td.iconColumn div{
+        background: url("../images/FauxTree/dr_icon.jpg") no-repeat;
+    }
+    
+    .fauxTree tr.item td.iconColumn span {
+        padding-left: 19px;
+    }
+    
+    .fauxTree tr.folder td.iconColumn span {
+        padding-left: 37px;
+    }
+    
+    .fauxTree tr.level0 td.iconColumn a, .fauxTree tr.level0 td.iconColumn div {
+        margin-left: 0px;
+    }
+    
+    .fauxTree tr.level1 td.iconColumn a, .fauxTree tr.level1 td.iconColumn div {
+        margin-left: 33px;
+    }
+    
+    .fauxTree tr.level2 td.iconColumn a, .fauxTree tr.level2 td.iconColumn div{
+        margin-left: 70px;
+    }
+    
+    .fauxTree tr.level3 td.iconColumn a, .fauxTree tr.level3 td.iconColumn div {
+        margin-left: 108px;
+    }
+    
+    .fauxTree tr.level4 td.iconColumn a, .fauxTree tr.level4 td.iconColumn div {
+        margin-left: 130px;
+    }
+	
+	.fauxTree tr.level4 td.iconColumn a, .fauxTree tr.level4 td.iconColumn div {
+        margin-left: 152px;
+    }
+	
+	.fauxTree tr.level5 td.iconColumn a, .fauxTree tr.level5 td.iconColumn div {
+        margin-left: 174px;
+    }
+	
+	.fauxTree tr.level6 td.iconColumn a, .fauxTree tr.level6 td.iconColumn div {
+        margin-left: 196px;
+    }
+	
+	.fauxTree tr.level7 td.iconColumn a, .fauxTree tr.level7 td.iconColumn div {
+        margin-left: 218px;
+    }
+	
+	.fauxTree tr.level8 td.iconColumn a, .fauxTree tr.level8 td.iconColumn div{
+        margin-left: 240px;
+    }
+	
+	.fauxTree tr.level9 td.iconColumn a, fauxTree tr.level9 td.iconColumn div {
+        margin-left: 262px;
+    }
+	
+	.fauxTree tr.level10 td.iconColumn a, .fauxTree tr.level10 td.iconColumn div {
+        margin-left: 284px;
+    }
+	
+	.fauxTree tr.level11 td.iconColumn a, .fauxTree tr.level11 td.iconColumn div {
+        margin-left: 284px;
+    }
+	
+	.fauxTree tr.level12 td.iconColumn a, .fauxTree tr.level12 td.iconColumn div {
+        margin-left: 306px;
+    }
+	
+	.fauxTree tr.level13 td.iconColumn a, .fauxTree tr.level13 td.iconColumn div {
+        margin-left: 328px;
+    }
+	
+	.fauxTree tr.level14 td.iconColumn a, .fauxTree tr.level14 td.iconColumn div {
+        margin-left: 350px;
+    }
+	
+	.fauxTree tr.level15 td.iconColumn a, .fauxTree tr.level15 td.iconColumn div {
+        margin-left: 272px;
+    }
+	
+	.fauxTree tr.level16 td.iconColumn a, .fauxTree tr.level16 td.iconColumn div {
+        margin-left: 394px;
+    }
+	
+	.fauxTree tr.level17 td.iconColumn a, .fauxTree tr.level17 td.iconColumn div {
+        margin-left: 416px;
+    }
+	
+	.fauxTree tr.level18 td.iconColumn a, .fauxTree tr.level18 td.iconColumn div {
+        margin-left: 438px;
+    }
+	
+	.fauxTree tr.level19 td.iconColumn a, .fauxTree tr.level19 td.iconColumn div {
+        margin-left: 460px;
+    }
+	
+	.fauxTree tr.level20 td.iconColumn a, .fauxTree tr.level20 td.iconColumn div {
+        margin-left: 482px;
+    }
+    
+/* start TreeMenu css */
+
+DIV.listScroller {
+	height: 261px;
+	@if $isIE {
+		width: 480px;
+	}
+	overflow-y: scroll;
+	overflow-x: auto;
+}
+
+TD.treeRightPanel {
+	vertical-align: top;
+	background-color: #fff;
+	padding: 0;
+	/*border:1px solid #ccc;
+	border-left:0;*/
+}
+
+TD.treeRightPanel TABLE.dataTable TBODY TD {
+	border-top: 0;
+
+}
+
+TD.treeRightPanel DIV.listScroller {
+	overflow: auto;
+	overflow-y: scroll;
+	height: 400px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top: 0;
+}
+
+TD.treeRightPanel DIV.listScroller table tbody td {
+	padding: 0;
+}
+
+TD.treeRightPanel DIV.listScroller table tbody td a {
+	line-height: 16px;
+	display: block;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-decoration: underline;
+}
+
+TD.treeRightPanel DIV.listScroller table tbody td a:hover {
+	text-decoration: underline;
+}
+
+TD.treeRightPanel DIV.listScroller a.treeFolder {
+	padding-left: 24px;
+	@include sprite-misc("folder.gif", 4px, -5px);
+}
+
+TD.treeRightPanel DIV.listScroller A.treeItem {
+	padding-left: 24px;
+	@include sprite-icon("document", 4px, -6px);
+}
+
+DIV.treeMenu {
+	overflow: auto;
+	padding: 5px;
+	height: 390px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-top: 0;
+}
+
+.treeTitle {
+	background: #ccc url($treeMenuTitleBackgroundImage) repeat-x 0 -500px;
+	border: 1px solid #ccc;
+	color: #333;
+	font-weight: bold;
+	height: 17px;
+	line-height: 17px;
+	padding: 4px 6px 4px 10px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+DIV.treeMenu UL {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+DIV.treeMenu UL UL {
+	margin: 0;
+}
+
+DIV.treeMenu UL LI {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+DIV.treeMenu UL LI UL LI {
+	margin: 0px 0 0px 16px;
+}
+
+DIV.treeMenu UL LI DIV {
+	height: 18px;
+}
+
+DIV.treeMenu UL LI SPAN {
+	color: #333;
+	text-decoration: none;
+	white-space: nowrap;
+	display: inline-block;
+	padding: 2px 0px 2px 31px;
+	cursor: pointer;
+}
+
+DIV.treeMenu UL LI A {
+	color: #333;
+	text-decoration: none;
+	white-space: nowrap;
+	display: inline-block;
+	padding: 2px 6px 2px 2px;
+}
+
+DIV.treeMenu UL LI A:hover {
+	text-decoration: underline;
+}
+
+DIV.treeMenu UL LI.treeNodeOpen A {
+	color: #333;
+	background-color: #fff;
+}
+
+DIV.treeMenu UL LI.treeNodeOpen UL {
+	display: block;
+}
+
+DIV.treeMenu UL LI.treeNodeOpen SPAN,
+DIV.treeMenu UL LI.treeNodeOpenSelected SPAN {
+	@include sprite-misc("ftree_collapse_n_folder.gif");
+}
+
+DIV.treeMenu UL LI.treeNodeOpenSelected A {
+	color: #000;
+	background-color: #ccc;
+}
+
+DIV.treeMenu UL LI.treeNodeOpenSelected UL LI A {
+	color: #333;
+	background-color: #fff;
+}
+
+DIV.treeMenu UL LI.treeNodeOpenSelected UL {
+	display: block;
+}
+
+DIV.treeMenu UL LI.treeNodeClosed UL {
+	display: none;
+}
+
+DIV.treeMenu UL LI.treeNodeClosed SPAN,
+DIV.treeMenu UL LI.treeNodeClosedSelected SPAN {
+	@include sprite-misc("ftree_expand_n_folder.gif");
+}
+
+DIV.treeMenu UL LI.docSelected A,
+DIV.treeMenu UL LI.treeNodeClosedSelected A {
+	color: #000;
+	background-color: #ccc;
+}
+
+DIV.treeMenu UL LI.treeNodeClosedSelected UL {
+	display: none;
+}
+
+DIV.treeMenu UL LI.docSelected SPAN,
+DIV.treeMenu UL LI.doc SPAN {
+	@include sprite-icon("blank", 14px, 0);
+}
+
+DIV.treeMenu UL LI.treeNodeEmptyOpen SPAN,
+DIV.treeMenu UL LI.treeNodeEmptySelected SPAN {
+	cursor: default;
+	@include sprite-misc("folder_open.gif", 16px, 0);
+
+}
+
+DIV.treeMenu UL LI.treeNodeEmptySelected A {
+	color: #000;
+	background-color: #ccc;
+}
+
+DIV.treeMenu UL LI.treeNodeEmpty SPAN {
+	cursor: default;
+	@include sprite-misc("folder.gif", 14px, 0);
+}
+
+/* end TreeMenu css */

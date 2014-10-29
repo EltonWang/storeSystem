@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<!--
+This page is used to create a iframe in a modal window. This iframe can post and reload. The destination of the iframe is passed in via
+the dialogArguments property.
+-->
+<html>
+<head>
+	<title>Search</title>
+	<script type="text/javascript">
+		function goToContentURL() {
+			var destURL = window.dialogArguments;
+			var iframeElem = document.createElement("IFRAME");
+			var bodyElem = document.getElementById("bodyElem");
+			
+			iframeElem.setAttribute("frameborder", "1");
+			iframeElem.setAttribute("scrolling", "yes");
+			iframeElem.setAttribute("src", destURL);
+			
+			bodyElem.appendChild(iframeElem);
+			//document.getElementById("windowContent").src = window.dialogArguments;
+		}
+	</script>
+	<style type="text/css">
+		BODY, HTML { 
+			height:100%; 
+			padding:0;
+			margin:0;
+		}
+		
+		IFRAME {
+			height:100%;
+			width:100%;
+			border-width:0;
+			overflow:auto;
+		}
+	
+	</style>
+
+</head>
+<body id="bodyElem" onload="goToContentURL();">
+</body>
+</html>

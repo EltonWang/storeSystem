@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Test</title>
+    <script>
+
+        window.basePath = '/public/';
+    </script>
+    <script type="text/javascript" src="/public/js/attach-stylesheet.js"></script>
+    <script type="text/javascript" src="/public/js/dr-framework-compressed-en_US.js"></script>
+
+    <script>
+
+
+    </script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body style="width: 800px; padding: 50px;">
+    <form method="get" data-behavior="search" action="">
+        <div class="listControl">
+            <!-- INSERT FOR ACTION BUTTONS -->
+
+
+            <input type="hidden" class="listAction" name="action" value="refresh" />
+
+            <!-- END FOR ACTION BUTTONS -->
+            <div class="contentBox">
+                <!-- INSERT FOR ACTION BUTTONS -->
+                <div class="actionRow">
+                    <ul class="buttons">
+
+
+
+                        <li><button name="activate" class="multiple small button" type="button" disabled="disabled"><span><span><span>Activate</span></span></span></button></li>
+                        <li><button name="delete" class="multiple button small" type="button" data-confirm-action="Are you sure you want to delete the selected user(s)?" disabled="disabled"><span><span><span>Delete</span></span></span></button></li>
+                        <li><button name="add" class="button small" type="button" onclick="showAlertShowCustomTitle();"><span><span><span>Add</span></span></span></button></li>
+
+
+                    </ul>
+                </div>
+                <!-- END ACTION BUTTONS -->
+                <div class="dataTableContainer">
+                    <table class="dataTable" cellpadding="0" cellspacing="0" border="0">
+                        <thead>
+                        <tr>
+                            <!-- INSERT FOR ACTION BUTTONS -->
+                            <th class="actionCol">&nbsp;</th>
+                            <!-- END ACTION BUTTONS -->
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email Address</th>
+                            <th>Status</th>
+                            <th>Administrator</th>
+                            <th>State</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- BEGIN ITERATING ROWS -->
+                        <tr>
+                            <!-- INSERT FOR ACTION BUTTONS -->
+                            <td class="actionCol">
+                                <input type="checkbox" name="selectedUsers" value="1" />
+                            </td>
+                            <!-- END ACTION BUTTONS -->
+                            <td>1</td>
+                            <td>Smith, Mary</td>
+                            <td>msmith@example.com</td>
+                            <td>Active</td>
+                            <td>True</td>
+                            <td>AL</td>
+                        </tr>
+                        <tr>
+                            <!-- INSERT FOR ACTION BUTTONS -->
+                            <td class="actionCol">
+                                <input type="checkbox" name="selectedUsers" value="1" />
+                            </td>
+                            <!-- END ACTION BUTTONS -->
+                            <td>1</td>
+                            <td>Smith, Mary</td>
+                            <td>msmith@example.com</td>
+                            <td>Active</td>
+                            <td>True</td>
+                            <td>AL</td>
+                        </tr>
+                        <tr>
+                            <!-- INSERT FOR ACTION BUTTONS -->
+                            <td class="actionCol">
+                                <input type="checkbox" name="selectedUsers" value="1" />
+                            </td>
+                            <!-- END ACTION BUTTONS -->
+                            <td>1</td>
+                            <td>Smith, Mary</td>
+                            <td>msmith@example.com</td>
+                            <td>Active</td>
+                            <td>True</td>
+                            <td>AL</td>
+                        </tr>
+                        <tr>
+                            <!-- INSERT FOR ACTION BUTTONS -->
+                            <td class="actionCol">
+                                <input type="checkbox" name="selectedUsers" value="1" />
+                            </td>
+                            <!-- END ACTION BUTTONS -->
+                            <td>1</td>
+                            <td>Smith, Mary</td>
+                            <td>msmith@example.com</td>
+                            <td>Active</td>
+                            <td>True</td>
+                            <td>AL</td>
+                        </tr>
+                        <!-- END ITERATING ROWS -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- INSERT FOR ACTION BUTTONS -->
+                <div class="actionRowBottom">
+                    <ul class="buttons">
+
+
+
+                        <li><button name="activate" class="multiple small button" type="button" disabled="disabled"><span><span><span>Activate</span></span></span></button></li>
+                        <li><button name="delete" class="multiple button small" type="button" data-confirm-action="Are you sure you want to delete the selected user(s)?" disabled="disabled"><span><span><span>Delete</span></span></span></button></li>
+                        <li><button name="add" class="button small" type="button" onclick="showAlertShowCustomTitle();"><span><span><span>Add</span></span></span></button></li>
+
+
+                    </ul>
+                </div>
+                <!-- END ACTION BUTTONS -->
+            </div>
+        </div>
+    </form>
+    <script>
+
+       // $.dr.init();
+    </script>
+</body>
+</html>
