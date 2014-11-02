@@ -1,16 +1,97 @@
 <%- include includes/top.ejs %>
 
-<div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-        Dropdown
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-    </ul>
+<div class="btn-group">
+    <button type="button" class="btn btn-default">插入</button>
+    <button type="button" class="btn btn-default">領出</button>
+    <button type="button" class="btn btn-default">置換</button>
+    <button type="button" class="btn btn-default">搜尋</button>
 </div>
+
+<div class="dropdownContainer">
+
+    <div class="dropdown level1">
+        第一層:
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            <span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        </ul>
+    </div>
+
+    <div class="dropdown level2" style="">
+        第二層:
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" disabled="disabled">
+            <span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+        </ul>
+    </div>
+
+    <div class="dropdown level3" style="">
+        第三層:
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" disabled="disabled">
+            <span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+        </ul>
+    </div>
+
+</div>
+
+<form class="navbar-form navbar-left level4" style="display: none;">
+    <div class="input-group">
+        <span class="input-group-addon">Slot1</span>
+        <input type="text" class="form-control">
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">Slot2</span>
+        <input type="text" class="form-control">
+    </div>
+</form>
+
+
+<script>
+    $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
+        var $target = $( event.currentTarget );
+        $target.closest( '.dropdown' )
+                .find( '[data-bind="label"]' ).text( $target.text() )
+                .end()
+                .children( '.dropdown-toggle' ).dropdown( 'toggle' );
+
+        return false;
+    });
+
+    storeModule.getPools();
+</script>
+
+<style>
+    .btn-group{
+        padding-bottom: 30px;
+    }
+
+    .dropdownContainer{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .dropdownContainer div.dropdown{
+        float: left;
+        padding-right: 30px;
+    }
+
+    form.level4{
+        padding-left: 0px;
+        float: left;
+        width: 550px;
+    }
+
+    form.level4 div.input-group{
+        padding-bottom: 15px;;
+    }
+
+    form.level4 input.form-control{
+        width: 400px !important;
+    }
+</style>
 
 <%- include includes/footer.ejs %>

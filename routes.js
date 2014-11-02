@@ -1,4 +1,5 @@
-
+var ServiceUtils = require('./lib/ServiceUtils.js');
+var database = require('./lib/database.js');
 
 
 module.exports = function(app) {
@@ -12,6 +13,14 @@ module.exports = function(app) {
 
     app.get('/beacon/tab', function(req, res) {
         res.render('tab');
+    });
+
+    app.get('/data/pools', function(req, res) {
+
+        database.getPoolInfo(function(result){
+            res.json(result);
+        });
+
     });
 
 
