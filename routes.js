@@ -15,6 +15,11 @@ module.exports = function(app) {
         res.render('tab');
     });
 
+    app.get('/data/destroyInitial', function(req, res) {
+        database.initialAllSlots();
+        res.send('hello world');
+    });
+
     app.get('/data/pools', function(req, res) {
         database.getPoolInfo(function(result){
             res.json(result);
@@ -22,9 +27,11 @@ module.exports = function(app) {
     });
 
     app.post('/data/slot/update', function(req, res) {
-        var slotName = req.body.slotName;
         var slotPlace = req.body.slotPlace;
-        database.updateSlotInfo(slotName, slotPlace, function(result){
+        var batch = req.body.batch;
+        var sub = req.body.sub;
+        var cell = req.body.cell;
+        database.updateSlotInfo(slotPlace, batch, sub, cell, function(result){
             res.json(result);
         });
 

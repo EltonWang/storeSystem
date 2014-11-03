@@ -19,6 +19,7 @@
     "cheerio": "*",
     "underscore": "*",
     "iconv-lite": "~0.4.4",
-    "mysql": "*"
+    "mysql": "*",
+    "async": "*"
   }
 }

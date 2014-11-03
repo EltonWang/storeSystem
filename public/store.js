@@ -119,14 +119,24 @@ var storeModule = (function (storeModule) {
 
 
             var h = [];
+
+            h.push('<div class="input-group">');
+            h.push('<span class="input-group-addon" style="font-size:16px;">位置&nbsp;</span>');
+            h.push('<input type="text" class="form-control" value="批次編碼" disabled=""/>');
+            h.push('<input type="text" class="form-control" value="代數" disabled=""/>');
+            h.push('<input type="text" class="form-control" value="細胞數" disabled=""/>');
+            h.push('</div>');
+
             _.each(layerObj.level4, function(level3){
                 var slotName = level3.name;
                 var disabledStr = level3.productName === "" ? 'disabled="disabled"': '';
                 h.push('<div class="input-group">');
                 h.push('<span class="input-group-addon">' + slotName + '</span>');
-                h.push('<input type="text" class="form-control" value="' + level3.productName + '"/>');
-                h.push('<span class="input-group-btn save"><button class="btn btn-default save" type="button" ' + disabledStr + '>Save</button></span>');
-                h.push('<span class="input-group-btn delete"><button class="btn btn-default delete" type="button" ' + disabledStr + '>Delete</button></span>');
+                h.push('<input type="text" class="form-control batch" value="' + level3.batch + '"/>');
+                h.push('<input type="text" class="form-control sub" value="' + level3.sub + '"/>');
+                h.push('<input type="text" class="form-control cell" value="' + level3.cell + '"/>');
+                h.push('<span class="input-group-btn save"><button class="btn btn-default save" type="button" ' + disabledStr + '>入庫</button></span>');
+                h.push('<span class="input-group-btn delete"><button class="btn btn-default delete" type="button" ' + disabledStr + '>出庫</button></span>');
                 h.push('</div>');
             });
             $('form.level4').html(h.join(''));
@@ -140,17 +150,17 @@ var storeModule = (function (storeModule) {
     var bindSlotTableEvent = function(){
         var $slotForm = $('form.level4');
         $slotForm.find('span.input-group-btn button.btn.save').click(function(){
-            var slotName = $(this).parent().siblings('input').val();
-            var slotNumber = $(this).parent().siblings('span.input-group-addon').html().trim();
-            saveSlot(slotNumber, slotName);
+            saveSlot($(this).closest('div.input-group'));
         });
         $slotForm.find('span.input-group-btn button.btn.delete').click(function(){
             var oSelf = $(this);
-            var slotNumber = $(this).parent().siblings('span.input-group-addon').html().trim();
-            $(this).parent().siblings('input').val('');
-            saveSlot(slotNumber, '', function(){
-                oSelf.prop("disabled", true);
-                oSelf.parent().siblings('span.input-group-btn.save').find('button').prop("disabled", true);
+            var $inputGroup = oSelf.closest('div.input-group');
+            $inputGroup.find('input.batch').val('');
+            $inputGroup.find('input.sub').val('');
+            $inputGroup.find('input.cell').val('');
+            saveSlot(oSelf.closest('div.input-group'), '', function(){
+                //oSelf.prop("disabled", true);
+                //oSelf.parent().siblings('span.input-group-btn.save').find('button').prop("disabled", true);
             });
         });
         $slotForm.find('input').keyup(function(){
@@ -166,21 +176,30 @@ var storeModule = (function (storeModule) {
 
     };
 
-    var saveSlot = function(slotNumber, slotName, callback){
+    var collectPostData = function($slotGroup){
         var slotPlace = [];
         slotPlace.push($('#dropdownMenu1').find('span[data-bind=label]').html().trim());
         slotPlace.push($('#dropdownMenu2').find('span[data-bind=label]').html().trim());
         slotPlace.push($('#dropdownMenu3').find('span[data-bind=label]').html().trim());
-        slotPlace.push(slotNumber);
-        slotPlace.join('-');
+        slotPlace.push($slotGroup.find('span.input-group-addon').html().trim());
 
+        var batch = $slotGroup.find('input.batch').val().trim();
+        var sub = $slotGroup.find('input.sub').val().trim();
+        var cell = $slotGroup.find('input.cell').val().trim();
+
+        return {"slotPlace": slotPlace.join('-'), "batch": batch, "sub": sub, "cell": cell};
+    };
+
+    var saveSlot = function($slotGroup, callback){
+
+        var postData = collectPostData($slotGroup);
 
         $.ajax({
             dataType:'json',
             type: 'POST',
             contentType: 'application/json',
             url: '/data/slot/update',
-            data: JSON.stringify({"slotPlace": slotPlace.join('-'), "slotName": slotName}),
+            data: JSON.stringify(postData),
             success: function(data){
                 console.log(data);
                 if(typeof callback === 'function'){
@@ -196,7 +215,9 @@ var storeModule = (function (storeModule) {
     var compilePoolData = function(data){
         _.each(data, function(slot){
             var levels = slot.slotName.split('-');
-            var productName = slot.name;
+            var batch = slot.batch;
+            var sub = slot.sub;
+            var cell = slot.cell;
 
             //handle level1
             var level1Obj = _.find(storeModule.storeStruc.level1, function(level){
@@ -236,7 +257,7 @@ var storeModule = (function (storeModule) {
                 return level.name === levels[3];
             });
             if(!level4Obj){
-                level3Obj.level4.push({'name': levels[3], 'productName':productName});
+                level3Obj.level4.push({'name': levels[3], 'batch': batch, 'sub':sub, 'cell': cell});
                 level4Obj = _.find(level3Obj.level4, function(level){
                     return level.name === levels[2];
                 });

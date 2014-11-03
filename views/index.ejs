@@ -1,16 +1,10 @@
 <%- include includes/top.ejs %>
 <div class="btn-group functionLevel" data-toggle="buttons">
     <label class="btn btn-primary active" onclick="storeModule.changeFunction('insert')" >
-        <input type="radio" name="options" id="option1" autocomplete="off" checked> 入庫
-    </label>
-    <label class="btn btn-primary" onclick="storeModule.changeFunction('remove')" >
-        <input type="radio" name="options" id="option2" autocomplete="off"> 出庫
-    </label>
-    <label class="btn btn-primary" onclick="storeModule.changeFunction('swap')" >
-        <input type="radio" name="options" id="option3" autocomplete="off"> 置換
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> 基本操作
     </label>
     <label class="btn btn-primary" onclick="storeModule.changeFunction('search')" >
-        <input type="radio" name="options" id="option4" autocomplete="off"> 搜尋
+        <input type="radio" name="options" id="option2" autocomplete="off"> 搜尋
     </label>
 </div>
 
@@ -89,15 +83,15 @@
     form.level4{
         padding-left: 0px;
         float: left;
-        width: 550px;
+        width: 800px;
     }
 
     form.level4 div.input-group{
-        padding-bottom: 15px;;
+        padding-bottom: 15px;
     }
 
     form.level4 input.form-control{
-        width: 400px !important;
+        width: 150px !important;
     }
 
     div.functionLevel label.btn-primary{
