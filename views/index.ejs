@@ -1,10 +1,17 @@
 <%- include includes/top.ejs %>
-
-<div class="btn-group">
-    <button type="button" class="btn btn-default">插入</button>
-    <button type="button" class="btn btn-default">領出</button>
-    <button type="button" class="btn btn-default">置換</button>
-    <button type="button" class="btn btn-default">搜尋</button>
+<div class="btn-group functionLevel" data-toggle="buttons">
+    <label class="btn btn-primary active" onclick="storeModule.changeFunction('insert')" >
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> 入庫
+    </label>
+    <label class="btn btn-primary" onclick="storeModule.changeFunction('remove')" >
+        <input type="radio" name="options" id="option2" autocomplete="off"> 出庫
+    </label>
+    <label class="btn btn-primary" onclick="storeModule.changeFunction('swap')" >
+        <input type="radio" name="options" id="option3" autocomplete="off"> 置換
+    </label>
+    <label class="btn btn-primary" onclick="storeModule.changeFunction('search')" >
+        <input type="radio" name="options" id="option4" autocomplete="off"> 搜尋
+    </label>
 </div>
 
 <div class="dropdownContainer">
@@ -91,6 +98,20 @@
 
     form.level4 input.form-control{
         width: 400px !important;
+    }
+
+    div.functionLevel label.btn-primary{
+        background-color: white;
+        border-color: #ccc;
+        color: black;
+    }
+    div.functionLevel .btn:active{
+        //box-shadow: none;
+
+    }
+    div.functionLevel .btn.active{
+        background-color: #e6e6e6;
+        boder-color: #adadad;
     }
 </style>
 

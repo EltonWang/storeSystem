@@ -12,6 +12,8 @@ var storeModule = (function (storeModule) {
     storeModule.currentCageObj;
     storeModule.currentLayerObj;
 
+    var currentFunc = '';
+
     var buildPoolsLevel = function(data){
         //console.log(data);
         compilePoolData(data);
@@ -54,6 +56,10 @@ var storeModule = (function (storeModule) {
                 bindLeve2Event(poolObj);
             }, 0);
         });
+
+        $('div.level1 button.btn').prop('disabled', false);
+        $('div.level2 button.btn').prop('disabled', true);
+        $('div.level3 button.btn').prop('disabled', true);
     };
 
     var bindLeve2Event = function(poolObj){
@@ -94,19 +100,96 @@ var storeModule = (function (storeModule) {
 
             storeModule.currentLayerObj = layerObj;
 
+            renderSlotTable();
+
+        });
+    };
+
+    var renderSlotTable = function(){
+
+        if(storeModule.currentPullObj && storeModule.currentLayerObj && storeModule.currentCageObj){
+
+            var poolName = storeModule.currentPullObj.name;
+            var cageName = storeModule.currentCageObj.name;
+            var layerName = storeModule.currentLayerObj.name;
+
+            var poolObj = _.find(storeModule.storeStruc.level1, function(level1){return level1.name===poolName;});
+            var cageObj = _.find(poolObj.level2, function(level2){return level2.name===cageName;});
+            var layerObj = _.find(cageObj.level3, function(level3){return level3.name===layerName;});
+
+
             var h = [];
             _.each(layerObj.level4, function(level3){
                 var slotName = level3.name;
+                var disabledStr = level3.productName === "" ? 'disabled="disabled"': '';
                 h.push('<div class="input-group">');
                 h.push('<span class="input-group-addon">' + slotName + '</span>');
-                h.push('<input type="text" class="form-control">');
+                h.push('<input type="text" class="form-control" value="' + level3.productName + '"/>');
+                h.push('<span class="input-group-btn save"><button class="btn btn-default save" type="button" ' + disabledStr + '>Save</button></span>');
+                h.push('<span class="input-group-btn delete"><button class="btn btn-default delete" type="button" ' + disabledStr + '>Delete</button></span>');
                 h.push('</div>');
             });
             $('form.level4').html(h.join(''));
 
             setTimeout(function(){
-                //bindLeve4Event();
+                bindSlotTableEvent();
             }, 0);
+        }
+    };
+
+    var bindSlotTableEvent = function(){
+        var $slotForm = $('form.level4');
+        $slotForm.find('span.input-group-btn button.btn.save').click(function(){
+            var slotName = $(this).parent().siblings('input').val();
+            var slotNumber = $(this).parent().siblings('span.input-group-addon').html().trim();
+            saveSlot(slotNumber, slotName);
+        });
+        $slotForm.find('span.input-group-btn button.btn.delete').click(function(){
+            var oSelf = $(this);
+            var slotNumber = $(this).parent().siblings('span.input-group-addon').html().trim();
+            $(this).parent().siblings('input').val('');
+            saveSlot(slotNumber, '', function(){
+                oSelf.prop("disabled", true);
+                oSelf.parent().siblings('span.input-group-btn.save').find('button').prop("disabled", true);
+            });
+        });
+        $slotForm.find('input').keyup(function(){
+            var oSelf = $(this);
+            if(oSelf.val()===""){
+                oSelf.siblings('span.save').find('button').prop('disabled', true);
+                oSelf.siblings('span.delete').find('button').prop('disabled', true);
+            }else{
+                oSelf.siblings('span.save').find('button').prop('disabled', false);
+                oSelf.siblings('span.delete').find('button').prop('disabled', false);
+            }
+        });
+
+    };
+
+    var saveSlot = function(slotNumber, slotName, callback){
+        var slotPlace = [];
+        slotPlace.push($('#dropdownMenu1').find('span[data-bind=label]').html().trim());
+        slotPlace.push($('#dropdownMenu2').find('span[data-bind=label]').html().trim());
+        slotPlace.push($('#dropdownMenu3').find('span[data-bind=label]').html().trim());
+        slotPlace.push(slotNumber);
+        slotPlace.join('-');
+
+
+        $.ajax({
+            dataType:'json',
+            type: 'POST',
+            contentType: 'application/json',
+            url: '/data/slot/update',
+            data: JSON.stringify({"slotPlace": slotPlace.join('-'), "slotName": slotName}),
+            success: function(data){
+                console.log(data);
+                if(typeof callback === 'function'){
+                    callback(data);
+                }
+            },
+            error: function(){
+                $.dr.alert('There was an error loading the pools.');
+            }
         });
     };
 
@@ -161,13 +244,40 @@ var storeModule = (function (storeModule) {
         });
     };
 
-    storeModule.getPools = function(){
+    storeModule.changeFunction = function(func){
+        console.log(func);
+        if(currentFunc === func){
+            return ;
+        }
+        currentFunc = func;
+        initialState();
+
+        storeModule.getPools(function(){
+            $('div.dropdown.level1 button.btn').prop('disabled', false);
+        });
+    };
+
+    var initialState = function(){
+
+
+        $('div.dropdown span[data-bind=label]').html('Select One');
+        $('div.dropdown ul').html('');
+        $('div.level4').html('');
+        $('div.dropdown button.btn').prop('disabled', true);
+
+    };
+
+    storeModule.getPools = function(callback){
         $.ajax({
+            data: { 'rndnum': new Date().getTime() },
             dataType:'json',
             url: '/data/pools',
             success: function(data){
                 //console.log(data);
                 buildPoolsLevel(data);
+                if(typeof callback === 'function'){
+                    callback(data);
+                }
             },
             error: function(){
                 $.dr.alert('There was an error loading the pools.');
