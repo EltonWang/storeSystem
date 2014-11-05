@@ -22,9 +22,7 @@ module.exports = function(app) {
 
     app.get('/data/pools', function(req, res) {
 
-        var connection = database.createConnection();
-
-        database.getPoolInfo(connection, function(result){
+        database.getPoolInfo(function(result){
             res.json(result);
         });
     });
