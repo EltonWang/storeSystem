@@ -52,8 +52,12 @@ var storeModule = (function (storeModule) {
 
             $('div.level2 ul.dropdown-menu').html(h.join(''));
 
+            var oldPoolName = $('div.level1 span[data-bind=label]').html();
+            console.log('Change Pool from ' + oldPoolName + ' to ' + poolName);
+
             setTimeout(function(){
                 bindLeve2Event(poolObj);
+                renderSlotTable();
             }, 0);
         });
 
@@ -82,8 +86,12 @@ var storeModule = (function (storeModule) {
 
             $('div.level3 ul.dropdown-menu').html(h.join(''));
 
+            var oldCageName = $('div.level2 span[data-bind=label]').html();
+            console.log('Change Cage from ' + oldCageName + ' to ' + cageName);
+
             setTimeout(function(){
                 bindLeve3Event();
+                renderSlotTable();
             }, 0);
         });
     };
@@ -100,18 +108,25 @@ var storeModule = (function (storeModule) {
 
             storeModule.currentLayerObj = layerObj;
 
-            renderSlotTable();
+            var oldLayerName = $('div.level3 span[data-bind=label]').html();
+
+            console.log('Change Layer from ' + oldLayerName + ' to ' + layerName);
+
+            setTimeout(function(){
+                renderSlotTable();
+            }, 0);
 
         });
     };
 
+
     var renderSlotTable = function(){
+        var poolName = $('div.level1 span[data-bind=label]').html();
+        var cageName = $('div.level2 span[data-bind=label]').html();
+        var layerName = $('div.level3 span[data-bind=label]').html();
+        if(poolName!=='Select One' && cageName!=='Select One' && layerName!=='Select One'){
 
-        if(storeModule.currentPullObj && storeModule.currentLayerObj && storeModule.currentCageObj){
-
-            var poolName = storeModule.currentPullObj.name;
-            var cageName = storeModule.currentCageObj.name;
-            var layerName = storeModule.currentLayerObj.name;
+            console.log('Render slot table for pool:'+poolName+' cage:'+cageName+' layer:'+layerName);
 
             var poolObj = _.find(storeModule.storeStruc.level1, function(level1){return level1.name===poolName;});
             var cageObj = _.find(poolObj.level2, function(level2){return level2.name===cageName;});
