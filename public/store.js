@@ -132,6 +132,9 @@ var storeModule = (function (storeModule) {
             var cageObj = _.find(poolObj.level2, function(level2){return level2.name===cageName;});
             var layerObj = _.find(cageObj.level3, function(level3){return level3.name===layerName;});
 
+            storeModule.currentPullObj = poolObj;
+            storeModule.currentCageObj = cageObj;
+            storeModule.currentLayerObj = layerObj;
 
             var h = [];
 
@@ -173,7 +176,7 @@ var storeModule = (function (storeModule) {
             $inputGroup.find('input.batch').val('');
             $inputGroup.find('input.sub').val('');
             $inputGroup.find('input.cell').val('');
-            saveSlot(oSelf.closest('div.input-group'), '', function(){
+            saveSlot(oSelf.closest('div.input-group'), function(){
                 //oSelf.prop("disabled", true);
                 //oSelf.parent().siblings('span.input-group-btn.save').find('button').prop("disabled", true);
             });
@@ -192,17 +195,20 @@ var storeModule = (function (storeModule) {
     };
 
     var collectPostData = function($slotGroup){
+
+        var slotName = $slotGroup.find('span.input-group-addon').html().trim();
+
         var slotPlace = [];
         slotPlace.push($('#dropdownMenu1').find('span[data-bind=label]').html().trim());
         slotPlace.push($('#dropdownMenu2').find('span[data-bind=label]').html().trim());
         slotPlace.push($('#dropdownMenu3').find('span[data-bind=label]').html().trim());
-        slotPlace.push($slotGroup.find('span.input-group-addon').html().trim());
+        slotPlace.push(slotName);
 
         var batch = $slotGroup.find('input.batch').val().trim();
         var sub = $slotGroup.find('input.sub').val().trim();
         var cell = $slotGroup.find('input.cell').val().trim();
 
-        return {"slotPlace": slotPlace.join('-'), "batch": batch, "sub": sub, "cell": cell};
+        return {"slotPlace": slotPlace.join('-'), "batch": batch, "sub": sub, "cell": cell, "slotName": slotName};
     };
 
     var saveSlot = function($slotGroup, callback){
@@ -217,6 +223,16 @@ var storeModule = (function (storeModule) {
             data: JSON.stringify(postData),
             success: function(data){
                 console.log(data);
+
+                var slotObj = _.find(storeModule.currentLayerObj.level4, function(level){
+                    return level.name===postData.slotName;
+                });
+                if(slotObj){
+                    slotObj.batch = postData.batch;
+                    slotObj.sub = postData.sub;
+                    slotObj.cell = postData.cell;
+                }
+
                 if(typeof callback === 'function'){
                     callback(data);
                 }
@@ -286,21 +302,26 @@ var storeModule = (function (storeModule) {
             return ;
         }
         currentFunc = func;
-        initialState();
 
-        storeModule.getPools(function(){
-            $('div.dropdown.level1 button.btn').prop('disabled', false);
-        });
+        if(func==='insert'){
+            $('div.dropdownContainer').show();
+            initialState();
+        }else if(func==='search') {
+            $('div.dropdownContainer').hide();
+            $('form.level4').hide();
+
+        }
     };
 
     var initialState = function(){
-
-
         $('div.dropdown span[data-bind=label]').html('Select One');
         $('div.dropdown ul').html('');
         $('div.level4').html('');
         $('div.dropdown button.btn').prop('disabled', true);
 
+        storeModule.getPools(function(){
+            $('div.dropdown.level1 button.btn').prop('disabled', false);
+        });
     };
 
     storeModule.getPools = function(callback){
