@@ -38,6 +38,13 @@ module.exports = function(app) {
 
     });
 
+    app.post('/data/slot/search', function(req, res) {
+        var searchKey = req.body.searchKey;
+        database.searchSlot(searchKey, function(result){
+            res.json(result);
+        });
+    });
+
 
 
 

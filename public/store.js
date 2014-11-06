@@ -305,12 +305,88 @@ var storeModule = (function (storeModule) {
 
         if(func==='insert'){
             $('div.dropdownContainer').show();
+            $('div.searchField').hide();
             initialState();
         }else if(func==='search') {
             $('div.dropdownContainer').hide();
             $('form.level4').hide();
+            $('div.searchField').show();
 
         }
+    };
+
+    storeModule.search = function(){
+        var searchContent = $('input#searchBox').val();
+        if(searchContent){
+            $.ajax({
+                dataType:'json',
+                type: 'POST',
+                contentType: 'application/json',
+                url: '/data/slot/search',
+                data: JSON.stringify({'searchKey': searchContent}),
+                success: function(data){
+                    //console.log(data);
+                    storeModule.storeStruc = {'level1': []};
+                    compilePoolData(data);
+                    renderSlotTableBySearch();
+
+                },
+                error: function(){
+                    $.dr.alert('There was an error loading the pools.');
+                }
+            });
+        }
+    };
+
+    var renderSlotTableBySearch = function(){
+        var searchResult = storeModule.storeStruc;
+
+        var h = [];
+
+        for(var i=0; i<searchResult.level1.length; i++){
+            var poolObj = searchResult.level1[i];
+            var poolName = poolObj.name;
+
+            for(var j=0; j<poolObj.level2.length; j++){
+                var cageObj = poolObj.level2[j];
+                var cageName = cageObj.name;
+
+                for(var k=0; k<cageObj.level3.length; k++){
+                    var layerObj = cageObj.level3[k];
+                    var layerName = layerObj.name;
+
+                    for(var x=0; x<layerObj.level4.length; x++){
+                        var slotObj = layerObj.level4[x];
+                        var slotName = slotObj.name;
+                        var slotBatch = slotObj.batch;
+                        var slotSub = slotObj.sub;
+                        var slotCell = slotObj.cell;
+
+
+                        console.log(poolName + '-' + cageName + '-' + layerName + '-' + slotName);
+
+
+                        //_.each(layerObj.level4, function(level3){
+                            //var slotName = level3.name;
+                            //var disabledStr = level3.productName === "" ? 'disabled="disabled"': '';
+                            h.push('<div class="input-group">');
+                            h.push('<span class="input-group-addon">' + poolName + '</span>');
+                            h.push('<span class="input-group-addon">' + cageName + '</span>');
+                            h.push('<span class="input-group-addon">' + layerName + '</span>');
+                            h.push('<span class="input-group-addon">' + slotName + '</span>');
+                            h.push('<input type="text" class="form-control batch" value="' + slotBatch + '"/>');
+                            h.push('<input type="text" class="form-control sub" value="' + slotSub + '"/>');
+                            h.push('<input type="text" class="form-control cell" value="' + slotCell + '"/>');
+                            h.push('</div>');
+                        //});
+
+                    }
+                }
+            }
+        }
+
+        $('form.level4').html(h.join(''));
+        $('form.level4').show();
     };
 
     var initialState = function(){
@@ -325,6 +401,7 @@ var storeModule = (function (storeModule) {
     };
 
     storeModule.getPools = function(callback){
+        $('div.functionLevel label').attr('disabled', 'disabled');
         $.ajax({
             data: { 'rndnum': new Date().getTime() },
             dataType:'json',
@@ -332,6 +409,7 @@ var storeModule = (function (storeModule) {
             success: function(data){
                 //console.log(data);
                 buildPoolsLevel(data);
+                $('div.functionLevel label').removeAttr('disabled');
                 if(typeof callback === 'function'){
                     callback(data);
                 }
